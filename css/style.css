@@ -1,0 +1,534 @@
+* {
+    box-sizing: border-box;
+}
+ 
+html {
+    width: 100%;
+    min-height: 100%;
+}
+ 
+body {
+    width: inherit;
+    min-height: inherit;
+    margin: 0;
+    padding: 0;
+    /*position: fixed;*/
+}
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+.home-top-div {
+  position: relative;
+  width: 100%;
+  height: 8.5rem;
+  font-size: 18px;
+  font-weight: bold;  
+  background-color: #743125;
+  padding: 0px !important;
+  color: #dbcdbd;
+  /*background: linear-gradient(to right, rgb(139,195,74), rgb(0,128,0), rgb(0, 128, 64));*/
+}
+
+.home-top-info {
+  margin-top: 25px;
+}
+
+.home-page-logo {
+  height: 110px;
+  width: 160px; 
+  /*float: left; 
+  margin-left: 4rem;*/
+  padding: 5px 0px 15px 0px;
+}
+
+
+.z{
+    height:500px;
+}
+.y{
+    position:absolute;
+    top:16.5%;
+    left: 8%;
+}
+
+.home-item-space {
+  margin-top: 10px;
+}
+
+.request-button {
+  background-color: #3f7033;
+  color: #dbcdbd;
+  /*border-radius: 15px;*/
+  border: 2px solid #3f7033;
+  height: auto;
+  padding: 10px;
+  font-size: 16px;
+  width: auto;
+  /*margin-left: 10px;*/
+}
+
+.request-button:hover {
+  background-color: #b24034;
+}
+
+nav {
+    width: 100%;
+    height: 5em;
+}
+/* change navbar background */
+.navbar {
+  background: #dbcdbd !important;
+
+}
+/* change navbar-brand color */
+/*.navbar a.navbar-brand {
+  color: red;
+  margin-left: 20px;
+  margin-right: 50px;
+}*/
+/* change navbar-brand color on hover */
+.navbar a.navbar-brand:hover {
+  color: green;
+}
+/*  change navbar li colors, also active one but not disabled one */
+.navbar ul.navbar-nav li.nav-item a.nav-link {
+  color: #743125;
+  font-weight: bold;
+  margin-left: 20px;
+  margin-right: 20px;
+  /*margin-top: 20px;*/
+}
+
+.navbar .nav-item .dropdown-menu {
+  background: #dbcdbd;
+}
+.navbar .nav-item .dropdown-menu .dropdown-item {
+  background: #dbcdbd;
+}
+
+.dropdown-divider {
+  border-top: 1px solid #743125 !important;
+}
+/* change navbar-toggler inside lines color (stroke) */
+.navbar-light span.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='yellow' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  color: black;
+}
+/* change hamburger button border color */
+button.navbar-toggler.navbar-toggler-right {
+  border-color: yellow;
+}
+/* change navbar background on collapse */
+@media (max-width: 768px) {
+  nav.navbar {
+    background: lightgray;
+  }
+}
+
+.fixed-back { 
+  width: 100%;
+  min-height: 400px;
+  background-image: url('http://localhost/GetItFix/images/bath.jpg');
+  background-attachment: fixed;
+  padding: 0px !important;
+  margin: 0px !important;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.jumbotron {
+  background-color: #dbcdbd !important;
+  margin: 0px !important;
+  text-align: center;
+  /*padding-left: ($spacer * .5) !important;
+  padding-right: ($spacer * .5) !important;*/
+}
+
+.home-back {
+  background-color: #dbcdbd !important;
+}
+/*.text-indent{
+  margin-left: 7rem;
+  margin-right: 7rem;
+}*/
+
+.jumbotron p {
+  margin-bottom: 2rem;
+}
+
+.panel-transparent h2{
+  background: rgba(122, 130, 136, 0.3)!important;
+  text-align: center;
+  padding: 20px;
+}
+
+
+.block {
+    text-align: center;
+    vertical-align: middle;
+}
+.circle {
+    background: rgba(46, 51, 56, 0.3)!important;
+    border-radius: 50%;
+    color: white;
+    height: 300px;
+    font-weight: bold;
+    width: 300px;
+    display: table;
+    margin: 20px auto;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    padding: 20px;
+}
+.circle h3 {
+    vertical-align: middle;
+    margin-top: 10px;
+}
+
+.circle img {
+    vertical-align: middle;
+}
+
+.first-block {
+  margin-left: 7rem;
+}
+
+.second-block {
+  margin-left: 3.5rem;
+}
+
+.main-service-box {
+  /*margin-bottom: 5rem;*/
+}
+.services-box {
+ height: 300px;
+  width: auto;
+  margin-left: 7rem;
+  margin-right: 7rem;
+  border: 1px solid red; 
+}
+.div-services {
+  display: table;
+  margin: 20px auto;
+  height: auto;
+  width: 300px;
+  background-color: #dbcdbd;
+  border: 1px solid #dbcdbd;
+  text-align: center;
+  z-index: 1000;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 5rem;
+}
+
+.div-services h5 {
+  padding: 20px 20px 10px 20px;
+}
+
+.div-services p {
+  padding: 0px 10px 20px 10px;
+}
+
+.service-btn {
+  background-color: #743125;
+  color: white;
+  border-color: 2px solid #743125;
+  padding: 5px 10px 5px 10px;
+  margin-bottom: 10px;
+}
+
+.why {
+  width: 100%;
+  height: auto;
+  background-color: #743125;
+  color: #dbcdbd;
+  text-align: center;
+  padding-top: 3rem;
+}
+
+.why h2 {
+  color: #00b5f1;
+}
+
+.why h4 {
+  color: #00b5f1;
+}
+
+.why-img {
+  margin-top: 3rem;
+  width: 400px;
+}
+
+.request-form {
+  width: 100%;
+  height: auto;
+  background-color: #d2c3ad;
+  padding: 3rem;
+}
+
+.request-form h2{
+  color: #743125;
+  text-align: center;
+}
+
+.request-area {
+}
+
+.btn-whatever {
+    background: #743125 !important;
+    color: #ffffff;
+    border-color: #743125 !important;
+
+}
+form {
+  width: 70%;
+  height: auto;
+  vertical-align: middle;
+  margin-left: 10rem;
+  margin-top: 2rem;
+  border: 8px solid #743125;
+  border-radius: 10px;
+  padding: 20px;  
+  background-color: #3f7033;
+}
+
+form label {
+  color: #743125; 
+  font-size: 19px;
+  font-weight: bold;
+}
+
+.form-control {
+  background-color: rgba(115, 38, 38, 0.5) !important;
+  border: 1px solid #00b5f1 !important;
+  color: white !important;
+}
+
+
+.home-testimonials {
+  background-image: url('http://localhost/GetItFix/images/map.jpg');
+  width: 100%;
+  height: auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.7;
+}
+
+.home-testimonials h2{
+  /*background: rgba(115, 38, 38, 0.7);*/
+  text-align: center;
+  padding-top: 20px;
+  color: #743125;
+}
+
+.talk-bubble {
+  margin: 40px;
+  display: inline-block;
+  position: relative;
+  width: 300px;
+  height: auto;
+  background-color: lightyellow;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.35);
+}
+
+.tri-right.btm-left:after{
+  content: ' ';
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: 0px;
+  right: auto;
+  top: auto;
+  bottom: -20px;
+  border: 22px solid;
+  border-color: transparent transparent transparent lightyellow;
+}
+
+.tri-right.btm-right:after{
+  content: ' ';
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: auto;
+  right: 0px;
+  bottom: -20px;
+  border: 12px solid;
+  border-color: lightyellow lightyellow transparent transparent;
+}
+
+
+.talktext{
+  padding: 1em;
+  text-align: left;
+  line-height: 1.5em;
+}
+.talktext p{
+  /* remove webkit p margins */
+  -webkit-margin-before: 0em;
+  -webkit-margin-after: 0em;
+}
+
+.home-testimonials-review {
+  position: relative;
+  background: rgba(115, 38, 38, 0.7); 
+  border-radius: 15px;
+  color: white;
+  width: 220px;
+  padding: 10px 20px 10px 30px;
+  margin: 30px 0px 0px 100px;
+}
+
+.home-round-img {
+  position: absolute;
+  bottom: 7.2rem;
+  height: 120px;
+  border: 2px solid #743125;
+}
+
+.home-round-img1 {
+  position: absolute;
+  bottom: 7.2rem;
+  left: 19.5rem;
+  height: 120px;
+  border: 2px solid #743125;
+}
+
+.home-testimonials-base {
+  height: 210px;
+  width: 170px;
+}
+
+/*---------start of footer------------*/
+footer {
+  background-color: #3e4551;
+  color: white;
+  width: 100%;
+}
+
+.footer-copyright {
+  background-color: #323741;
+  color: grey;
+}
+
+.footer-copyright a{
+  color: white;
+}
+
+.list-unstyled a {
+  color: white;
+}
+
+.btn-footer {
+  background-color: #3f7033;
+  border-color: #3f7033;
+}
+
+.btn-footer:hover {
+  background-color: #323741;
+  border: 3px solid #3f7033;
+  color: #3f7033;
+}
+
+i {
+  padding: 20px;
+  width: 58px;
+  text-align: center;
+  color: white;
+  border-radius: 50%;
+  z-index: 1000;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);  
+}
+
+i:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.35), 0 6px 20px 0 rgba(0, 0, 0, 0.25);
+}
+.fa-facebook {
+  background-color: #3B5998;  
+}
+
+.fa-twitter {
+  background-color: #55acee;
+}
+
+.fa-google-plus {
+  background-color: #dd4b39;
+  }
+
+
+
+
+/*-----------------------------CONTACT US---------------------------------*/
+
+.contact-top-div {
+   background:  
+    linear-gradient(
+      rgba(63, 112, 51, 0.45), 
+      rgba(63, 112, 51, 0.45)
+    ),
+    url('http://localhost/GetItFix/images/contact-us1.jpg');
+  /*background-image: url('http://localhost/GetItFix/images/contact-us.jpg');*/
+  height: 250px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+}
+
+.contact-top-div h1 {
+  padding-top: 6rem;
+}
+
+.contact-us-div {
+  width: 100%;
+  height: auto;
+  background-color: #dbcdbd;
+  color: #743125;
+  padding: 50px;
+}
+
+.contact-telephone{
+  height: 140px;
+}
+.contact-control {
+  width: 30%;
+  height: 50px !important;
+  border-radius: 5px;
+  background-color: #dbcdbd;
+  border: 2px solid #743125;
+  margin: 40px 0px 0px 10px;
+  padding: 0px !important;
+}
+
+.btn-contact {
+  background: #743125 !important;
+    color: #ffffff;
+    border-color: #743125 !important;
+    height: 50px;
+    margin: -4px 0px 0px 10px;
+}
+
+.contact-get-back {
+  background-color: #3f7033;
+  width: 100%;
+  text-align: center;
+  padding: 30px;
+  margin-top: 20px;
+}
+
+.contact-fill-form {
+  width: 100%;
+  height: auto;
+  background-color: #dbcdbd;
+}
+
+.contact-head {
+  text-align: center;
+  color: #743125;
+}
+
+.contact-support {
+  position: absolute;
+  bottom: 0%;
+  float: left;
+}
