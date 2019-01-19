@@ -7,10 +7,11 @@
     <title>GetItFix: Home</title>
     <link rel="stylesheet" type="text/css" href="css/style.css" />
     <link href="libs/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <!-- <link rel="stylesheet" href="css/responsive.css" media="screen and (max-width: 900px)" /> -->
+    <link rel="stylesheet" href="css/responsive.css" media="screen and (max-width: 650px)" />
     <!-- <link rel="stylesheet" href="css/responsive1.css" media="screen and (max-width: 650px)" /> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="libs/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
     <script src="libs/bootstrap/js/bootstrap.min.js"></script>
     <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
     
@@ -28,12 +29,11 @@
             </div>
             <div class="col-md-6 text-center">
             <div class="home-top-info float-md-right">
+                <div class="fa fa-phone">
+                  <span style="margin-left: 5px;">0424 500 074</span>
+            </div><br>
             <div class="fa fa-envelope">
-            info@getitfixcleaningservices.com</div><br>
-            <div class="fa fa-phone">
-                0424500074
-                <!-- <button class="request-button" type="submit">Request a free quote</button> -->
-            </div>
+            <span style="margin-left: 5px;">info@getitfixcleaningservices.com</div></span>          
           </div>
         </div>
         </div>
@@ -79,13 +79,30 @@
       </div>
     <!-- end of first row div--> 
 <div class="container y">
-  <nav class="navbar navbar-expand-md navbar-light">
+  <nav class="navbar navbar-expand-md navbar-light container">
  <!--  <a class="navbar-brand" href="#"><img src="images/logo_getitfix.png" style="height: 100px; width: 100px;"> </a> -->
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="navbarNav">
-    <ul class="nav navbar-nav ml-auto">
+    <ul id="menu-main-nav" class="navbar-nav nav-fill w-100">
+     <li id="menu-item-42" class="nav-item menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-6 current_page_item menu-item-42"><a href="XXX" class="nav-link">HOME</a></li>
+     <li id="menu-item-963" class="nav-item menu-item menu-item-type-post_type menu-item-object-page menu-item-963 dropdown"><a href="#" class="nav-link home-item-space dropdown-toggle" data-toggle="dropdown" data_target="dropdown_target">SERVICES
+        <span class="caret"></span></a>
+        <div class="dropdown-menu" aria-labelledby="dropdown_target">
+          <a class="dropdown-item">Bond Cleaning</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item">Carpet Cleaning</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item">Pest Control</a>
+        </div>
+      </li>
+     <li id="menu-item-40" class="nav-item menu-item menu-item-type-post_type menu-item-object-page menu-item-40"><a href="XXX" class="nav-link">CLEANING CHECKLIST</a></li>
+     <li id="menu-item-40" class="nav-item menu-item menu-item-type-post_type menu-item-object-page menu-item-40"><a href="XXX" class="nav-link">ABOUT</a></li>
+     <li id="menu-item-40" class="nav-item menu-item menu-item-type-post_type menu-item-object-page menu-item-40"><a href="XXX" class="nav-link">CONTACT</a></li>
+     <li id="menu-item-40" class="nav-item menu-item menu-item-type-post_type menu-item-object-page menu-item-40 lifts"><a href="XXX" class="nav-link"><button class="request-button" type="submit">Request a Free Quote</button></a></li>
+</ul>
+   <!--  <ul class="nav navbar-nav ml-auto">
       <li class="nav-item active">
         <a class="nav-link home-item-space" href="#">HOME <span class="sr-only">(current)</span></a>
       </li>
@@ -110,21 +127,21 @@
         <a class="nav-link home-item-space" href="#">ABOUT</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link home-item-space" href="#">CONTACT</a>
+        <a class="nav-link home-item-space" href="contact.html">CONTACT</a>
       </li>
       <li class="nav-item">
        <a class="nav-link" href="#"><button class="request-button" type="submit">Request a Free Quote</button></a> 
       </li>
-    </ul>
+    </ul> -->
   </div>
 </nav>
 </div>
 
 
- <div class="row"> 
-    <div class="fixed-back">
+ <!-- <div class="row">  -->
+    <!-- <div class="fixed-back"> -->
       <div class="home-back">
-    <div class="col-xs-6 jumbotron">
+    <div class="jumbotron">
     <h2 class="container">Are you discovering inspiration to clean and declutter your messy home?</h2>
     <hr style="height:3px; width:50px; border-top:2px solid #00b5f1" />
 <p class="container">We can help you there! At Get It Fix Cleaning Services, we aim to make your abode a healthy, happy and flawlessly clean place to reside in. Our unmatched expertise and seamless customer experiences underpin our goal of wowing you with our cleaning services.</p>
@@ -173,26 +190,26 @@
     <div class="row">
         <div class="col-md-4 block">
             <div class="circle">
-              <img src="images/book.png" style="height: 100px; width: 100px">
-                <h3>You book us</h3>
+              <img src="images/book.png" style="height: 100px; width: 100px; margin-top: 25px;">
+                <h3>You book our services</h3>
             </div>
         </div>
         <div class="col-md-4 block">
             <div class="circle">
-              <img src="images/cleann.png" style="height: 100px; width: 100px">
+              <img src="images/cleann.png" style="height: 100px; width: 100px; margin-top: 25px;">
                 <h3>We clean your place</h3>
             </div>
         </div>
         <div class="col-md-4 block">
             <div class="circle">
-              <img src="images/feedy.png" style="height: 100px; width: 100px">
+              <img src="images/feedy.png" style="height: 100px; width: 100px; margin-top: 25px;">
                 <h3>We get your feedback</h3>
             </div>
         </div>
     </div>
 </div>
-</div>
-</div>
+<!-- </div> -->
+<!-- </div> -->
 
 
 
@@ -266,6 +283,7 @@
       
     </form>
   </div>
+  <?php include 'php_pages/index.php';?>
 </div> 
 
 <!-- ----------------Testimonials----------- -->

@@ -1,0 +1,14 @@
+.navbar ul.navbar-nav li.nav-item a.nav-link {  
+  margin-left: 10px !important;
+  margin-right: 10px !important;
+  margin-top: 20px;
+}
+
+nav {
+    width: 10% !important;
+    height: 7em;
+}
+
+.request-button {
+	padding: 5px !important;
+}

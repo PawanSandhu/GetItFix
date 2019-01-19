@@ -22,11 +22,11 @@ html, body {
 .home-top-div {
   position: relative;
   width: 100%;
-  height: 8.5rem;
+  height: auto;
   font-size: 18px;
   font-weight: bold;  
   background-color: #743125;
-  padding: 0px !important;
+  padding: 0px 0px 20px 0px;
   color: #dbcdbd;
   /*background: linear-gradient(to right, rgb(139,195,74), rgb(0,128,0), rgb(0, 128, 64));*/
 }
@@ -63,7 +63,7 @@ html, body {
   /*border-radius: 15px;*/
   border: 2px solid #3f7033;
   height: auto;
-  padding: 10px;
+  padding: 8px;
   font-size: 16px;
   width: auto;
   /*margin-left: 10px;*/
@@ -73,8 +73,19 @@ html, body {
   background-color: #b24034;
 }
 
+.lifts {
+  margin-top: 0px !important;
+}
+
+.nav-item {
+  margin-top: 10px;
+}
+.nav-item-fill-back {
+  background-color: #3f7033 !important;
+  color: #dbcdbd !important;
+}
 nav {
-    width: 100%;
+    /*width: 99%;*/
     height: 5em;
 }
 /* change navbar background */
@@ -96,9 +107,13 @@ nav {
 .navbar ul.navbar-nav li.nav-item a.nav-link {
   color: #743125;
   font-weight: bold;
-  margin-left: 20px;
+  /*margin-left: 20px;
   margin-right: 20px;
-  /*margin-top: 20px;*/
+  *//*margin-top: 20px;*/
+}
+
+.home-item-space {
+    margin-top: 0px !important;
 }
 
 .navbar .nav-item .dropdown-menu {
@@ -130,7 +145,7 @@ button.navbar-toggler.navbar-toggler-right {
 .fixed-back { 
   width: 100%;
   min-height: 400px;
-  background-image: url('http://localhost/GetItFix/images/bath.jpg');
+  background-image: url('http://localhost/GetItFix/images/buck.jpg');
   background-attachment: fixed;
   padding: 0px !important;
   margin: 0px !important;
@@ -158,8 +173,25 @@ button.navbar-toggler.navbar-toggler-right {
   margin-bottom: 2rem;
 }
 
+.panel-transparent {
+  background:  
+    linear-gradient(
+      rgba(0,0,0,0.3), 
+      rgba(0,0,0,0.3)
+    ),
+    url('http://localhost/GetItFix/images/blue.jpg');
+  width: 100%;
+  min-height: 400px;
+  /*background-image: url('http://localhost/GetItFix/images/ork1.jpg');*/
+  background-attachment: fixed;
+  padding: 0px !important;
+  margin: 0px !important;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .panel-transparent h2{
-  background: rgba(122, 130, 136, 0.3)!important;
+  /*background: rgba(122, 130, 136, 0.7)!important;*/
   text-align: center;
   padding: 20px;
 }
@@ -170,9 +202,9 @@ button.navbar-toggler.navbar-toggler-right {
     vertical-align: middle;
 }
 .circle {
-    background: rgba(46, 51, 56, 0.3)!important;
+    background: rgba(255, 255, 255, 0.5);
     border-radius: 50%;
-    color: white;
+    color: black;
     height: 300px;
     font-weight: bold;
     width: 300px;
@@ -287,10 +319,11 @@ form {
   vertical-align: middle;
   margin-left: 10rem;
   margin-top: 2rem;
-  border: 8px solid #743125;
+  border: 4px solid #743125;
   border-radius: 10px;
   padding: 20px;  
-  background-color: #3f7033;
+  background-color: #d2c3ad;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.4), 0 1px 1px 0 rgba(0, 0, 0, 0.35);
 }
 
 form label {
@@ -300,9 +333,10 @@ form label {
 }
 
 .form-control {
-  background-color: rgba(115, 38, 38, 0.5) !important;
-  border: 1px solid #00b5f1 !important;
+  background-color: #D2C3AD !important;
+  border: 1px solid #dbcdbd !important;
   color: white !important;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.4), 0 1px 1px 0 rgba(0, 0, 0, 0.35);
 }
 
 
@@ -329,7 +363,7 @@ form label {
   width: 300px;
   height: auto;
   background-color: lightyellow;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.35);
+  box-shadow: 4px 4px 8px 4px rgba(0, 0, 0, 0.4), 4px 6px 20px 4px rgba(0, 0, 0, 0.35);
 }
 
 .tri-right.btm-left:after{
@@ -458,6 +492,7 @@ i:hover {
 
 
 
+
 /*-----------------------------CONTACT US---------------------------------*/
 
 .contact-top-div {
@@ -513,7 +548,7 @@ i:hover {
   width: 100%;
   text-align: center;
   padding: 30px;
-  margin-top: 20px;
+  /*margin-top: 20px;*/
 }
 
 .contact-fill-form {
@@ -529,6 +564,9 @@ i:hover {
 
 .contact-support {
   position: absolute;
-  bottom: 0%;
+  top: 0%;
+  left: 0%;
   float: left;
+  height: 196px;
+  margin-left: 0px !important;
 }
