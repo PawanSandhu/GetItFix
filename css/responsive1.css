@@ -1,3 +1,29 @@
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px)  {
+    .y {
+    top: 9.5%;
+    left: 3%;
+}
+
+.col-md-4 {
+    flex: 1 0 100%;
+    max-width: 100%;
+}
+
+.div-services {
+    width: 500px;
+}
+
+.home-srv-img {
+  height: 300px; 
+  width: 500px;
+}
+}
+
+
+@media screen and (max-width: 767px) {
+
 .navbar-toggler {
         display:block;
     }
@@ -38,4 +64,6 @@ nav {
 
 #menu-main-nav {
 	margin-left: 85px;
+}
+
 }

@@ -1,0 +1,30 @@
+.y {
+	left: 4%; 
+}
+
+@media only screen 
+and (min-device-width : 1024px) 
+and (max-device-width : 1366px)  {
+    .y {
+    top: 7.25%;
+    left: 4%;
+}
+
+}
+@media screen and (max-width: 1010px) {
+.y {
+    left: 2%;
+}
+}
+
+@media screen and (max-width: 991px) {
+.y {
+    left: 12%;
+}
+}
+
+@media screen and (max-width: 850px) {
+.y {
+    left: 8%;
+}
+}

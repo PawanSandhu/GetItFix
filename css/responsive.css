@@ -27,18 +27,17 @@ nav {
     background: #dbcdbd;
         padding: 10px 180px 10px 50px;
     position: absolute;
-    right: 20px;
+    right: 0px;
     top: 30px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     z-index: 1000;
-    /*padding: 20px;
-    float: left;
-    position: absolute;
-    top: 205% !important;
-    left: -80%;*/
 }
 
 #menu-main-nav {
-	margin-left: 160px;
+	margin-left: 50px;
 }
 
+@media screen and (max-width: 400px) {
+.navbar-collapse {
+        padding: 10px 120px 10px 50px;
+}
