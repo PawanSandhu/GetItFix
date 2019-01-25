@@ -13,7 +13,7 @@ body {
     min-height: inherit;
     margin: 0;
     padding: 0;
-    font-size: 1.25rem !important;
+    font-size: 1rem !important;
     /*position: fixed;*/
 }
 
@@ -51,8 +51,9 @@ html, body {
 }
 .y{
     position:absolute;
-    top:16.5%;
+    top:15.5%;
     left: 8%;
+    z-index: 1000;
 }
 
 .home-item-space {
@@ -159,7 +160,6 @@ nav {
   background-color: #dbcdbd !important;
   margin: 0px !important;
   text-align: center;
-  font-size: 1.25rem;
   /*padding-left: ($spacer * .5) !important;
   padding-right: ($spacer * .5) !important;*/
 }
@@ -314,7 +314,7 @@ nav {
     background: #743125 !important;
     color: #ffffff;
     border-color: #743125 !important;
-
+    font-size: 1rem !important;
 }
 form {
   width: 70%;
@@ -331,7 +331,7 @@ form {
 
 form label {
   color: #743125; 
-  font-size: 19px;
+  font-size: 1rem;
   font-weight: bold;
 }
 
@@ -339,6 +339,7 @@ form label {
   background-color: #D2C3AD !important;
   border: 1px solid #dbcdbd !important;
   color: white !important;
+  font-size: 1rem;
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.4), 0 1px 1px 0 rgba(0, 0, 0, 0.35);
 }
 
@@ -352,7 +353,7 @@ form label {
   opacity: 0.7;
 }
 
-.home-testimonials h2{
+.home-testimonials h1{
   /*background: rgba(115, 38, 38, 0.7);*/
   text-align: center;
   padding-top: 20px;
@@ -406,6 +407,11 @@ form label {
   -webkit-margin-after: 0em;
 }
 
+.col-special {
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
 .home-testimonials-review {
   position: relative;
   background: rgba(115, 38, 38, 0.7); 
@@ -416,6 +422,15 @@ form label {
   margin: 30px 0px 0px 100px;
 }
 
+.home-testimonials-review1 {
+  position: relative;
+  background: rgba(115, 38, 38, 0.7); 
+  border-radius: 15px;
+  color: white;
+  width: 220px;
+  padding: 10px 20px 10px 20px;
+  margin: 30px 0px 0px 100px;
+}
 .home-round-img {
   position: absolute;
   bottom: 7.2rem;
