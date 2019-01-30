@@ -983,17 +983,31 @@ background-color: #dbcdbd;
 }
 
 
-<!-- bond cleaning-->
+/*..........bond cleaning..............*/
 .bond-main-img{
   width :100%;
   height :250px;
   position: absolute;
 }
 .bond-top-div{
-  width: 100%;
+  background:  
+    linear-gradient(
+      rgba(63, 112, 51, 0.65), 
+      rgba(0, 102, 204, 0.65)
+    ),
+    url('http://localhost/Bond/images/bond-cleaning-back.jpg');
+  /*background-image: url('http://localhost/GetItFix/images/contact-us.jpg');*/
   height: 250px;
-  background-color: #dbcdbd;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
 }
+
+.bond-top-div h1 {
+  padding-top: 6rem;
+}
+
 .bond-main-text{
   color: white;
   position: absolute;
@@ -1012,8 +1026,18 @@ background-color: #dbcdbd;
   position: absolute;
 }
 .bond-services{
+    background:  
+    linear-gradient(
+      rgba(204, 153, 0, 0.45), 
+      rgba(153, 204, 255, 0.45)
+    ),
+    url('http://localhost/GetItFix/images/banner1.jpg');
+  /*background-image: url('http://localhost/GetItFix/images/contact-us.jpg');*/
+  height: auto;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
   
-    background-color: #dbcdbd;
 
 }
 .bond-service-heading{
@@ -1034,6 +1058,8 @@ background-color: #dbcdbd;
 .bond-services-ul li{
   list-style: none;
   margin-bottom: 20px;
+  font-size: 1.45rem;
+  opacity: 2000;
 }
 .bond-quote{
   padding: 2rem 0rem 2rem 0rem;
@@ -1053,4 +1079,218 @@ background-color: #dbcdbd;
   background-color: #743125;
   color: #3F7033;
   font-weight: bold;
+}
+
+.bond-faq{
+  background-color: #dbcdbd;
+}
+.bond-faq-heading{
+  padding: 2rem 0rem 2rem 0rem;
+  text-align: center;
+}
+.bond-faq-list{
+  margin-top: 10px;
+}
+.bond-faq-content{
+  background-color: #3F7033;
+  border: 1px solid #dbcdbd;
+  z-index: 1000;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.bond-faq-content P{
+  padding: 0px 10px 20px 10px;
+} 
+.bond-faq-btnS{
+  background-color: #3F7033;
+  color: #dbcdbd;
+}
+/*about-us done by ninderpal*/
+/*bug fixing and responsiveness done by Pawandeep kaur*/
+
+.about-top-div {
+  background:  
+    linear-gradient(
+      rgba(0, 204, 255, 0.65), 
+      rgba(204, 153, 0, 0.65)
+    ),
+    url('http://localhost/Bond/images/slide2.jpg');
+  /*background-image: url('http://localhost/GetItFix/images/contact-us.jpg');*/
+  height: 250px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+}
+
+.about-top-div h1 {
+  padding-top: 6rem;
+}
+
+.about-intro-img {
+  height: 300px;
+  width: 100%;
+}
+
+
+.about-into-head{
+    padding-top: 30px; 
+}
+
+.about-intro-img{
+  color: #3f7033;
+    padding-top: 50px;
+    height: 300px;
+    width: 100%; 
+    margin-bottom: 2rem;
+}
+
+.list-head{
+  color: #3f7033;
+  position: absolute;
+  top: 5rem;
+  left: 28rem;
+  z-index: 1000;
+  background-color: rgba(46, 51, 56, 0.3);
+}
+
+.about-intro-div {
+  background-color: #dbcdbd;
+  
+}
+
+.about-why-us-div {
+  background-color: #dbcdbd;
+}
+.about-into-head2{
+    padding-top: 50px; 
+}
+
+.about-intro-img2{
+  height: 300px;
+  width: 100%;
+  padding-bottom: 50px;
+  opacity: 10;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: red;
+  color: white;
+  text-align: center;
+}
+
+.footer-about{
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgb(150, 103, 105);
+  color: white;
+  text-align: center;
+  background-color: #743125
+
+}
+.about-button {
+  background-color: #3f7033 ;
+  color: #dbcdbd ;
+  border: 2px solid #3f7033 ;
+  height: auto;
+  padding: 10px;
+  font-size: 1.45rem;
+  width: auto;
+
+}
+
+.about-workers-text {
+  margin-top: 3rem;
+}
+.about-workers {
+  background-color: #dbcdbd;
+  padding-top: 2rem;
+}
+
+.button-back{
+  background-color: #743125;
+  padding: 20px 0px 20px 0px;
+  color: white;
+}
+
+
+.about-button:hover {
+  background-color: #743125;
+}
+
+.about-full-image {
+  width:100%;
+  height: 500px;
+}
+
+.footer-about
+{
+  background-color: ##3f7033 !important;
+
+}
+
+
+
+/*checklist bug fixing done by Pawandeep kaur*/
+
+
+.Checklist-top-div {
+   background:  
+    linear-gradient(
+      rgba(51, 51, 204, 0.65), 
+      rgba(0, 153, 51, 0.65)
+    ),
+    url('http://localhost/Bond/images/service2.jpg');
+  /*background-image: url('http://localhost/GetItFix/images/contact-us.jpg');*/
+  height: 250px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+}
+
+.Checklist-top-div h1 {
+  padding-top: 6rem;
+}
+
+.check-head{
+  padding: 20px;
+  background-color: #743125;
+  color: #dbcdbd;
+}
+
+.checklist-head{
+  padding: 20px 0px 0px 20px;
+    }
+
+.checklist-img {
+  /*border: 2px solid red;*/
+  height: 300px;
+  width: 300px;
+  margin: 0px 0px 20px 0px;
+}
+
+.list-img1{
+  height:400px;
+ padding-top: 20px;
+
+}
+
+.list-img2{
+  padding-top: 20px;
+  width: 100%;
+  height:300px;
+}
+.checklist1{
+  background-color: #dbcdbd;
+  padding: 20px 0px 20px 0px;
+}
+
+.checklist2{
+  background-color: #c0a48c;
+  padding: 20px 0px 20px 0px;
 }

@@ -104,6 +104,28 @@ form label {
     font-size: 1.75rem;
     padding: 10px 20px 10px 20px;
 }
+
+.about-full-image {
+    height: 400px;
+}
+
+.about-workers-text {
+    margin-top: 0rem;
+}
+
+.about-intro-img2 {
+    height: 300px;
+    width: 85%;
+    padding: 0px 0px 30px 70px;
+    opacity: 10;
+}
+
+.about-intro-img {
+    padding: 30px 0px 30px 50px;
+    height: 300px;
+    width: 85%;
+    margin-bottom: 2rem;
+}
 }
 
 @media screen and (max-width: 767px) {
@@ -161,5 +183,9 @@ nav {
 
 .carpet-price {
     margin-left: 5rem;
+}
+
+.about-full-image {
+    height: 400px;
 }
 }
