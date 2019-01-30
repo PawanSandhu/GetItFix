@@ -88,6 +88,10 @@ form label {
     max-width: 50%;
 }
 
+.bond-services-list{  
+    padding: 2rem 0rem 2rem 0rem;
+}
+
 .pest-work1 {
     width: 300px;
 }

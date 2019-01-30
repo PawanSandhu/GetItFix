@@ -553,7 +553,7 @@ i:hover {
   background-color: #dbcdbd;
   border: 2px solid #743125;
   margin: 40px 0px 0px 10px;
-  padding: 0px !important;
+  padding: 10px !important;
 }
 
 .btn-contact {
@@ -576,6 +576,7 @@ i:hover {
   width: 100%;
   height: auto;
   background-color: #dbcdbd;
+  padding: 2rem;
 }
 
 .contact-head {
@@ -592,6 +593,16 @@ i:hover {
   margin-left: 0px !important;
 }
 
+.contact-details {
+  display: table;
+  height: auto;
+  width: 300px;
+  text-align: center;
+  z-index: 1000;
+  padding: 20px;
+      font-size: 2rem;
+      color: #dbcdbd;
+}
 /*pest control css by lakhpreet singh*/
 .pest-main-img{
   width: 100%;
@@ -750,11 +761,26 @@ i:hover {
   position: absolute;
 }
 
+.pricing-table {
+  background-color: #dbcdbd;
+  padding: 50px;
+}
 .pricing-top-div {
-  width: 100%;
+  padding-top: 6rem;
+}
+.pricing-top-div {
+  background:  
+    linear-gradient(
+      rgba(51, 102, 255, 0.65), 
+      rgba(63, 112, 51, 0.65)
+    ),
+    url('http://localhost/GetItFix/images/pricing7.jpg');
+  /*background-image: url('http://localhost/GetItFix/images/contact-us.jpg');*/
   height: 250px;
-  position: relative;
-
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
 }
 
 .pricing-main-text {
@@ -805,10 +831,6 @@ i:hover {
   padding: 30px;
 }
 
-.pricing-color {
-  background color: #743125;
-}
-
 
 .pricing1 p {
   padding: 0px 10px 10px 10px;
@@ -818,18 +840,20 @@ table {
   font-family: arial, sans-serif;
   border-collapse: collapse;
   width: 100%;
-  margin-top: 30px;
-  margin-bottom: 30px;
+}
+th{
+  color: #743125;
+  font-weight: 600;
 }
 
 td, th {
-  border: 1px solid #dddddd;
+  border: 3px solid #743125;
   text-align: left;
   padding: 8px;
 }
 
 tr:nth-child(even) {
-  background-color: #dddddd;
+  background-color: #c0a48c;
 }
 
 .pricing-text {
@@ -1016,6 +1040,33 @@ background-color: #dbcdbd;
   z-index: 1000;
   background-color: rgba(46, 51, 56, 0.3);
 }
+
+.bond-faq-ques {
+  display: table;
+  height: auto;
+  width: 100%;
+  background-color: #c0a48c;
+  border: 1px solid #dbcdbd;
+  text-align: center;
+  z-index: 1000;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.05);
+  /*margin-bottom: 1rem;*/
+  padding: 10px;
+}
+
+.bond-faq-ans {
+  display: table;
+  height: auto;
+  width: 100%;
+  background-color: #c0a48c;
+  border: 1px solid #dbcdbd;
+  text-align: center;
+  z-index: 1000;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.05);
+  margin-bottom: 1rem;
+  padding: 10px;
+}
+
 .bond-intro{
   padding: 3rem 0rem 3rem 0rem;
   background-color: #dbcdbd;
@@ -1046,7 +1097,7 @@ background-color: #dbcdbd;
     color: #dbcdbd;
 }
 .bond-services-list{
-  
+    font-weight: 600;
     padding: 2rem 0rem 2rem 30rem;
 }
 .bond-images{
@@ -1083,26 +1134,35 @@ background-color: #dbcdbd;
 
 .bond-faq{
   background-color: #dbcdbd;
+  padding-bottom: 2rem;
 }
 .bond-faq-heading{
   padding: 2rem 0rem 2rem 0rem;
   text-align: center;
 }
 .bond-faq-list{
-  margin-top: 10px;
+      margin: 10px 0px 0px 10px;
+    display: inline-block;
+    
 }
-.bond-faq-content{
+
+.bond-faq-list h5{
+  float: left;
+}
+/*.bond-faq-content{
   background-color: #3F7033;
   border: 1px solid #dbcdbd;
   z-index: 1000;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
+}*/
 .bond-faq-content P{
   padding: 0px 10px 20px 10px;
 } 
 .bond-faq-btnS{
   background-color: #3F7033;
   color: #dbcdbd;
+  float: right;
+  margin: 0px 10px 0px 10px;
 }
 /*about-us done by ninderpal*/
 /*bug fixing and responsiveness done by Pawandeep kaur*/

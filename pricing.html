@@ -1,34 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>GetitFix</title>
-    <link rel="stylesheet" type="text/css" href="libs/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="libs/bootstrap/js/bootstrap.min.js">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    
+    <title>GetItFix: Pricing</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link href="libs/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/responsive3.css" media="screen and (max-width: 1150px)" />
+    <link rel="stylesheet" href="css/responsive2.css" media="screen and (max-width: 1024px)" />
+    <link rel="stylesheet" href="css/responsive1.css" media="screen and (max-width: 768px)" />
+    <link rel="stylesheet" href="css/responsive.css" media="screen and (max-width: 650px)" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="libs/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <script src="libs/bootstrap/js/bootstrap.min.js"></script>
 </head>
-<body>
-<?php require 'price.php';?>
 
-	<div class="pricing-top-div">
+<body> 
+<div class="home-header">
+            <div class="home-top-div">
+              <div class="container">
+              <div class="row">
+                <div class="col-special text-center">
+              <img class="home-page-logo float-md-left" src="images/logo_getitfix.png"> 
+            </div>
+            <div class="col-special text-center">
+            <div class="home-top-info float-md-right">
+                <div class="fa fa-phone">
+                  <span style="margin-left: 5px;">0424 500 074</span>
+            </div><br>
+            <div class="fa fa-envelope">
+            <span style="margin-left: 5px;">info@getitfixcleaningservices.com</div></span>          
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
 
-
-    <img class="pricing-main-img" src="images/pricing7.jpg">
-
-    <h1 class="pricing-main-text">Pricing</h1>    
+    <div class="container y">
+  <nav class="navbar navbar-expand-md navbar-light container">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul id="menu-main-nav" class="navbar-nav nav-fill w-100">
+     <li id="menu-item-42" class="nav-item menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-6 current_page_item menu-item-42"><a href="index.html" class="nav-link">HOME</a></li>
+     <li id="menu-item-963" class="nav-item menu-item menu-item-type-post_type menu-item-object-page menu-item-963 dropdown"><a href="#" class="nav-link home-item-space dropdown-toggle" data-toggle="dropdown" data_target="dropdown_target">SERVICES
+        <span class="caret"></span></a>
+        <div class="dropdown-menu" aria-labelledby="dropdown_target">
+          <a href="bond.html" class="dropdown-item">End of Lease Cleaning</a>
+          <div class="dropdown-divider"></div>
+          <a href="carpet.html" class="dropdown-item">End of Lease Carpet Steam Cleaning</a>
+          <div class="dropdown-divider"></div>
+          <a href="pest.html" class="dropdown-item">End of Lease Pest Control</a>
+        </div>
+      </li>
+      <li id="menu-item-40" class="nav-item menu-item menu-item-type-post_type menu-item-object-page menu-item-40"><a href="checklist.html" class="nav-link">CLEANING CHECKLIST</a></li>
+     <li id="menu-item-40" class="nav-item menu-item menu-item-type-post_type menu-item-object-page menu-item-40"><a href="pricing.html" class="nav-link">PRICING</a></li>
+     <li id="menu-item-40" class="nav-item menu-item menu-item-type-post_type menu-item-object-page menu-item-40"><a href="about_us.html" class="nav-link">ABOUT</a></li>
+     <li id="menu-item-40" class="nav-item menu-item menu-item-type-post_type menu-item-object-page menu-item-40"><a href="contact.html" class="nav-link">CONTACT</a></li>
+     <li id="menu-item-40" class="nav-item menu-item menu-item-type-post_type menu-item-object-page menu-item-40 lifts"><a href="index.html" class="nav-link"><button class="request-button" type="submit">Request a Free Quote</button></a></li>
+</ul>
+</div>
+</nav>
+</div>
 </div>
 
- 
-  
-            <h3 class="pricing-color">
+    <div class="pricing-top-div text-center">
+        <h1>Pricing</h1>
+    </div>
+
+            <div class="pricing-color">
                 <div class="container">
-                Our prices can be variable according to the size and condition of the Houses.Each additional room starts from $49.
+                <h3>Our prices can be variable according to the size and condition of the Houses.Each additional room starts from $49.
                 </h3>
               </div>
-
+            </div>
+              
+<div class="pricing-table">
 <div class="container">
 
 <table>
@@ -38,62 +87,153 @@
     <th>Bed+Bath Price($)</th>
     <th>Carpet Steam Cleaning Price($)</th>
   </tr>
-
+<tr>
+    <td>1</td>
+    <td>1</td>
+    <td>$229.00</td>
+    <td>$49.00</td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>1</td>
+    <td>$269.00</td>
+    <td>$59.00</td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>2</td>
+    <td>$329.00</td>
+    <td>$55.00</td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td>1</td>
+    <td>$369.00</td>
+    <td>$69.00</td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td>2</td>
+    <td>$399.00</td>
+    <td>$69.00</td>
+  </tr>
+  <tr>
+    <td>4</td>
+    <td>1</td>
+    <td>$429.00</td>
+    <td>$89.00</td>
+  </tr>
+  <tr>
+    <td>4</td>
+    <td>2</td>
+    <td>$469.00</td>
+    <td>$89.00</td>
+  </tr>
+    <td>5</td>
+    <td>2</td>
+    <td>$529.00</td>
+    <td>$99.00</td>
+  </tr>
+  <tr>
+    <td>5</td>
+    <td>3</td>
+    <td>$569.00</td>
+    <td>$99.00</td>
+  </tr>
   
   </table>
 </div>
-<div class="container">
- 
-  <div class="row pricing-text">
-    <div class="col-md-8 col-lg-8">
- <h3>Pest Control</h3>
- <p>
- Pest Control prices starts from $49.00 with bond cleaning package.
-</p>
 </div>
 
+<div class="pricing-color">
+                <div class="container">
+                <h3>Pest Control prices starts from $49.00 with bond cleaning package.
+                </h3>
+              </div>
+            </div>
+<!-- Footer -->
+ <footer class="page-footer font-small stylish-color-dark pt-4">
+    <div class="container text-center text-md-left">
 
-<div class="col-md-4 col-lg-4">
-            <img src="images/pest14.jpg" class="pricing-pest" style="width: 100%; height: 100px;">
-     </div>
-</div>
+      <div class="row">
 
-    <div class="row pricing-text">
-    <div class="col-md-8 col-lg-8">
-        <h3>Pressure Cleaning</h3>
-         <p>
-           Pressure Cleaning of driveway,garage or balcony starts from $59.00.
-           </p>
-         </div>
-         
-         
-            <div class="col-md-4 col-lg-4">
-            <img src="images/pressure-washers.jpg" class="pricing-clean" style="width: 100%; height: 100px;">
-         </div>
-          </div>
-        
+        <div class="col-md-4 mx-auto">
 
-        <div class="row pricing-text">
-<div class="col-md-8 col-lg-8">
- <h3>Lawn Moving</h3>
- <p>
-    Lawn Moving starts from $69.00.
-</p>
-</div>
+          <h5 class="font-weight-bold text-uppercase mt-3 mb-4">GetItFix Bond Cleaning</h5>
+          <p>We are a bond cleaning company that provides quality cleaning services and all general pest treatments for your home.</p>
 
-
-<div class="col-md-4 col-lg-4">
-            <img src="images/lawn.jpeg" class="pricing-lawn" style="width: 100%; height: 100px;">
-
-
-          </div>
         </div>
 
+        <hr class="clearfix w-100 d-md-none">
 
-  
+        <div class="col-md-2 mx-auto">
 
+          <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Services</h5>
+
+          <ul class="list-unstyled">
+            <li>
+              <a href="#!">Bond cleaning</a>
+            </li>
+            <li>
+              <a href="#!">Carpet cleaning</a>
+            </li>
+            <li>
+              <a href="#!">Pest control</a>
+            </li>
+            
+          </ul>
+
+        </div>
+      <div class="col-md-4 mx-auto">
+          <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Pricing</h5>
+          <p>Bond cleaning - starts from $200
+            <br>
+          Carpet cleaning - starts from $100
+          <br>
+          Pest control - starts from $69
+        </p>
+
+        </div>
+        
+      </div>
+
+    </div>
+
+    <hr>
+
+    <ul class="list-unstyled list-inline text-center py-2">
+      
+      <li class="list-inline-item">
+        <a href="#!" class="btn btn-footer btn-lg btn-rounded">Request a free quote</a>
+      </li>
+    </ul>
+
+    <hr>
+
+    <ul class="list-unstyled list-inline text-center">
+      <li class="list-inline-item">
+        <a href="#">
+          <i class="fa fa-facebook fa-lg"> </i>
+        </a>
+      </li>
+      <li class="list-inline-item">
+        <a href="#">
+          <i class="fa fa-twitter fa-lg"> </i>
+        </a>
+      </li>
+      <li class="list-inline-item">
+        <a href="#">
+          <i class="fa fa-google-plus fa-lg"> </i>
+        </a>
+      </li>
+     
+    </ul>
+
+    <div class="footer-copyright text-center py-3">© 2019 Copyright:
+      <a href="https://mdbootstrap.com/education/bootstrap/">GetItFixBondCleaning.com.au</a>
+    </div>
+
+</footer> 
 
 </body>
 </html>
-
-

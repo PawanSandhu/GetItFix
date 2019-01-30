@@ -76,6 +76,28 @@ nav {
 .carpet-vacuum-text {
     font-size: 1.45rem;
 }
+
+.bond-services-list{  
+    padding: 2rem 0rem 2rem 2rem;
+}
+
+.contact-control {
+  width: 80%;
+  height: 50px !important;
+  border-radius: 5px;
+  background-color: #dbcdbd;
+  border: 2px solid #743125;
+  margin: 40px 0px 0px 10px;
+  padding: 10px !important;
+}
+
+.contact-support {
+    display: none;
+}
+.btn-contact {
+    margin-top: 20px;
+}
+
 }
 
 @media screen and (max-width: 477px) { 
@@ -97,6 +119,22 @@ nav {
         padding: 10px 120px 10px 50px;
 }
 
+.contact-control {
+  width: 80%;
+  height: 50px !important;
+  border-radius: 5px;
+  background-color: #dbcdbd;
+  border: 2px solid #743125;
+  margin: 40px 0px 0px 10px;
+  padding: 10px !important;
+}
+
+.contact-support {
+    display: none;
+}
+.btn-contact {
+    margin-top: 20px;
+}
 .div-services {
     width: 300px;
 }
@@ -104,6 +142,10 @@ nav {
 .home-srv-img {
   height: 200px; 
   width: 300px;
+}
+
+.bond-services-list{  
+    padding: 2rem 0rem 2rem 0rem;
 }
 
 form {
@@ -176,6 +218,10 @@ form {
 
 .carpet-vacuum-text {
     padding: 50px 20px 20px 20px;
+}
+
+.bond-services-list{  
+    padding: 2rem 0rem 2rem 0rem;
 }
 }
 

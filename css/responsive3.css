@@ -2,6 +2,9 @@
     width: 220px;
 }
 
+.bond-services-list{  
+    padding: 2rem 0rem 2rem 15rem;
+}
 @media screen and (max-width : 1075px)  {
 .y {
 	left: 4%;

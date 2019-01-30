@@ -1,11 +1,30 @@
 $(document).ready(function() {
-	// alert('hmmm');
+	$("#contact-button").click(function(){
+	var name = $("#username").val();
+	var mobile = $("#usermobile").val();
+	if(name == ""){
+		alert('Please enter your name');
+	}
+	else if(mobile == ""){
+		alert('Please enter your contact number');
+	}
+	else{
+		$.ajax({
+        url: 'php_pages/contact.php',
+        type: 'POST',
+        data: {
+            postusername:name,
+            postuserphone:mobile
+        },
+        success: function(msg) {
+        	$('#username').val('');
+        	$('#usermobile').val('');
+            alert('We will contact you soon.');
+        }               
+    });
+	}
 });
 
-$('#page-index').on('pageshow', function() {
-  alert('hello');
-  console.log("hiiiii");
- });
 
 function IsEmail(email) {
   var regex = /^([a-zA-Z0-9_\.\-\+])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
@@ -16,7 +35,7 @@ function IsEmail(email) {
   }
 }
 
-$("#submit").click(function(){
+$("#contact-submit").click(function(){
 	var name = $("#name").val();
 	var email = $("#email").val();
 	var phone = $("#phone").val();
@@ -38,13 +57,7 @@ $("#submit").click(function(){
 		alert('Please enter the subject');
 	}
 	else {
-		// alert('will contact you soon.');
-		// var data = $("#myform :input").serializeArray();
-		// console.log("data is: " + JSON.stringify(data));
-		// $.post($("myform")).attr("action"), data, function(info){$("#result").html(info);};
-		// var result = "<?php php_func(); ?>";
-		// alert("result is" + result);
-		// $("#myform").submit(function( e ) {
+		// $("#mycontactform").submit(function( e ) {
 		// e.preventDefault();
 		$.ajax({
         url: 'php_pages/index.php',
@@ -57,18 +70,15 @@ $("#submit").click(function(){
              postmessage:message
         },
         success: function(msg) {
-        	$('#myform')[0].reset();
+        	$('#mycontactform')[0].reset();
             alert('Your query has been sent.');
         }               
     });
-		
-
-		// $.post('php_pages/index.php', {postname:name, postemail:email, postcontact:phone, postsubject:subject, postmessage:message},
-		//  function(data){
-		//  	// $("result").html(data);
-		//  	alert("data is: " + data);
-		//  	$('#myform')[0].reset();
 		// });
 	}
 });
+
+});
+
+
 
