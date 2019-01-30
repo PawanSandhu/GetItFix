@@ -68,16 +68,19 @@ html, body {
   background-color: #3f7033;
   color: #dbcdbd;
   /*border-radius: 15px;*/
-  border: 2px solid #3f7033;
+  border: 3px solid #3f7033;
   height: auto;
   padding: 8px;
   font-size: 16px;
   width: auto;
+  font-weight: bold;
   /*margin-left: 10px;*/
 }
 
 .request-button:hover {
-  background-color: #b24034;
+  background-color: #dbcdbd;
+  color: #3f7033;
+
 }
 
 .lifts {
@@ -516,8 +519,8 @@ i:hover {
 .contact-top-div {
    background:  
     linear-gradient(
-      rgba(63, 112, 51, 0.45), 
-      rgba(63, 112, 51, 0.45)
+      rgba(63, 112, 51, 0.65), 
+      rgba(63, 112, 51, 0.65)
     ),
     url('http://localhost/GetItFix/images/contact-us1.jpg');
   /*background-image: url('http://localhost/GetItFix/images/contact-us.jpg');*/
@@ -589,7 +592,6 @@ i:hover {
   margin-left: 0px !important;
 }
 
-
 /*pest control css by lakhpreet singh*/
 .pest-main-img{
   width: 100%;
@@ -598,9 +600,22 @@ i:hover {
 }
 
 .pest-top-div {
-  width: 100%;
+   background:  
+    linear-gradient(
+      rgba(63, 112, 51, 0.65), 
+      rgba(63, 112, 51, 0.65)
+    ),
+    url('http://localhost/GetItFix/images/grass1.jpg');
+  /*background-image: url('http://localhost/GetItFix/images/contact-us.jpg');*/
   height: 250px;
-  position: relative;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+}
+
+.pest-top-div h1 {
+  padding-top: 6rem;
 }
 
 .pest-main-text {
@@ -624,7 +639,7 @@ i:hover {
 }
 
 .pest-slideshow {
-  background-color: lightgrey;
+  background-color: #dbcdbd;
 }
 
 .pest-work {
@@ -846,11 +861,196 @@ tr:nth-child(even) {
 
 }
 
+/*carpet cleaning done by manjeet kaur*/
+.carpet-top-div {
+   background:  
+    linear-gradient(
+      rgba(63, 112, 51, 0.65), 
+      rgba(0, 102, 204, 0.65)
+    ),
+    url('http://localhost/Bond/images/bond51.jpg');
+  /*background-image: url('http://localhost/GetItFix/images/contact-us.jpg');*/
+  height: 250px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+}
+
+.carpet-top-div h1 {
+  padding-top: 6rem;
+}
+
+.carpet-intro-div {  
+  padding: 3rem 0rem 3rem 0rem;
+  background-color: #dbcdbd;
+}
+
+.carpet-main-img{
+  width :100%;
+  height :250px;
+  position: absolute;
+}
 
 
+.carpet-top-div{
+  width: 100%;
+  height: 250px;
+  background-color: #dcbdbd;
+}
+
+.carpet-vacuum-div {
+    overflow: hidden;
+}
+.carpet-vacuum-img {
+    float: right;
+    width: 180px;
+    height: 360px;
+    background-color: #3F7033;
+}
+.carpet-vacuum-text-div {
+    overflow: hidden;
+    height: 360px;
+    background-color: #3F7033;
+}
+
+.carpet-vacuum-text {
+    margin-top: 20px;
+    height: 320px;
+    padding: 90px 50px 20px 150px;
+    background-color: #dbcdbd;
+    font-size: 1.75rem;
+}
+
+.vacuumpic {
+    height: 360;
+    width: 180;
+    position: absolute;
+}
+
+.carpet-price-starsts{
+  padding:30px;
+  text-align: center;
+  background-color:#743125;
+  color: #dbcdbd;
+}
+.carpet-price{  
+  background-color: #3F7033;
+  width: auto;
+  margin-left: 15rem;
+    font-size: 1.75rem;
+    padding: 10px 20px 10px 20px;
+
+  color: #dbcdbd;
+  border: 3px solid #3F7033;
+}
+.carpet-price:hover{
+background-color: #dbcdbd;
+  color: #3F7033;
+  /*font-weight: bold;*/
+}
+.carpet-process{
+  background-color:#dbcdbd;
+    padding-top: 20px;
+}
+.carpet-work-process{
+  display: table;
+  margin: 20px auto;
+  height: 400px;
+  width: 300px;
+  background-color: #dbcdbd;
+  border: 1px solid #dbcdbd;
+  text-align: center;
+  z-index: 1000;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 5rem;
+}
+
+.carpet-work-process h5 {
+  padding: 20px 20px 10px 20px;
+}
+.carpet-work-process p {
+  padding: 0px 10px 20px 10px;
+}
+.process-heading{
+  text-align: center;
+  padding: 14px 30px;
+  margin-top: 20px;
+}
+.carpet-process-img{
+  height: 200px; 
+    width: 300px;
+}
 
 
+<!-- bond cleaning-->
+.bond-main-img{
+  width :100%;
+  height :250px;
+  position: absolute;
+}
+.bond-top-div{
+  width: 100%;
+  height: 250px;
+  background-color: #dbcdbd;
+}
+.bond-main-text{
+  color: white;
+  position: absolute;
+  top: 5rem;
+  left: 29rem;
+  z-index: 1000;
+  background-color: rgba(46, 51, 56, 0.3);
+}
+.bond-intro{
+  padding: 3rem 0rem 3rem 0rem;
+  background-color: #dbcdbd;
+}
+.bond-main-img{
+  width :100%;
+  height :250px;
+  position: absolute;
+}
+.bond-services{
   
+    background-color: #dbcdbd;
 
+}
+.bond-service-heading{
+  padding: 2rem 0rem 2rem 0rem;
+    background-color: #743125;
+    color: #dbcdbd;
+}
+.bond-services-list{
+  
+    padding: 2rem 0rem 2rem 30rem;
+}
+.bond-images{
+  height: 30px;
+  width: 30px;
+  margin-right: 20px;
+}
 
+.bond-services-ul li{
+  list-style: none;
+  margin-bottom: 20px;
+}
+.bond-quote{
+  padding: 2rem 0rem 2rem 0rem;
+  background-color: #743125;
+  color: #dbcdbd;
+  align-content: center;
+}
+.bond-quote-button{
+  background-color: #3F7033;
+  border: 3px solid #3F7033;
+  color: #dbcdbd;
+  margin: 20px 0px 0px 35px;
+  padding: 15px  15px 15px 15px;
+}
 
+.bond-quote-button:hover {
+  background-color: #743125;
+  color: #3F7033;
+  font-weight: bold;
+}

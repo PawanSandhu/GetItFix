@@ -1,4 +1,10 @@
+.pest-work1 {
+    width: 220px;
+}
+
+@media screen and (max-width : 1075px)  {
 .y {
 	left: 4%;
-	top: 15.5%; 
+	top: 16.5%; 
+}
 }

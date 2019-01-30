@@ -46,6 +46,44 @@ nav {
   width: 300px;
 }
 
+.col-md-3 {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+.carpet-top-div h1 {
+    padding-top: 3rem;
+}
+
+.pest-work1 {
+    width: 300px;
+}
+
+.carpet-price {
+    margin-left: 3rem;
+}
+
+@media screen and (max-width: 575px) {
+.carpet-price {
+    margin-left: 0.5rem;
+    font-size: 1.45rem;
+}
+
+.carpet-vacuum-text {
+    font-size: 1.45rem;
+}
+}
+
+@media screen and (max-width: 477px) { 
+.carpet-price {
+    margin-left: 0.5rem;
+    font-size: 1.25rem;
+}
+
+.carpet-vacuum-text {
+    font-size: 1.25rem;
+}
+}
 @media screen and (max-width: 430px) {
 .navbar-collapse {
         padding: 10px 120px 10px 50px;
@@ -72,6 +110,19 @@ form {
 .home-round-img1 {
     left: 15rem;
 }
+
+
+.carpet-vacuum-img {
+    width: 150px;
+}
+
+.carpet-vacuum-text {
+    padding: 80px 20px 20px 20px;
+}
+
+.carpet-price{ 
+    margin-left: 10px;
+}
 }
 
 @media screen and (max-width: 380px) {
@@ -87,6 +138,10 @@ form {
     margin: 20px;
     width: 230px;
 }
+
+.carpet-price{ 
+    margin-left: 10px;
+}
 }
 
 @media screen and (max-width: 360px) {
@@ -101,6 +156,10 @@ form {
 
 .talk-bubble {
     margin: 40px;
+}
+
+.carpet-vacuum-text {
+    padding: 50px 20px 20px 20px;
 }
 }
 
@@ -126,5 +185,14 @@ form {
 
 .home-testimonials-review1 {
     width: 180px;
+}
+
+.carpet-price{ 
+    margin-left: 10px;
+    font-size: 1.15rem;
+}
+
+.carpet-vacuum-text {
+    font-size: 1.15rem;
 }
 }

@@ -6,26 +6,43 @@ and (max-device-width : 1366px)  {
     top: 7.25%;
     left: 4%;
 }
+
+.pest-work1 {
+    width: 220px;
+}
+
+.carpet-vacuum-text {
+    padding: 80px 50px 20px 60px;
+    font-size: 1.75rem;
+}
+
+.carpet-price {
+    background-color: #3F7033;
+    width: auto;
+    margin-left: 15rem;
+    font-size: 1.75rem;
+    padding: 10px 20px 10px 20px;
+}
 }
 
 @media screen and (max-width : 1023px)  {
     .y {
 	left: 4%;
-	top: 15.5%; 
+	top: 16.5%; 
 }
 }
 
 @media screen and (max-width: 1010px) {
 .y {
     left: 2%;
-	top: 15.5%; 
+	top: 16.5%; 
 }
 }
 
 @media screen and (max-width: 991px) {
 .y {
     left: 12%;
-	top: 15.5%; 
+	top: 16.5%; 
 }
 
 .col-md-4 {
@@ -42,9 +59,30 @@ and (max-device-width : 1366px)  {
   width: 500px;
 }
 
+.carpet-vacuum-text {
+    padding: 50px 50px 20px 100px;
+}
+
 form {
     width: 90%;
     margin-left: 2rem;
+}
+
+.col-md-3 {
+    -ms-flex: 0 0 25%;
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
+.pest-work1 {
+    width: 300px;
+}
+}
+
+@media screen and (max-width: 910px) {
+
+.carpet-vacuum-text {
+    padding: 30px 50px 20px 60px;
 }
 }
 
@@ -52,5 +90,13 @@ form {
 .y {
     left: 8%;
 	top: 16.5%; 
+}
+
+.carpet-vacuum-text {
+    padding: 50px 50px 20px 60px;
+}
+
+.carpet-price {
+    margin-left: 10rem;
 }
 }
