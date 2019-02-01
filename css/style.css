@@ -1,3 +1,4 @@
+/*Home page developed by Pawandeep kaur*/
 * {
     box-sizing: border-box;
 }
@@ -7,20 +8,19 @@ html {
     min-height: 100%;
 }
  
-
 body {
     width: inherit;
     min-height: inherit;
     margin: 0;
     padding: 0;
     font-size: 1rem !important;
-    /*position: fixed;*/
 }
 
 html, body {
     max-width: 100%;
     overflow-x: hidden;
 }
+
 .home-top-div {
   position: relative;
   width: 100%;
@@ -151,7 +151,7 @@ nav {
 .fixed-back { 
   width: 100%;
   min-height: 400px;
-  background-image: url('http://localhost/GetItFix/images/buck.jpg');
+  background-image: url('http://getitfix.ictatjcub.com/images/buck.jpg');
   background-attachment: fixed;
   padding: 0px !important;
   margin: 0px !important;
@@ -185,10 +185,9 @@ nav {
       rgba(0,0,0,0.3), 
       rgba(0,0,0,0.3)
     ),
-    url('http://localhost/GetItFix/images/blue.jpg');
+    url('http://getitfix.ictatjcub.com/images/blue.jpg');
   width: 100%;
   min-height: 400px;
-  /*background-image: url('http://localhost/GetItFix/images/ork1.jpg');*/
   background-attachment: fixed;
   padding: 0px !important;
   margin: 0px !important;
@@ -348,7 +347,7 @@ form label {
 
 
 .home-testimonials {
-  background-image: url('http://localhost/GetItFix/images/map.jpg');
+  background-image: url('http://getitfix.ictatjcub.com/images/map.jpg');
   width: 100%;
   height: auto;
   background-repeat: no-repeat;
@@ -522,8 +521,7 @@ i:hover {
       rgba(63, 112, 51, 0.65), 
       rgba(63, 112, 51, 0.65)
     ),
-    url('http://localhost/GetItFix/images/contact-us1.jpg');
-  /*background-image: url('http://localhost/GetItFix/images/contact-us.jpg');*/
+    url('http://getitfix.ictatjcub.com/images/Contact-us1.jpg');
   height: 250px;
   width: 100%;
   background-repeat: no-repeat;
@@ -616,8 +614,7 @@ i:hover {
       rgba(63, 112, 51, 0.65), 
       rgba(63, 112, 51, 0.65)
     ),
-    url('http://localhost/GetItFix/images/grass1.jpg');
-  /*background-image: url('http://localhost/GetItFix/images/contact-us.jpg');*/
+    url('http://getitfix.ictatjcub.com/images/grass1.jpg');
   height: 250px;
   width: 100%;
   background-repeat: no-repeat;
@@ -774,8 +771,7 @@ i:hover {
       rgba(51, 102, 255, 0.65), 
       rgba(63, 112, 51, 0.65)
     ),
-    url('http://localhost/GetItFix/images/pricing7.jpg');
-  /*background-image: url('http://localhost/GetItFix/images/contact-us.jpg');*/
+    url('http://getitfix.ictatjcub.com/images/pricing7.jpg');
   height: 250px;
   width: 100%;
   background-repeat: no-repeat;
@@ -892,8 +888,7 @@ tr:nth-child(even) {
       rgba(63, 112, 51, 0.65), 
       rgba(0, 102, 204, 0.65)
     ),
-    url('http://localhost/Bond/images/bond51.jpg');
-  /*background-image: url('http://localhost/GetItFix/images/contact-us.jpg');*/
+    url('http://getitfix.ictatjcub.com/images/bond51.jpg');
   height: 250px;
   width: 100%;
   background-repeat: no-repeat;
@@ -1019,8 +1014,7 @@ background-color: #dbcdbd;
       rgba(63, 112, 51, 0.65), 
       rgba(0, 102, 204, 0.65)
     ),
-    url('http://localhost/Bond/images/bond-cleaning-back.jpg');
-  /*background-image: url('http://localhost/GetItFix/images/contact-us.jpg');*/
+    url('http://getitfix.ictatjcub.com/images/bond-cleaning-back.jpg');
   height: 250px;
   width: 100%;
   background-repeat: no-repeat;
@@ -1082,9 +1076,8 @@ background-color: #dbcdbd;
       rgba(204, 153, 0, 0.45), 
       rgba(153, 204, 255, 0.45)
     ),
-    url('http://localhost/GetItFix/images/banner1.jpg');
-  /*background-image: url('http://localhost/GetItFix/images/contact-us.jpg');*/
-  height: auto;
+    url('http://getitfix.ictatjcub.com/images/banner1.jpg');
+      height: auto;
   width: 100%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1173,8 +1166,7 @@ background-color: #dbcdbd;
       rgba(0, 204, 255, 0.65), 
       rgba(204, 153, 0, 0.65)
     ),
-    url('http://localhost/Bond/images/slide2.jpg');
-  /*background-image: url('http://localhost/GetItFix/images/contact-us.jpg');*/
+    url('http://getitfix.ictatjcub.com/images/slide2.jpg');
   height: 250px;
   width: 100%;
   background-repeat: no-repeat;
@@ -1304,8 +1296,7 @@ background-color: #dbcdbd;
       rgba(51, 51, 204, 0.65), 
       rgba(0, 153, 51, 0.65)
     ),
-    url('http://localhost/Bond/images/service2.jpg');
-  /*background-image: url('http://localhost/GetItFix/images/contact-us.jpg');*/
+    url('http://getitfix.ictatjcub.com/images/service2.jpg');
   height: 250px;
   width: 100%;
   background-repeat: no-repeat;

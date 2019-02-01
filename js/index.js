@@ -1,22 +1,5 @@
 $(document).ready(function() {
-	// alert('hmmm');
-});
-
-$('#page-index').on('pageshow', function() {
-  alert('hello');
-  console.log("hiiiii");
- });
-
-function IsEmail(email) {
-  var regex = /^([a-zA-Z0-9_\.\-\+])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
-  if(!regex.test(email)) {
-    return false;
-  }else{
-    return true;
-  }
-}
-
-$("#submit").click(function(){
+	$("#submit").click(function(){
 	var name = $("#name").val();
 	var email = $("#email").val();
 	var phone = $("#phone").val();
@@ -38,14 +21,6 @@ $("#submit").click(function(){
 		alert('Please enter the subject');
 	}
 	else {
-		// alert('will contact you soon.');
-		// var data = $("#myform :input").serializeArray();
-		// console.log("data is: " + JSON.stringify(data));
-		// $.post($("myform")).attr("action"), data, function(info){$("#result").html(info);};
-		// var result = "<?php php_func(); ?>";
-		// alert("result is" + result);
-		// $("#myform").submit(function( e ) {
-		// e.preventDefault();
 		$.ajax({
         url: 'php_pages/index.php',
         type: 'POST',
@@ -62,13 +37,23 @@ $("#submit").click(function(){
         }               
     });
 		
-
-		// $.post('php_pages/index.php', {postname:name, postemail:email, postcontact:phone, postsubject:subject, postmessage:message},
-		//  function(data){
-		//  	// $("result").html(data);
-		//  	alert("data is: " + data);
-		//  	$('#myform')[0].reset();
-		// });
 	}
 });
+
+
+});
+
+$('#page-index').on('pageshow', function() {
+  alert('hello');
+  console.log("hiiiii");
+ });
+
+function IsEmail(email) {
+  var regex = /^([a-zA-Z0-9_\.\-\+])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+  if(!regex.test(email)) {
+    return false;
+  }else{
+    return true;
+  }
+}
 

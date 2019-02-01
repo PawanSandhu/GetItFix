@@ -4,6 +4,7 @@
   margin-top: 20px;
 }*/
 
+    /* Force table to not be like tables anymore */
 nav {
     width: 0% !important;
     height: 0em !important;
@@ -203,6 +204,7 @@ form {
 }
 
 @media screen and (max-width: 360px) {
+
 .home-round-img {
     left: 2.5rem;
 }

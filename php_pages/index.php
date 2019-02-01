@@ -1,8 +1,8 @@
 <?php
 $servername = 'localhost';
-$username = 'root';
-$password = '';
-$database = 'getitfix_database';
+$username = 'ictatjcu_getitfi';
+$password = '123zxc';
+$database = 'ictatjcu_getitfix';
 
 // Create connection
 $conn = mysqli_connect($servername, $username, $password, $database);
@@ -12,9 +12,6 @@ if (!$conn) {
     die("Connection failed: " . mysqli_connect_error());
 }
 echo "Connected successfully";
-// if(isset($_POST['name'])){
-//     echo 'Variable is set and I can use it!';
-// }
 
 $Email = $_POST['postemail'];
 $Name = $_POST['postname'];
