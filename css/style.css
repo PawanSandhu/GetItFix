@@ -1345,3 +1345,27 @@ background-color: #dbcdbd;
   background-color: #c0a48c;
   padding: 20px 0px 20px 0px;
 }
+
+/*.............Registration page..................*/
+
+.login-page-logo {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+
+}
+
+#loginform {
+  width: 50%;
+  height: auto;
+  vertical-align: middle;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  margin-top: 2rem;
+  /*border: 4px solid #743125;*/
+  /*border-radius: 10px;*/
+  padding: 20px;  
+  background-color: #d2c3ad;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.4), 0 1px 1px 0 rgba(0, 0, 0, 0.35);
+}
