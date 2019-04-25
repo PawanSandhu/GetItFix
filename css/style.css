@@ -1346,6 +1346,125 @@ background-color: #dbcdbd;
   padding: 20px 0px 20px 0px;
 }
 
+/* pressure wash css*/
+
+.pressure-main-img{
+  width: 100%;
+  height: 250px;
+  position: absolute;
+}
+
+.pressure-top-div {
+   background:  
+    linear-gradient(
+      rgba(63, 112, 51, 0.65), 
+      rgba(63, 112, 51, 0.65)
+    ),
+    url('http://192.168.64.2/GetItFix/images/pressure.jpg');
+  height: 250px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+}
+
+.pressure-top-div h1 {
+  padding-top: 6rem;
+}
+
+.pressure-main-text {
+  color: white;
+  position: absolute;
+  top: 5rem;
+  left: 28rem;
+  z-index: 1000;
+  background-color: rgba(46, 51, 56, 0.3);
+}
+.pressure-intro {
+  padding: 3rem 0rem 3rem 0rem;
+  background-color: #dbcdbd;
+}
+
+
+.pressure-intro p {
+  margin: 10px 0px 30px 0px;
+  
+}
+
+.pressure-cleaning{
+    background:  
+    linear-gradient(
+      rgba(204, 153, 0, 0.45), 
+      rgba(153, 204, 255, 0.45)
+    ),
+    height: auto;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+
+}
+.pressure-cleaning-heading{
+  padding: 2rem 0rem 2rem 0rem;
+    background-color: #743125;
+    color: #dbcdbd;
+}
+.pressure-process{
+  background-color:#dbcdbd;
+    padding-top: 20px;
+}
+.pressure-work-process{
+  display: table;
+  margin: 20px auto;
+  height: 400px;
+  width: 300px;
+  background-color: #dbcdbd;
+  border: 1px solid #dbcdbd;
+  text-align: center;
+  z-index: 1000;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 5rem;
+}
+
+.pressure-work-process h5 {
+  padding: 20px 20px 10px 20px;
+}
+.pressure-work-process p {
+  padding: 0px 10px 20px 10px;
+}
+.process-heading{
+  text-align: center;
+  padding: 14px 30px;
+  margin-top: 20px;
+}
+.pressure-process-img{
+  height: 200px; 
+    width: 300px;
+}
+.pressure-wash{
+    background:  
+    linear-gradient(
+      rgba(204, 153, 0, 0.45), 
+      rgba(153, 204, 255, 0.45)
+    ),
+    height: auto;
+  width: 100%;
+  /*position: absolute;
+  left: 0;
+  right: 0;*/
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+
+}
+.pressure-wash-heading{
+  padding: 2rem 2rem 2rem 2rem;
+    background-color: #743125;
+    color: #dbcdbd;
+}
+
+
+
 /*.............Registration page..................*/
 
 .login-page-logo {
@@ -1369,3 +1488,4 @@ background-color: #dbcdbd;
   background-color: #d2c3ad;
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.4), 0 1px 1px 0 rgba(0, 0, 0, 0.35);
 }
+
