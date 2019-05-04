@@ -1,10 +1,10 @@
 <!doctype html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GetItFix: About us</title>
+    <title>GetItFix: Login</title>
     <link rel="stylesheet" type="text/css" href="css/style.css" />
     <link href="libs/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/responsive3.css" media="screen and (max-width: 1075px)" />
@@ -14,39 +14,21 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="libs/jquery-3.3.1.min.js"></script>
     <script type="text/javascript" src="js/index.js"></script>
-    <script src="libs/bootstrap/js/bootstrap.min.js"></script>
-
+    <script src="libs/bootstrap/js/bootstrap.min.js"></script> 
 </head>
-<body>
+ <body class="main-background">
+   <div class="Login-form">
+     <img src="images/logo_getitfix.png" alt="" class="avatar">
+     <!-- <h2>Login Form</h2> -->
+     <form class="signForm" action="">
+       <p>Email</p>
+       <input type="email" id="email" placeholder="Enter Email">
+       <p>Password</p>
+       <input type="password" id="password" placeholder="Enter Password">
 
-  <div class="request-form">
-  
-  <img class="login-page-logo" src="images/logo_getitfix.png" style="height: 110px;
-  width: 160px;">
-
-  <hr style="height:3px; width:50px; border-top:2px solid #00b5f1" />
-  <div class="request-area">
-    <form id="loginform">
-   <!-- <form id="myform"> -->
-    <div class="form-group">
-      <label for="name">Username *</label>
-      <input type="text" class="form-control" id="name" placeholder="Your Username" name="name" maxlength="30">
-    </div>
-    <div class="form-group">
-      <label for="subject">Password *</label>
-      <input type="text" class="form-control" id="password" placeholder=" Enter Password" name="password" maxlength="20">
-    </div>
-    
-    <button type="button" id="submit" class="btn btn-block btn-whatever">login</button>
-      <label>
-      <input type="checkbox" checked="checked" name="remember"> Remember me
-    </label>
-
-    <div class="psw">Forgot <a href="#">password?</a></div>
-    </form>
-
-  </div>
-  
-   
+       <input type="button" id="login-button" value="Sign In">
+       <p><a>Forgot Password?</a></p>
+     </form>
+   </div>
  </body>
-  </html>
+ </html>
