@@ -1,22 +1,13 @@
 $(document).ready(function() {
-	$("#submit").click(function(){
+	$("#login-button").click(function(){
 		var submit = $(this).val();
-	var name = $("#name").val();
 	var email = $("#email").val();
-	var phone = $("#phone").val();
 	var password = $("#password").val();
-	var confirm_password = $("#confirm_password").val();
-	if(name == ""){
-		alert('Please enter your name');
-	}
-	else if(email == ""){
+	 if(email == ""){
 		alert('Please enter your email address');
 	}
 	else if(IsEmail(email) == false){
 		alert('Please enter a valid email address');
-	}
-	else if(phone == ""){
-		alert('Please enter your contact number');
 	}
 	else if(password == ""){
 		alert('Please enter the password');
@@ -24,28 +15,24 @@ $(document).ready(function() {
 	else if(password.length < 6){
 		alert('Password should be at least 6 characters long');
 	}
-	else if(confirm_password == ""){
-		alert('Please confirm the password');
-	}
-	else if(confirm_password != password){
-		alert('Password did not match. Please re-enter.');
-	}
 	else {
 		$.ajax({
-        url: 'php_pages/registration.php',
+        url: 'php_pages/login.php',
         type: 'POST',
         data: {
-            postname:name,
              postemail:email,
-             postcontact:phone,
              postpassword:password,
-             postconfirmpassword:confirm_password,
              postsubmit:submit
         },
         success: function(msg) {
         	$('.signForm')[0].reset();
-            alert (msg);
-            window.location.href = "login.html";
+            // alert (msg);
+            if(msg=="welcome") {
+            window.location.href = "welcome.php";	
+            }
+            else{
+              alert(msg);
+            }
         },
         error: function(err) {
         	alert(err);
