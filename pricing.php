@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GetItFix: Pest Control</title>
+    <title>GetItFix: Pricing</title>
     <link rel="stylesheet" type="text/css" href="css/style.css" />
     <link href="libs/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/responsive3.css" media="screen and (max-width: 1150px)" />
@@ -14,6 +14,35 @@
     <script src="libs/jquery-3.3.1.min.js"></script>
     <script type="text/javascript" src="js/index.js"></script>
     <script src="libs/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      function setEditable(row_id){
+  alert("in set editable" + JSON.stringify(row_id));
+  var tr = document.getElementById(row_id);
+  var tr_elements = $("#" + row_id).find(".editable");
+  
+  for( var i = 0; i<tr_elements.length; i++){ // set the row td's Editible
+    tr_elements[i].contentEditable = "true";
+    tr_elements[i].style.color="red";
+  } 
+  var updateLinkHTML = "<a onclick='editStudent(" + row_id + ")' class='updateLink' ><img class='linkImage' src='update.png' />Update</a>";
+        
+  $("#" + row_id).find(".editLink").fadeOut('slow' ,function(){$(this).replaceWith(updateLinkHTML).fadeIn()});
+  alert('Row is now editibale edit it and click Update to Save');
+}
+
+function editStudent(row_id){
+  var bedroom = $("#" + row_id).find(".editable")[0].textContent;
+  var bathroom = $("#" + row_id).find(".editable")[1].textContent;
+  var bedbath = $("#" + row_id).find(".editable")[2].textContent;
+  var carpet = $("#" + row_id).find(".editable")[3].textContent;
+  
+  $.post("editStudent.php" , {sprice_id:row_id, sbedroom:bedroom, sbathroom:bathroom, sbedbath:bedbath, scarpet:carpet} , function(data){
+    $("#result").html(data);
+    $("#" + row_id).fadeOut('slow' , function(){$(this).replaceWith(data).fadeIn('slow');});
+  } );
+}
+
+    </script>
 </head>
 
 <body> 
@@ -85,193 +114,227 @@
 </div>
 </div>
 
-
-<div class="pest-top-div text-center">
-        <h1>End of Lease Pest Control</h1>
+    <div class="pricing-top-div text-center">
+        <h1>Pricing</h1>
     </div>
 
-<div class="pest-intro">
-  <div class="container">
-      <div class="row">
-        <div class="col-md-6 " >
-          <div class="container">
-            <h4>
-                "Tired of ants, cockroaches, fleas, rats and spiders infesting your property? Don’t make it an unpleasant sight for your next tenant. Get rid of insects and rodents with top notch Pest Control Services at Get It Fix Bond Cleaning."
-                </h4>
-            <p> Unwanted pests at the end of your tenancy can make it difficult for you to get your bond back. Not only that, they spread a major number of diseases and make your setting an unlivable place to be. With Get It Fix Bond Cleaning, you can get rid of undesirable pests and save your bond by avoiding any unnecessary cost tribunals.
-                
-            </p>
-            
-        </div>
-      </div>
-        <div class="col-md-6 ">
-          <div class="container">
-            <img src="images/COACK.jpg" class="img-fluid" style="width: 100%; height: 300px;">
-
-           </div>
-          </div>
-        </div>
-      </div>
-      </div>
+            <div class="pricing-color">
+                <div class="container">
+                <h3>Our prices can be variable according to the size and condition of the Houses.Each additional room starts from $49.
+                </h3>
+              </div>
+            </div>
 
 
-<div class="pest-work">
-  <div class="container">
-<h3>
-              "When should you book in your end of lease pest control ?"
-            </h3>
-            <p style="color: lightgrey;">It is always best to get your pest control done after your whole property is thoroughly cleaned and treated, as mopping of floors or steam cleaning of carpets will strip our treatment away.
-            Please ensure that your property is vacant, and there are no large stored goods inside your garage or rooms.
-          </p>
-</div></div>
-
-
-      <div class="pest-slideshow">
-        <div class="slideshow-container"> 
-
-          <div class="mySlides fade">
-
-            <img src="images/pest10.jpg" style="width:100%">
-
-          </div>
-
-          <div class="mySlides fade">
-
-            <img src="images/to.jpg" style="width:100%">
-
-          </div>
-
-          <div class="mySlides fade">
-
-            <img src="images/pest9.jpg" style="width:100%;">
-
-          </div>
-
-    </div>
-    
-
-<div style="text-align:center;">
-  <span class="dot"></span>
-  <span class="dot"></span>
-  <span class="dot"></span>
+<div class="pricing-table">
+<div class="container">
+<button id="pricing-button" class="pricing-button" type="submit">Edit</button>
+<table>
+  <thead>
+  <tr>
+    <th>Bedrooms</th>
+    <th>Bathrooms</th>
+    <th>Bed+Bath Price($)</th>
+    <th>Carpet Steam Cleaning Price($)</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td>1</td>
+    <td>1</td>
+    <td>$229.00</td>
+    <td>$49.00</td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>1</td>
+    <td>$269.00</td>
+    <td>$59.00</td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>2</td>
+    <td>$329.00</td>
+    <td>$55.00</td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td>1</td>
+    <td>$369.00</td>
+    <td>$69.00</td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td>2</td>
+    <td>$399.00</td>
+    <td>$69.00</td>
+  </tr>
+  <tr>
+    <td>4</td>
+    <td>1</td>
+    <td>$429.00</td>
+    <td>$89.00</td>
+  </tr>
+  <tr>
+    <td>4</td>
+    <td>2</td>
+    <td>$469.00</td>
+    <td>$89.00</td>
+  </tr>
+    <td>5</td>
+    <td>2</td>
+    <td>$529.00</td>
+    <td>$99.00</td>
+  </tr>
+  <tr>
+    <td>5</td>
+    <td>3</td>
+    <td>$569.00</td>
+    <td>$99.00</td>
+  </tr>
+  
+  </tbody>
+</table>
+</div>
 </div>
 
-</div>
 
+ 
 
+ <?php
+$servername = 'localhost';
+$username = 'root';
+$password = '';
+$database = 'GetItFix';
 
+// Create connection
+$con = mysqli_connect($servername, $username, $password, $database);
 
-<script>
-var slideIndex = 0;
-showSlides();
-
-function showSlides() {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  slideIndex++;
-  if (slideIndex > slides.length) {slideIndex = 1}
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-  setTimeout(showSlides, 2000); // Change image every 2 seconds
+// Check connection
+if (!$con) {
+    die("Connection failed: " . mysqli_connect_error());
 }
-</script>
+
+$result = $con->query('SELECT * FROM Pricing;');
+  echo '<div class="container">
+  <table>
+     <tr>
+     <th>Bedroom</th>
+     <th>Bathroom</th>
+     <th>Bed_Bath</th>
+     <th>Carpet</th>
+     <th>Edit</th>
+     </tr>';
+    while($row = $result->fetch_assoc())
+    echo '<tr id="'. $row['price_id'] .'">' .
+      '<td class="editable" id="sid">'. $row['Bedroom'] . '</td>' .
+       '<td class="editable" id="sid">'. $row['Bathroom'] . '</td>' .
+       '<td class="editable" id="sname">'. $row['Bed_Bath'] . '</td>' .
+       '<td class="editable" id="sprogram">'. $row['Carpet'] . '</td>' . 
+       '<td class="link"><a onclick="setEditable('. $row['price_id'] .')" class="editLink" alt="Edit" name="Edit"><img class="linkImage" src="edit.png" / >Edit</a></td>' .
+       '</tr>';
+       echo '</table>
+   </div>';
 
 
-
-<div class="pest-work">
-  <div class="container">
-<h3>
-    Our trained and certified pest control personnel follows a guaranteed program to eradicate the pests at the end of lease
-    
-  </h3>
-<span>Get RID of Pests In 4 Easy Steps</span>
-
-</div></div>
+  // $con = new mysqli('localhost' , 'root' , 'root' , 'test_db');
+  $result = $con->query('SELECT * FROM student;');
+  echo '<table>
+     <tr>
+     <th>Student ID</th>
+     <th>Name</th>
+     <th>Program</th>
+     <th>Edit</th>
+     </tr>';
+    while($row = $result->fetch_assoc())
+    echo '<tr id="'. $row['student_id'] .'">' .
+       '<td class="editable" id="sid">'. $row['student_id'] . '</td>' .
+       '<td class="editable" id="sname">'. $row['Name'] . '</td>' .
+       '<td class="editable" id="sprogram">'. $row['Program'] . '</td>' . 
+       '<td class="link"><a onclick="setEditable('. $row['student_id'] .')" class="editLink" alt="Edit" name="Edit"><img class="linkImage" src="edit.png" / >Edit</a></td>' .
+       '</tr>';
+?>
+           
+              
+<div class="pricing-table">
+<div class="container">
+<button id="pricing-button" class="pricing-button" type="submit">Edit</button>
+<table>
+  <thead>
+  <tr>
+    <th>Bedrooms</th>
+    <th>Bathrooms</th>
+    <th>Bed+Bath Price($)</th>
+    <th>Carpet Steam Cleaning Price($)</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td>1</td>
+    <td>1</td>
+    <td>$229.00</td>
+    <td>$49.00</td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>1</td>
+    <td>$269.00</td>
+    <td>$59.00</td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>2</td>
+    <td>$329.00</td>
+    <td>$55.00</td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td>1</td>
+    <td>$369.00</td>
+    <td>$69.00</td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td>2</td>
+    <td>$399.00</td>
+    <td>$69.00</td>
+  </tr>
+  <tr>
+    <td>4</td>
+    <td>1</td>
+    <td>$429.00</td>
+    <td>$89.00</td>
+  </tr>
+  <tr>
+    <td>4</td>
+    <td>2</td>
+    <td>$469.00</td>
+    <td>$89.00</td>
+  </tr>
+    <td>5</td>
+    <td>2</td>
+    <td>$529.00</td>
+    <td>$99.00</td>
+  </tr>
+  <tr>
+    <td>5</td>
+    <td>3</td>
+    <td>$569.00</td>
+    <td>$99.00</td>
+  </tr>
   
-
-
-
-<div class="pest-work2">
-  <div class="container">
-      <div class="row" >
-      <div class="col-md-3 ">
-        <div class="pest-work1" >
-        
-        <h5>1. Inspect</h5>
-        <p>We will search thoroughly and report our findings.
-       <ul>
-        <li>First find the problem</li>
-        <li>After this apply corrective solution</li>
-      </ul>
-    </p>
-        
-      </div>
-    </div>
-      <div class="col-md-3 ">
-        <div class="pest-work1">
-          
-        <h5>2. Apply Gel</h5>
-              <p>We will apply a bait gel which kills cockroaches and fleas.
-    
-       <ul>
-        <li>Applying gel kills unwanted germs and pest</li>
-        <li>Best Solution for your pest problem</li>
-      </ul>
-    </p>
-        
-      </div>
-      </div>
-      <div class="col-md-3 ">
-        <div class="pest-work1">
-          
-        <h5>3. Dust</h5>
-        <p>We may apply a fine insecticidal powder to your roof void, subfloor and in your wall cavities.
-       <ul>
-        <li>This powder block the way of pest to come inside</li>
-        <li>Recommended by many</li>
-        
-        
-      </ul>
-    </p>
-
-        
-      </div>
-      </div>
-      <div class="col-md-3">
-        <div class="pest-work1">
-          
-        <h5>4. Surface spray</h5>
-              <p>Once your interiors are treated with the gel and insecticidal powder, we disperse a special surface spray around the perimeter of your building.
-       <ul>
-        <li>Preventitive Solutions</li>
-        <li>Best solutions advices</li>
-      
-      </ul>
-    </p>
-          </div>
-        </div>
-      </div>
-    </div>
+  </tbody>
+</table>
 </div>
-    
-  <div class="pest-work">
-  <div class="container">
-<h3>
-    We offer pest control services against the following to keep your sanctuary in the most perfect condition.
-  </h3>
-     </div>
-    </div>
-    <div class="container">
-      <img class="pest-pic" src="images/c-3.jpg">
-    </div>
-  
+</div>
+
+<div class="pricing-color">
+                <div class="container">
+                <h3>Pest Control prices starts from $49.00 with bond cleaning package.
+                </h3>
+              </div>
+            </div>
+
 
 <!-- Footer -->
  <footer class="page-footer font-small stylish-color-dark pt-4">

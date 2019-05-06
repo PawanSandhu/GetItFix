@@ -1397,8 +1397,8 @@ background-color: #dbcdbd;
 .pressure-top-div {
    background:  
     linear-gradient(
-      rgba(63, 112, 51, 0.65), 
-      rgba(63, 112, 51, 0.65)
+      rgba(255, 221, 204, 0.65), 
+      rgba(204, 102, 0, 0.65)
     ),
     url('http://192.168.64.2/GetItFix/images/pressure.jpg');
   height: 250px;
@@ -1534,9 +1534,9 @@ background-color: #dbcdbd;
 /*............Lawn Mowing...........*/
 .lawn-top-div{
   background:  
-    linear-gradient(
-      rgba(63, 112, 51, 0.65), 
-      rgba(0, 102, 204, 0.65)
+    linear-gradient( 
+      rgba(179, 143, 0, 0.65),
+      rgba(63, 112, 51, 0.65)
     ),
     url('http://192.168.64.2/GetItFix/images/grass1.jpg');
   height: 250px;
