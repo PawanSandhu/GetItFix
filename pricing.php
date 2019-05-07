@@ -14,35 +14,7 @@
     <script src="libs/jquery-3.3.1.min.js"></script>
     <script type="text/javascript" src="js/index.js"></script>
     <script src="libs/bootstrap/js/bootstrap.min.js"></script>
-    <script type="text/javascript">
-      function setEditable(row_id){
-  alert("in set editable" + JSON.stringify(row_id));
-  var tr = document.getElementById(row_id);
-  var tr_elements = $("#" + row_id).find(".editable");
-  
-  for( var i = 0; i<tr_elements.length; i++){ // set the row td's Editible
-    tr_elements[i].contentEditable = "true";
-    tr_elements[i].style.color="red";
-  } 
-  var updateLinkHTML = "<a onclick='editStudent(" + row_id + ")' class='updateLink' ><img class='linkImage' src='update.png' />Update</a>";
-        
-  $("#" + row_id).find(".editLink").fadeOut('slow' ,function(){$(this).replaceWith(updateLinkHTML).fadeIn()});
-  alert('Row is now editibale edit it and click Update to Save');
-}
-
-function editStudent(row_id){
-  var bedroom = $("#" + row_id).find(".editable")[0].textContent;
-  var bathroom = $("#" + row_id).find(".editable")[1].textContent;
-  var bedbath = $("#" + row_id).find(".editable")[2].textContent;
-  var carpet = $("#" + row_id).find(".editable")[3].textContent;
-  
-  $.post("editStudent.php" , {sprice_id:row_id, sbedroom:bedroom, sbathroom:bathroom, sbedbath:bedbath, scarpet:carpet} , function(data){
-    $("#result").html(data);
-    $("#" + row_id).fadeOut('slow' , function(){$(this).replaceWith(data).fadeIn('slow');});
-  } );
-}
-
-    </script>
+    
 </head>
 
 <body> 
@@ -120,83 +92,12 @@ function editStudent(row_id){
 
             <div class="pricing-color">
                 <div class="container">
-                <h3>Our prices can be variable according to the size and condition of the Houses.Each additional room starts from $49.
+                <h3>Our prices can be variable according to the size and condition of the Houses. <br>Each additional room starts from $49.
                 </h3>
               </div>
             </div>
 
 
-<div class="pricing-table">
-<div class="container">
-<button id="pricing-button" class="pricing-button" type="submit">Edit</button>
-<table>
-  <thead>
-  <tr>
-    <th>Bedrooms</th>
-    <th>Bathrooms</th>
-    <th>Bed+Bath Price($)</th>
-    <th>Carpet Steam Cleaning Price($)</th>
-  </tr>
-  </thead>
-  <tbody>
-  <tr>
-    <td>1</td>
-    <td>1</td>
-    <td>$229.00</td>
-    <td>$49.00</td>
-  </tr>
-  <tr>
-    <td>2</td>
-    <td>1</td>
-    <td>$269.00</td>
-    <td>$59.00</td>
-  </tr>
-  <tr>
-    <td>2</td>
-    <td>2</td>
-    <td>$329.00</td>
-    <td>$55.00</td>
-  </tr>
-  <tr>
-    <td>3</td>
-    <td>1</td>
-    <td>$369.00</td>
-    <td>$69.00</td>
-  </tr>
-  <tr>
-    <td>3</td>
-    <td>2</td>
-    <td>$399.00</td>
-    <td>$69.00</td>
-  </tr>
-  <tr>
-    <td>4</td>
-    <td>1</td>
-    <td>$429.00</td>
-    <td>$89.00</td>
-  </tr>
-  <tr>
-    <td>4</td>
-    <td>2</td>
-    <td>$469.00</td>
-    <td>$89.00</td>
-  </tr>
-    <td>5</td>
-    <td>2</td>
-    <td>$529.00</td>
-    <td>$99.00</td>
-  </tr>
-  <tr>
-    <td>5</td>
-    <td>3</td>
-    <td>$569.00</td>
-    <td>$99.00</td>
-  </tr>
-  
-  </tbody>
-</table>
-</div>
-</div>
 
 
  
@@ -215,15 +116,18 @@ if (!$con) {
     die("Connection failed: " . mysqli_connect_error());
 }
 
-$result = $con->query('SELECT * FROM Pricing;');
-  echo '<div class="container">
+
+
+
+   $result = $con->query('SELECT * FROM Pricing;');
+  echo '<div class="pricing-table">
+  <div class="container">
   <table>
      <tr>
-     <th>Bedroom</th>
-     <th>Bathroom</th>
-     <th>Bed_Bath</th>
-     <th>Carpet</th>
-     <th>Edit</th>
+     <th>Bedrooms</th>
+     <th>Bathrooms</th>
+     <th>Bed+Bath Price($)</th>
+     <th>Carpet Steam Cleaning Price($)</th>
      </tr>';
     while($row = $result->fetch_assoc())
     echo '<tr id="'. $row['price_id'] .'">' .
@@ -231,102 +135,14 @@ $result = $con->query('SELECT * FROM Pricing;');
        '<td class="editable" id="sid">'. $row['Bathroom'] . '</td>' .
        '<td class="editable" id="sname">'. $row['Bed_Bath'] . '</td>' .
        '<td class="editable" id="sprogram">'. $row['Carpet'] . '</td>' . 
-       '<td class="link"><a onclick="setEditable('. $row['price_id'] .')" class="editLink" alt="Edit" name="Edit"><img class="linkImage" src="edit.png" / >Edit</a></td>' .
        '</tr>';
        echo '</table>
+   </div>
    </div>';
 
-
-  // $con = new mysqli('localhost' , 'root' , 'root' , 'test_db');
-  $result = $con->query('SELECT * FROM student;');
-  echo '<table>
-     <tr>
-     <th>Student ID</th>
-     <th>Name</th>
-     <th>Program</th>
-     <th>Edit</th>
-     </tr>';
-    while($row = $result->fetch_assoc())
-    echo '<tr id="'. $row['student_id'] .'">' .
-       '<td class="editable" id="sid">'. $row['student_id'] . '</td>' .
-       '<td class="editable" id="sname">'. $row['Name'] . '</td>' .
-       '<td class="editable" id="sprogram">'. $row['Program'] . '</td>' . 
-       '<td class="link"><a onclick="setEditable('. $row['student_id'] .')" class="editLink" alt="Edit" name="Edit"><img class="linkImage" src="edit.png" / >Edit</a></td>' .
-       '</tr>';
-?>
-           
-              
-<div class="pricing-table">
-<div class="container">
-<button id="pricing-button" class="pricing-button" type="submit">Edit</button>
-<table>
-  <thead>
-  <tr>
-    <th>Bedrooms</th>
-    <th>Bathrooms</th>
-    <th>Bed+Bath Price($)</th>
-    <th>Carpet Steam Cleaning Price($)</th>
-  </tr>
-  </thead>
-  <tbody>
-  <tr>
-    <td>1</td>
-    <td>1</td>
-    <td>$229.00</td>
-    <td>$49.00</td>
-  </tr>
-  <tr>
-    <td>2</td>
-    <td>1</td>
-    <td>$269.00</td>
-    <td>$59.00</td>
-  </tr>
-  <tr>
-    <td>2</td>
-    <td>2</td>
-    <td>$329.00</td>
-    <td>$55.00</td>
-  </tr>
-  <tr>
-    <td>3</td>
-    <td>1</td>
-    <td>$369.00</td>
-    <td>$69.00</td>
-  </tr>
-  <tr>
-    <td>3</td>
-    <td>2</td>
-    <td>$399.00</td>
-    <td>$69.00</td>
-  </tr>
-  <tr>
-    <td>4</td>
-    <td>1</td>
-    <td>$429.00</td>
-    <td>$89.00</td>
-  </tr>
-  <tr>
-    <td>4</td>
-    <td>2</td>
-    <td>$469.00</td>
-    <td>$89.00</td>
-  </tr>
-    <td>5</td>
-    <td>2</td>
-    <td>$529.00</td>
-    <td>$99.00</td>
-  </tr>
-  <tr>
-    <td>5</td>
-    <td>3</td>
-    <td>$569.00</td>
-    <td>$99.00</td>
-  </tr>
   
-  </tbody>
-</table>
-</div>
-</div>
+?>
+      
 
 <div class="pricing-color">
                 <div class="container">

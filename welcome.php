@@ -19,10 +19,17 @@ session_start();
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="libs/jquery-3.3.1.min.js"></script>
     <script src="libs/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      function goToPrices() {
 
+        window.location.href="edit-pricing.php";
+
+      } 
+
+         </script>
 </head>
 
-<body>  
+<body style="background-color: #dbcdbd;">  
 
             <div class="home-top-div">
               <div class="container">
@@ -32,7 +39,7 @@ session_start();
             </div>
             <div class="col-special text-center">
             <div class="home-top-info float-md-right">
-                <button id="logout-btn" class="logout-btn" onclick="window.location.href = 'php_pages/logout.php'">LOG OUT</button>    
+                <button id="logout-btn" class="logout-btn" onclick="window.location.href = 'php_pages/logout.php';">LOG OUT</button>    
           </div>
         </div>
         </div>
@@ -40,14 +47,26 @@ session_start();
 </div>
 
 
-<div class="welcome-div">
+<div class="welcome-div text-center">
   <div class="container">
 
     <?php
-    echo '<p> Hi ' .$_SESSION['username']. ' !</p>';
+    echo '<h2> Hi ' .$_SESSION['username']. ' !</h2><br><br>';
+    if($_SESSION['username'] == 'admin') {
+      echo '<div class="edit-price-div text-center">
+  <a href="edit-pricing.php"><img src="images/hhh.png" style="width: 150px; height: 150px;"></a>
+  <h5>Edit Prices</h5>
+  </div>';
+    }
+    
     ?>
   </div>
 </div>
+
+<hr>
+<div class="cpyryt">© 2019 Copyright:GetItFixBondCleaning.com.au</div>
+
+
 </body>
 </html>
 

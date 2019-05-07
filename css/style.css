@@ -61,9 +61,11 @@ html, body {
 }
 
 .home-srv-img {
-  height: 200px; 
-  width: 300px;
+  height: 200px !important; 
+  width: 300px !important;
 }
+
+
 .request-button {
   background-color: #3f7033;
   color: #dbcdbd;
@@ -257,7 +259,17 @@ nav {
 }
 
 .main-service-box {
-  /*margin-bottom: 5rem;*/
+  background:  
+    linear-gradient(
+      rgba(219, 205, 189, 0.65),
+      rgba(0, 181, 241, 0.65)
+    ),
+    url('http://192.168.64.2/GetItFix/images/window.jpg');
+  height: auto;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 3rem;
 }
 .services-box {
  height: 300px;
@@ -268,7 +280,6 @@ nav {
 }
 .div-services {
   display: table;
-  margin: 20px auto;
   height: auto;
   width: 300px;
   background-color: #dbcdbd;
@@ -276,7 +287,6 @@ nav {
   text-align: center;
   z-index: 1000;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  margin-bottom: 5rem;
 }
 
 .div-services h5 {
@@ -890,6 +900,10 @@ td, th {
 
 tr:nth-child(even) {
   background-color: #c0a48c;
+}
+
+.editlink {
+  color: #743125 !important;
 }
 
 .pricing-text {
@@ -1804,3 +1818,111 @@ background-color: #dbcdbd;
   color: #3f7033;
   border: 3px solid #743125;
   }
+
+
+  /* Rectangle Out */
+.hvr-rectangle-out {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  background: #e1e1e1;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+.hvr-rectangle-out:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #743125;
+  -webkit-transform: scale(0);
+  transform: scale(0);
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-rectangle-out:hover, .hvr-rectangle-out:focus, .hvr-rectangle-out:active {
+  color: #743125;
+}
+.hvr-rectangle-out:hover:before, .hvr-rectangle-out:focus:before, .hvr-rectangle-out:active:before {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+
+
+.div-services {
+  position: relative;
+}
+
+.anim-image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+  color: #743125 !important;
+}
+
+.anim-middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 30%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.div-services:hover .anim-image {
+  opacity: 0.3;
+}
+
+.div-services:hover .anim-middle {
+  opacity: 1;
+}
+
+.anim-text {
+  color: white;
+  font-size: 16px;
+  padding: 5px;
+}
+
+
+.welcome-div {
+  height: auto;
+  width: 92%;
+  background-color: #c0a78c;
+  margin: 3rem;
+  padding: 3rem;
+}
+
+.edit-price-div {
+  height: auto;
+  width: 300px;
+  background-color: #cccc00;
+}
+
+.edit-price-div h5 {
+  background-color: #999900;
+   color: white;
+   padding: 1rem;
+}
+
+.cpyryt {
+  padding-left: 1rem;
+  font-size: 12px;
+}
