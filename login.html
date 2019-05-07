@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="css/responsive.css" media="screen and (max-width: 650px)" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="libs/jquery-3.3.1.min.js"></script>
-    <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript" src="js/login.js"></script>
     <script src="libs/bootstrap/js/bootstrap.min.js"></script> 
 </head>
  <body class="main-background">
@@ -22,12 +22,13 @@
      <!-- <h2>Login Form</h2> -->
      <form class="signForm" action="">
        <p>Email</p>
-       <input type="email" id="email" placeholder="Enter Email">
+       <input type="email" class="login-inputt" id="email" placeholder="Enter Email">
        <p>Password</p>
-       <input type="password" id="password" placeholder="Enter Password">
+       <input type="password" class="login-inputt" id="password" placeholder="Enter Password">
 
        <input type="button" id="login-button" value="Sign In">
-       <p><a>Forgot Password?</a></p>
+       <a class="login-blue" href="#">Forgot Password?</a><br>
+       <span class="login-white">Don't have an account?<a class="login-blue" href="registration.html"> Sign Up now</a></span>
      </form>
    </div>
  </body>

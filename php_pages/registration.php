@@ -1,4 +1,7 @@
 <?php
+
+session_start();
+// header('location:login.html');
 $servername = 'localhost';
 $username = 'root';
 $password = '';
@@ -11,42 +14,35 @@ $conn = mysqli_connect($servername, $username, $password, $database);
 if (!$conn) {
     die("Connection failed: " . mysqli_connect_error());
 }
-echo "Connected successfully";
 
-
-if(isset($_POST['postsubmit'])){
-	$Name = $_POST['postname'];
-}
+mysqli_select_db($conn, 'GetItFix');
+// if(isset($_POST['postsubmit'])){
+// 	$Name = $_POST['postname'];
+// }
 $Email = $_POST['postemail'];
 $Contact = $_POST['postcontact'];
 $Password = $_POST['postpassword'];
-$ConfirmPassword= $_POST['postconfirmpassword'];
+$Name = $_POST['postname'];
 
-echo $Name;
-echo $Email;
-echo $Contact;
-echo $Password;
-echo $ConfirmPassword;
-
-$result = mysqli_query("select * from Registration where Email_id = '$Email'");
-	if(mysqli_num_rows($result) > 0){
-		echo "You are already registered";
-	}
-	else {
-
-$sql = "insert into Registration(Name, Email_id, Phone_number, Password, Confirm_password) values('$Name', '$Email', '$Contact', '$Password', '$ConfirmPassword')";
+$sqll = "select * from Registration where Email_id = '$Email'";
+	$result = mysqli_query($conn, $sqll);
+// echo "result is" . $result;
+$num = mysqli_num_rows($result);
+if($num == 1){
+	echo"The email have you have entered is already registered.";
+	return false;
+}
+else {
+$sql = "insert into Registration(Name, Email_id, Phone, Password) values('$Name', '$Email', '$Contact', '$Password')";
 
 $query = mysqli_query($conn, $sql);
 if($query){
-	echo 'Data inserted successfully';
+	echo 'You have been registered.';
+	return true;
 }
 else {
 	die('Error: table not found');
 }
-}
-}
-else{
-	echo "here";
 }
 mysqli_close($conn);
 ?>
