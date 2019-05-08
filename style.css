@@ -51,7 +51,7 @@ html, body {
 }
 .y{
     position:absolute;
-    top:14.5%;
+    top:16.5%;
     left: 8%;
     z-index: 1000;
 }
@@ -61,11 +61,9 @@ html, body {
 }
 
 .home-srv-img {
-  height: 200px !important; 
-  width: 300px !important;
+  height: 200px; 
+  width: 300px;
 }
-
-
 .request-button {
   background-color: #3f7033;
   color: #dbcdbd;
@@ -82,26 +80,6 @@ html, body {
 .request-button:hover {
   background-color: #dbcdbd;
   color: #3f7033;
-
-}
-
-.login-btn {
-  background-color: #dbcdbd;
-  color: #743125;
-  /*border-radius: 15px;*/
-  border: 3px solid #743125;
-  height: auto;
-  padding: 8px;
-  font-size: 16px;
-  width: 80px;
-  font-weight: bold;
-  /*margin-left: 10px;*/
-}
-
-.login-btn:hover {
-  background-color: #dbcdbd;
-  border: 3px solid #dbcdbd;
-  color: #00b5f1;
 
 }
 
@@ -259,17 +237,7 @@ nav {
 }
 
 .main-service-box {
-  background:  
-    linear-gradient(
-      rgba(219, 205, 189, 0.65),
-      rgba(0, 181, 241, 0.65)
-    ),
-    url('http://192.168.64.2/GetItFix/images/window.jpg');
-  height: auto;
-  width: 100%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding: 3rem;
+  /*margin-bottom: 5rem;*/
 }
 .services-box {
  height: 300px;
@@ -280,6 +248,7 @@ nav {
 }
 .div-services {
   display: table;
+  margin: 20px auto;
   height: auto;
   width: 300px;
   background-color: #dbcdbd;
@@ -287,6 +256,7 @@ nav {
   text-align: center;
   z-index: 1000;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 5rem;
 }
 
 .div-services h5 {
@@ -348,7 +318,7 @@ nav {
     border-color: #743125 !important;
     font-size: 1rem !important;
 }
-#myform {
+form {
   width: 70%;
   height: auto;
   vertical-align: middle;
@@ -780,27 +750,7 @@ i:hover {
 
 /*------------------pricing starts-----------------*/
 
-.pricing-button {
-  background-color: #3f7033;
-  color: #dbcdbd;
-  /*border-radius: 15px;*/
-  border: 3px solid #3f7033;
-  height: auto;
-  width: 80px;
-  padding: 8px;
-  font-size: 16px;
-  width: auto;
-  font-weight: bold;
-  float: right;
-  margin-bottom: 10px;
-  
-}
 
-.pricing-button:hover {
-  background-color: #dbcdbd;
-  color: #3f7033;
-
-}
 
 .pricing-main-img{
   width: 100%;
@@ -900,10 +850,6 @@ td, th {
 
 tr:nth-child(even) {
   background-color: #c0a48c;
-}
-
-.editlink {
-  color: #743125 !important;
 }
 
 .pricing-text {
@@ -1400,127 +1346,115 @@ background-color: #dbcdbd;
   padding: 20px 0px 20px 0px;
 }
 
-/* pressure wash css*/
-
-.pressure-main-img{
-  width: 100%;
-  height: 250px;
-  position: absolute;
+/*login page
+/* Bordered form */
+form {
+  border: 3px solid #f1f1f1;
 }
 
-.pressure-top-div {
-   background:  
-    linear-gradient(
-      rgba(255, 221, 204, 0.65), 
-      rgba(204, 102, 0, 0.65)
-    ),
-    url('http://192.168.64.2/GetItFix/images/pressure.jpg');
-  height: 250px;
+/* Full-width inputs */
+input[type=text], input[type=password] {
   width: 100%;
-  background-repeat: no-repeat;
-  background-size: cover;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #4CAF50;
   color: white;
-}
-
-.pressure-top-div h1 {
-  padding-top: 6rem;
-}
-
-.pressure-main-text {
-  color: white;
-  position: absolute;
-  top: 5rem;
-  left: 28rem;
-  z-index: 1000;
-  background-color: rgba(46, 51, 56, 0.3);
-}
-.pressure-intro {
-  padding: 3rem 0rem 3rem 0rem;
-  background-color: #dbcdbd;
-}
-
-
-.pressure-intro p {
-  margin: 10px 0px 30px 0px;
-  
-}
-
-.pressure-cleaning{
-    background:  
-    linear-gradient(
-      rgba(204, 153, 0, 0.45), 
-      rgba(153, 204, 255, 0.45)
-    ),
-    height: auto;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
   width: 100%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  
+}
 
+/* Add a hover effect for buttons */
+button:hover {
+  opacity: 0.8;
 }
-.pressure-cleaning-heading{
-  padding: 2rem 0rem 2rem 0rem;
-    background-color: #743125;
-    color: #dbcdbd;
+
+/* Extra style for the cancel button (red) */
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
 }
-.pressure-process{
-  background-color:#dbcdbd;
-    padding-top: 20px;
+
+/* Center the avatar image inside this container */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
 }
-.pressure-work-process{
-  display: table;
-  margin: 20px auto;
+
+/* Avatar image */
+img.avatar {
+  width: 40%;
+  border-radius: 50%;
+}
+
+/* Add padding to containers */
+.container {
+  padding: 16px;
+}
+
+
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+    display: block;
+    float: none;
+  }
+  .cancelbtn {
+    width: 100%;
+  }
+}
+
+
+
+
+
+
+/*.blob */
+
+.content1{
+  margin-left: 0px;
+  padding: 20px;
+  color: white;
   height: 400px;
-  width: 300px;
-  background-color: #dbcdbd;
-  border: 1px solid #dbcdbd;
-  text-align: center;
-  z-index: 1000;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  margin-bottom: 5rem;
-}
-
-.pressure-work-process h5 {
-  padding: 20px 20px 10px 20px;
-}
-.pressure-work-process p {
-  padding: 0px 10px 20px 10px;
-}
-.process-heading{
-  text-align: center;
-  padding: 14px 30px;
-  margin-top: 20px;
-}
-.pressure-process-img{
-  height: 200px; 
-    width: 300px;
-}
-.pressure-wash{
-    background:  
-    linear-gradient(
-      rgba(204, 153, 0, 0.45), 
-      rgba(153, 204, 255, 0.45)
-    ),
-    height: auto;
-  width: 100%;
-  /*position: absolute;
-  left: 0;
-  right: 0;*/
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-color: black;
   
+}
 
+.tips-img {
+  padding: 20px;
 }
-.pressure-wash-heading{
-  padding: 2rem 2rem 2rem 2rem;
-    background-color: #743125;
-    color: #dbcdbd;
+
+.blog-img2{
+  height: 400px;
+  width: 400px;
 }
+
+
+.tips3 {
+  background-color: #d2c3ad;
+}
+
+.back-clr{
+  background-color: rgb(220,220,220);
+}
+/*read-more button*/
+#more {display: none;}
 
 
 
 /*.............Registration page..................*/
-/*
+
 .login-page-logo {
   margin-left: auto;
   margin-right: auto;
@@ -1536,393 +1470,9 @@ background-color: #dbcdbd;
   margin-right: auto;
   display: block;
   margin-top: 2rem;
+  /*border: 4px solid #743125;*/
+  /*border-radius: 10px;*/
   padding: 20px;  
   background-color: #d2c3ad;
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.4), 0 1px 1px 0 rgba(0, 0, 0, 0.35);
-
-}
-*/
-
-
-
-/*............Lawn Mowing...........*/
-.lawn-top-div{
-  background:  
-    linear-gradient( 
-      rgba(179, 143, 0, 0.65),
-      rgba(63, 112, 51, 0.65)
-    ),
-    url('http://192.168.64.2/GetItFix/images/grass1.jpg');
-  height: 250px;
-  width: 100%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  color: white;
-}
-
-.lawn-top-div h1 {
-  padding-top: 6rem;
-}
-.lawn-intro{
- padding: 3rem 0rem 3rem 0rem;
-  background-color: #dbcdbd; 
-}
-.lawn-quote{
-  padding: 2rem 0rem 2rem 0rem;
-  background-color: #743125;
-  color: #dbcdbd;
-  align-content: center;
-}
-.lawn-quote-button{
-  background-color: #3F7033;
-  border: 3px solid #3F7033;
-  color: #dbcdbd;
-  margin: 20px 0px 0px 35px;
-  padding: 15px  15px 15px 15px;
-}
-
-.lawn-quote-button:hover {
-  background-color: #743125;
-  color: #3F7033;
-  font-weight: bold;
-}
-.lawn-services{
-  background:  
-    linear-gradient(
-      rgba(204, 153, 0, 0.45), 
-      rgba(153, 204, 255, 0.45)
-    ),
-    url('http://192.168.64.2/GetItFix/images/banner1.jpg');
-      height: auto;
-  width: 100%;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.lawn-service-heading{
-  padding: 2rem 0rem 2rem 0rem;
-    background-color: #743125;
-    color: #dbcdbd;
-}
-.lawn-service-list{
-  background-color: #dbcdbd;
-}
-.lawn-service-img{
-  height: 200px; 
-    width: 300px;
-}
-.lawn-all-service{
-  display: table;
-  margin: 20px auto;
-  height: 400px;
-  width: 300px;
-  background-color: #dbcdbd;
-  border: 1px solid #dbcdbd;
-  text-align: center;
-  z-index: 1000;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  margin-bottom: 5rem;
-}
-
-.lawn-all-service h5 {
-  padding: 20px 20px 10px 20px;
-}
-.lawn-all-service p {
-  padding: 0px 10px 20px 10px;
-}
-.lawn-faq{
-  background-color: #dbcdbd;
-  padding-bottom: 2rem;
-}
-.lawn-faq-heading{
-  padding: 2rem 0rem 2rem 0rem;
-  text-align: center;
-}
-.lawn-faq-ques{
-  display: table;
-  height: auto;
-  width: 100%;
-  background-color: #c0a48c;
-  border: 1px solid #dbcdbd;
-  text-align: center;
-  z-index: 1000;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.05);
-  /*margin-bottom: 1rem;*/
-  padding: 10px;
-}
-
-.lawn-faq-ans {
-  display: table;
-  height: auto;
-  width: 100%;
-  background-color: #c0a48c;
-  border: 1px solid #dbcdbd;
-  text-align: center;
-  z-index: 1000;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.05);
-  margin-bottom: 1rem;
-  padding: 10px;
-}
-.lawn-faq-list{
-      margin: 10px 0px 0px 10px;
-    display: inline-block;
-    
-}
-
-.lawn-faq-list h5{
-  float: left;
-}
-/*.bond-faq-content{
-  background-color: #3F7033;
-  border: 1px solid #dbcdbd;
-  z-index: 1000;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}*/
-.lawn-faq-content P{
-  padding: 0px 10px 20px 10px;
-} 
-.lawn-faq-btnS{
-  background-color: #3F7033;
-  color: #dbcdbd;
-  float: right;
-  margin: 0px 10px 0px 10px;
-}
-
-
-/*............Login form...........*/
-.main-background{
-  margin: 0;
-  padding: 0;
-
-}
-
-.main-background:before{
-  content: '';
-  position: fixed;
-  width: 100vw;
-  height: 100vh;
-  background-image: url('http://192.168.64.2/GetItFix/images/window.jpg');
-  background-position: center center;
-  background-repeat:no-repeat;
-  background-attachment: fixed;
-  -webkit-background-size:cover;
-  background-size:cover; 
-  -webkit-filter: blur(1px); 
-  -moz-filter: blur(1px);
-}
-.Login-form{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%,-50%);
-  -moz-transform: translate(-50%,-50%);
-  -ms-transform: translate(-50%,-50%);
-  -o-transform: translate(-50%,-50%);
-  transform: translate(-50%,-50%);
-  width: 400px;
-  height: auto;
-  padding: 30px 40px;
-  background: rgba(0,0,0,0.6);
-}
-
-.avatar{
-  /*position: absolute;*/
-  width: 140px;
-  height: 100px;
-  margin-left: 5rem;
-  /*
-  border-radius:50%;
-  overflow: hidden;
-  top: calc(-80px/2);
-  left: calc(50% - 40px);*/
-
-}
-
-.signForm{
-  margin-top: 40px;
-}
-
-.Login-form h2{
-   margin: 0;
-   padding: 0 0 20px;
-   color: #fff;
-   text-align: center;
-   text-transform: uppercase;
-}
-
-.Login-form p{
-  margin: 0;
-  padding: 0;
-  font-weight: bold;
-  color: #fff;
-}
-
-.Login-form input{
-  width: 100%;
-  margin-bottom: 20px;
-}
-
-.login-inputt
-{
-      border: none;
-      border-bottom: 1px solid #fff;
-      background: transparent;
-      outline: none;
-      height: 40px;
-      color: #fff;
-      font-size: 16px; 
-}
-.Login-form input[type=button]{
-    height: 45px;
-    color: #fff;
-    font-size: 18px;
-    background: #3F7033 ;
-    cursor: pointer;
-    border-radius: 25px;
-    border: none;
-    outline: none;
-    margin: 20px 0px 0px 0px;
-}
-
-
-.login-blue
-{
-  color: #00b5f1 !important;
-  font-size: 14px;
-  text-decoration: none;
-}
-
-.login-blue:hover {
-  text-decoration: underline;
-}
-
-.login-white {
-  color: #fff !important;
-  font-size: 14px;
-  text-decoration: none;
-}
-
-.logout-btn {
-  background-color: #3f7033;
-  color: #dbcdbd;
-  /*border-radius: 15px;*/
-  border: 3px solid #3f7033;
-  height: auto;
-  padding: 10px;
-  font-size: 16px;
-  width: auto;
-  font-weight: bold;
-}
-
-.logout-btn:hover {
-  background-color: #dbcdbd;
-  color: #3f7033;
-  border: 3px solid #743125;
-  }
-
-
-  /* Rectangle Out */
-.hvr-rectangle-out {
-  display: inline-block;
-  vertical-align: middle;
-  -webkit-transform: perspective(1px) translateZ(0);
-  transform: perspective(1px) translateZ(0);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-  position: relative;
-  background: #e1e1e1;
-  -webkit-transition-property: color;
-  transition-property: color;
-  -webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-}
-.hvr-rectangle-out:before {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: #743125;
-  -webkit-transform: scale(0);
-  transform: scale(0);
-  -webkit-transition-property: transform;
-  transition-property: transform;
-  -webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-  -webkit-transition-timing-function: ease-out;
-  transition-timing-function: ease-out;
-}
-.hvr-rectangle-out:hover, .hvr-rectangle-out:focus, .hvr-rectangle-out:active {
-  color: #743125;
-}
-.hvr-rectangle-out:hover:before, .hvr-rectangle-out:focus:before, .hvr-rectangle-out:active:before {
-  -webkit-transform: scale(1);
-  transform: scale(1);
-}
-
-
-
-.div-services {
-  position: relative;
-}
-
-.anim-image {
-  opacity: 1;
-  display: block;
-  width: 100%;
-  height: auto;
-  transition: .5s ease;
-  backface-visibility: hidden;
-  color: #743125 !important;
-}
-
-.anim-middle {
-  transition: .5s ease;
-  opacity: 0;
-  position: absolute;
-  top: 30%;
-  left:50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  text-align: center;
-}
-
-.div-services:hover .anim-image {
-  opacity: 0.3;
-}
-
-.div-services:hover .anim-middle {
-  opacity: 1;
-}
-
-.anim-text {
-  color: white;
-  font-size: 16px;
-  padding: 5px;
-}
-
-
-.welcome-div {
-  height: auto;
-  width: 92%;
-  background-color: #c0a78c;
-  margin: 3rem;
-  padding: 3rem;
-}
-
-.edit-price-div {
-  height: auto;
-  width: 300px;
-  background-color: #cccc00;
-}
-
-.edit-price-div h5 {
-  background-color: #999900;
-   color: white;
-   padding: 1rem;
-}
-
-.cpyryt {
-  padding-left: 1rem;
-  font-size: 12px;
 }
