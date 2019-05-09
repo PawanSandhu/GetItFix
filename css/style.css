@@ -1411,10 +1411,9 @@ background-color: #dbcdbd;
 .pressure-top-div {
    background:  
     linear-gradient(
-      rgba(255, 221, 204, 0.65), 
-      rgba(204, 102, 0, 0.65)
-    ),
-    url('http://192.168.64.2/GetItFix/images/pressure.jpg');
+    rgba(0, 26, 0, 0.45),
+    rgba(0, 26, 0, 0.45)),
+  url('http://192.168.64.2/GetItFix/images/pres.png');
   height: 250px;
   width: 100%;
   background-repeat: no-repeat;
@@ -1484,7 +1483,8 @@ background-color: #dbcdbd;
   padding: 20px 20px 10px 20px;
 }
 .pressure-work-process p {
-  padding: 0px 10px 20px 10px;
+  padding: 30px 20px 30px 20px;
+  /*margin-top: 10x;*/
 }
 .process-heading{
   text-align: center;
@@ -1517,7 +1517,28 @@ background-color: #dbcdbd;
     color: #dbcdbd;
 }
 
+.pressure-call{
+  background: 
+  linear-gradient(
+    rgba(0, 26, 0, 0.45),
+    rgba(0, 26, 0, 0.45)),
+  url('http://192.168.64.2/GetItFix/images/pressure.jpg');
+  height: 250px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  padding: 3rem;
+} 
 
+.pressure-call h2{
+  padding-top: 4rem;
+  text-align: center;
+}
+.pressure-images{
+  height: 30px;
+  width: 30px;
+}
 
 /*.............Registration page..................*/
 /*
