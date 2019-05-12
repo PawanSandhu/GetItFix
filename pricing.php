@@ -103,23 +103,9 @@
  
 
  <?php
-$servername = 'localhost';
-$username = 'root';
-$password = '';
-$database = 'GetItFix';
+require 'php_pages/db_conn.php';
 
-// Create connection
-$con = mysqli_connect($servername, $username, $password, $database);
-
-// Check connection
-if (!$con) {
-    die("Connection failed: " . mysqli_connect_error());
-}
-
-
-
-
-   $result = $con->query('SELECT * FROM Pricing;');
+   $result = $conn->query('SELECT * FROM Pricing;');
   echo '<div class="pricing-table">
   <div class="container">
   <table>

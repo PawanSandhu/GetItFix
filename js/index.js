@@ -1,4 +1,16 @@
 $(document).ready(function() {
+	$('#request-button').click(function(){
+$('html, body').animate({scrollTop: $('.request-form').offset().top}, 'slow');
+return false;
+});
+
+
+$('#footer-request').click(function(){
+$('html, body').animate({scrollTop: $('.request-form').offset().top}, 'slow');
+return false;
+});
+
+
 	$("#submit").click(function(){
 	var name = $("#name").val();
 	var email = $("#email").val();
@@ -33,7 +45,7 @@ $(document).ready(function() {
         },
         success: function(msg) {
         	$('#myform')[0].reset();
-            alert('Your query has been sent.');
+            alert(msg);
         }               
     });
 		
@@ -43,10 +55,7 @@ $(document).ready(function() {
 
 });
 
-$('#page-index').on('pageshow', function() {
-  alert('hello');
-  console.log("hiiiii");
- });
+
 
 function IsEmail(email) {
   var regex = /^([a-zA-Z0-9_\.\-\+])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;

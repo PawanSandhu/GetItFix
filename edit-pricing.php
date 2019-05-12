@@ -27,7 +27,6 @@ session_start();
       } 
 
       function setEditable(row_id){
-  alert("in set editable" + JSON.stringify(row_id));
   var tr = document.getElementById(row_id);
   var tr_elements = $("#" + row_id).find(".editable");
   
@@ -35,20 +34,19 @@ session_start();
     tr_elements[i].contentEditable = "true";
     tr_elements[i].style.color="red";
   } 
-  var updateLinkHTML = "<a href='#' onclick='editStudent(" + row_id + ")' class='updateLink' ><img class='linkImage' src='update.png' />Update</a>";
+  var updateLinkHTML = "<a href='#' onclick='editPricing(" + row_id + ")' class='updateLink' ><img class='linkImage' src='update.png' />Update</a>";
         
   $("#" + row_id).find(".editLink").fadeOut('slow' ,function(){$(this).replaceWith(updateLinkHTML).fadeIn()});
-  alert('Row is now editibale edit it and click Update to Save');
 }
 
-function editStudent(row_id){
+function editPricing(row_id){
   var bedroom = $("#" + row_id).find(".editable")[0].textContent;
   var bathroom = $("#" + row_id).find(".editable")[1].textContent;
   var bedbath = $("#" + row_id).find(".editable")[2].textContent;
   var carpet = $("#" + row_id).find(".editable")[3].textContent;
   
-  $.post("editStudent.php" , {sprice_id:row_id, sbedroom:bedroom, sbathroom:bathroom, sbedbath:bedbath, scarpet:carpet} , function(data){
-    alert(data);
+  $.post("php_pages/updatePricing.php" , {sprice_id:row_id, sbedroom:bedroom, sbathroom:bathroom, sbedbath:bedbath, scarpet:carpet} , function(data){
+    
     $("#result").html(data);
     $("#" + row_id).fadeOut('slow' , function(){$(this).replaceWith(data).fadeIn('slow');});
   } );
@@ -77,21 +75,10 @@ function editStudent(row_id){
 
 
     <?php
-$servername = 'localhost';
-$username = 'root';
-$password = '';
-$database = 'GetItFix';
-
-// Create connection
-$con = mysqli_connect($servername, $username, $password, $database);
-
-// Check connection
-if (!$con) {
-    die("Connection failed: " . mysqli_connect_error());
-}
+require 'php_pages/db_conn.php';
 
 
-$result = $con->query('SELECT * FROM Pricing;');
+$result = $conn->query('SELECT * FROM Pricing;');
   echo '<div class="pricing-table">
   <div class="container">
   <table>

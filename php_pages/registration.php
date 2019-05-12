@@ -1,24 +1,8 @@
 <?php
+require 'db_conn.php';
 
 session_start();
-// header('location:login.html');
-$servername = 'localhost';
-$username = 'root';
-$password = '';
-$database = 'GetItFix';
 
-// Create connection
-$conn = mysqli_connect($servername, $username, $password, $database);
-
-// Check connection
-if (!$conn) {
-    die("Connection failed: " . mysqli_connect_error());
-}
-
-mysqli_select_db($conn, 'GetItFix');
-// if(isset($_POST['postsubmit'])){
-// 	$Name = $_POST['postname'];
-// }
 $Email = $_POST['postemail'];
 $Contact = $_POST['postcontact'];
 $Password = $_POST['postpassword'];
@@ -44,5 +28,4 @@ else {
 	die('Error: table not found');
 }
 }
-mysqli_close($conn);
 ?>
