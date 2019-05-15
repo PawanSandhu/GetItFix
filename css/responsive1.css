@@ -130,6 +130,17 @@ form label {
     width: 85%;
     margin-bottom: 2rem;
 }
+
+.content1 h5, li {
+    padding: 0px 60px 0px 20px;
+}
+
+h5, h5 {
+    font-size: 1.60rem;
+}
+li{
+    font-size: 1.40rem;
+}
 }
 
 @media screen and (max-width: 767px) {
@@ -192,4 +203,27 @@ nav {
 .about-full-image {
     height: 400px;
 }
+.blog-services{
+ margin-left: 0px;
+ width: 500px;
 }
+
+
+.pressure-intro h4 {
+    margin-top: 20px;
+}
+}
+
+@media screen and (max-width: 690px) {
+.blog-full-image{
+    height: 400px;
+}
+
+
+.pressure-call h4{
+    font-size: 20px !important;
+}
+}
+
+
+@

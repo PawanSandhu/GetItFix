@@ -27,6 +27,10 @@ and (max-device-width : 1366px)  {
     font-size: 1.75rem;
     padding: 10px 20px 10px 20px;
 }
+.blog-tips {
+
+    margin-left: 5px;
+}
 }
 
 @media screen and (max-width : 1023px)  {
@@ -81,12 +85,31 @@ form {
 .pest-work1 {
     width: 300px;
 }
+
+.blog-services{
+    width: 600px;
+ margin-bottom: 2rem;  
+ margin-left: 2rem;
+ padding-bottom: 2rem;
 }
+
+.blog-services img{
+    height: 400px !important;
+}
+}
+
 
 @media screen and (max-width: 910px) {
 
 .carpet-vacuum-text {
     padding: 30px 50px 20px 60px;
+}
+
+
+
+.blog-full-image {
+    height: 500px;
+    width: 100%;
 }
 }
 
@@ -106,5 +129,10 @@ form {
 
 .carpet-price {
     margin-left: 10rem;
+}
+
+
+.blog-full-image{
+    height: 450px;
 }
 }

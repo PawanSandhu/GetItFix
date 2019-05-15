@@ -11,3 +11,9 @@
 	top: 16.5%; 
 }
 }
+
+@media screen and (max-width : 1045px)  {
+.blog-services {
+    width: 285px;
+}
+}
