@@ -1745,7 +1745,36 @@ background-color: #dbcdbd;
   background: rgba(0,0,0,0.6);
 }
 
+.Registration-form{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  -moz-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  -o-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  width: 400px;
+  height: auto;
+  padding: 30px 40px;
+  background: rgba(0,0,0,0.6);
+}
+
 .avatar{
+  /*position: absolute;*/
+  width: 140px;
+  height: 100px;
+  margin-left: 5rem;
+  /*
+  border-radius:50%;
+  overflow: hidden;
+  top: calc(-80px/2);
+  left: calc(50% - 40px);*/
+
+}
+
+
+.avatr{
   /*position: absolute;*/
   width: 140px;
   height: 100px;
@@ -1782,6 +1811,26 @@ background-color: #dbcdbd;
   margin-bottom: 20px;
 }
 
+.Registration-form h2{
+   margin: 0;
+   padding: 0 0 20px;
+   color: #fff;
+   text-align: center;
+   text-transform: uppercase;
+}
+
+.Registration-form p{
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+  color: #fff;
+}
+
+.Registration-form input{
+  width: 100%;
+  margin-bottom: 20px;
+}
+
 .login-inputt
 {
       border: none;
@@ -1804,6 +1853,18 @@ background-color: #dbcdbd;
     margin: 20px 0px 0px 0px;
 }
 
+
+.Registration-form input[type=button]{
+    height: 45px;
+    color: #fff;
+    font-size: 18px;
+    background: #3F7033 ;
+    cursor: pointer;
+    border-radius: 25px;
+    border: none;
+    outline: none;
+    margin: 20px 0px 0px 0px;
+}
 
 .login-blue
 {
@@ -1986,7 +2047,7 @@ background-color: #dbcdbd;
       rgba(204, 153, 0, 0.45), 
       rgba(153, 204, 255, 0.45)
     ),
-    url('http://192.168.64.2/GetItFix/images/blog1.jpg');
+    url('http://192.168.64.2/GetItFix/images/blgg.jpeg');
       height: 250px;
   width: 100%;
   background-repeat: no-repeat;
