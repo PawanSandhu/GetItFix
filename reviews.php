@@ -8,7 +8,7 @@ session_start();
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GetItFix: Welcome</title>
+    <title>GetItFix: Reviews</title>
     <link rel="stylesheet" type="text/css" href="css/style.css" />
     <!-- <link rel="stylesheet" type="text/css" href="css/animate_styles.css" /> -->
     <link href="libs/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -20,13 +20,33 @@ session_start();
     <script src="libs/jquery-3.3.1.min.js"></script>
     <script src="libs/bootstrap/js/bootstrap.min.js"></script>
     <script type="text/javascript">
-      function goToPrices() {
+     function validateFeedback(){
+  var name = $("#name").val();
+  var review = $("#review").val();
+  if(name == ""){
+    alert('Please enter your name');
+  }
+  else if(review == ""){
+    alert('Please enter your feedback');
+  }
+  else {
+    $.ajax({
+        url: 'php_pages/feedback.php',
+        type: 'POST',
+        data: {
+            postname:name,
+             postreview:review
+        },
+        success: function(msg) {
+          $('#review-form')[0].reset();
+            alert (msg);
+        }               
+    });
+    
+  }
+};
 
-        window.location.href="edit-pricing.php";
-
-      } 
-
-         </script>
+    </script>
 </head>
 
 <body style="background-color: #dbcdbd;">  
@@ -47,27 +67,28 @@ session_start();
 </div>
 
 
-<div class="welcome-div text-center">
+<div class="welcome-div">
   <div class="container">
 
     <?php
-    echo '<h2> Hi ' .$_SESSION['username']. ' !</h2><br><br>';
-    if($_SESSION['username'] == 'admin') {
-      echo '<div class="edit-price-div text-center">
-  <a href="edit-pricing.php"><img src="images/hhh.png" style="width: 150px; height: 150px;"></a>
-  <h5>Edit Prices</h5>
-  </div>';
-    }
-    else {
-      echo '<div class="review-div text-center">
-  <a href="reviews.php"><img src="images/rev.png" style="width: 150px; height: 150px;"></a>
-  <h5>Reviews</h5>
-  </div>';
-    }
+    echo '<h2 class="text-center"> Your feedback is important to us!</h2><br><br>
+    <form id="review-form">
+    <div class="form-group">
+      <label for="name">Name *</label>
+      <input type="text" class="form-control" id="name" placeholder="Your name" name="name" maxlength="30">
+    </div>
+    <div class="form-group">
+    <label for="detail">Review</label>
+      <textarea class="form-control" rows="5" id="review" placeholder="Your feedback" name="message" maxlength="300"></textarea>
+    </div>
+    <button type="button" id="submit" class="btn btn-whatever" onclick="validateFeedback()">Submit</button>
+      
+    </form>';
     
     ?>
   </div>
 </div>
+
 
 <hr>
 <div class="cpyryt">© 2019 Copyright:GetItFixBondCleaning.com.au</div>
