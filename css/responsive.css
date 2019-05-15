@@ -68,6 +68,31 @@ nav {
     height: 300px;
 }
 
+
+
+.blog-img2 {
+    width: 100%;
+}
+
+.blog-full-image{
+    height: 350px;
+}
+
+.blog-services{
+  width: 400px;
+}
+.blog-services img{
+  height: 300px !important;
+}
+}
+
+@media screen and (max-width: 610px) {
+.blog-full-image{
+    height: 450px;
+}
+}
+
+
 @media screen and (max-width: 575px) {
 .carpet-price {
     margin-left: 0.5rem;
@@ -99,7 +124,44 @@ nav {
     margin-top: 20px;
 }
 
+.pressure-call h4{
+    font-size: 17px !important;
 }
+
+}
+
+@media screen and (max-width: 560px) {
+  .blog-full-image {
+    height: 300px;
+  }
+}
+
+
+@media screen and (max-width: 550px) {
+
+.blog-services{
+    width: 325px;
+  }
+  .blog-services img{
+   height: 250px;
+  }
+
+}
+
+@media screen and (max-width: 415px) {
+
+.blog-services{
+    width: 230px;
+    margin-left: 0rem;
+  }
+  .blog-services img{
+   height: 200px !important;
+   width:  250px !important;
+  }
+
+}
+
+
 
 @media screen and (max-width: 477px) { 
 .carpet-price {
@@ -114,7 +176,12 @@ nav {
 .about-full-image {
     height: 200px;
 }
+
+.blog-full-image {
+    height: 250px;
+  }
 }
+
 @media screen and (max-width: 430px) {
 .navbar-collapse {
         padding: 10px 120px 10px 50px;
@@ -182,6 +249,10 @@ form {
 .about-button {
     margin-top: 20px;
 }
+
+.blog-full-image {
+    height: 260px;
+  }
 }
 
 @media screen and (max-width: 380px) {
@@ -258,5 +329,11 @@ form {
 
 .carpet-vacuum-text {
     font-size: 1.15rem;
+}
+.pressure-work-process{
+  width: 250px;
+}
+.pressure-process-img{
+  width: 250px !important;
 }
 }
