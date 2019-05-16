@@ -146,23 +146,7 @@ nav {
    height: 250px;
   }
 
-
-.avatr {
-
-    margin-left: 2rem;
 }
-
-.Registration-form{
-   
-    width: 300px;
-    height: 690px;
-    
-}
-
-}
-
-
-
 
 @media screen and (max-width: 415px) {
 
@@ -174,18 +158,6 @@ nav {
    height: 200px !important;
    width:  250px !important;
   }
-
-
-.Login-form {
-   
-    width: 250px;
-    height: 450px;
-    
-}
-.avatar {
-
-    margin-left: 1rem;
-}
 
 }
 
@@ -324,24 +296,6 @@ form {
 .bond-services-list{  
     padding: 2rem 0rem 2rem 0rem;
 }
-
-.Login-form {
-   
-    width: 300px;
-    height: 500px;
-    
-}
-.avatar {
-
-    margin-left: 1.6rem;
-}
-
-.Registration-form{
-   
-    width: 300px;
-    height: 690px;
-    
-}
 }
 
 @media screen and (max-width: 320px) {
@@ -382,17 +336,13 @@ form {
 .pressure-process-img{
   width: 250px !important;
 }
-
-.Login-form {
-   
-    width: 250px;
-    height: 485px;
-    
-}
-.avatar {
-
-    margin-left: 1rem;
+.lawn-all-service {
+  width: 250px;
+  margin-left: 20px;
 }
 
-
+.lawn-service-img {
+  width: 250px;
+  }
+}
 }
