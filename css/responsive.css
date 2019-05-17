@@ -336,4 +336,13 @@ form {
 .pressure-process-img{
   width: 250px !important;
 }
+.lawn-all-service {
+  width: 250px;
+  margin-left: 20px;
+}
+
+.lawn-service-img {
+  width: 250px;
+  }
+}
 }
