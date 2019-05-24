@@ -1,7 +1,5 @@
 <?php
 
-session_start();
-
 ?>
 <!doctype html>
 <html>
@@ -21,21 +19,21 @@ session_start();
     <script src="libs/bootstrap/js/bootstrap.min.js"></script>
     <script type="text/javascript">
      function validateFeedback(){
-  var name = $("#name").val();
-  var review = $("#review").val();
-  if(name == ""){
-    alert('Please enter your name');
+  var discount = $("#discount").val();
+  var amount = $("#amount").val();
+  if(discount == ""){
+    alert('Please enter discount details');
   }
-  else if(review == ""){
-    alert('Please enter your feedback');
+  else if(amount == ""){
+    alert('Please enter amount');
   }
   else {
     $.ajax({
-        url: 'php_pages/feedback.php',
+        url: 'php_pages/offer.php',
         type: 'POST',
         data: {
-            postname:name,
-             postreview:review
+            postdiscount:discount,
+             postamount:amount
         },
         success: function(msg) {
           $('#review-form')[0].reset();
@@ -44,6 +42,19 @@ session_start();
     });
     
   }
+};
+
+function deleteoffer(){
+    $.ajax({
+        url: 'php_pages/offerdelete.php',
+      
+        success: function(msg) {
+          $('#review-form')[0].reset();
+            alert (msg);
+        }               
+    });
+    
+  
 };
 
     </script>
@@ -65,28 +76,40 @@ session_start();
         </div>
       </div>
 </div>
+
+
 <div class="welcome-div">
   <div class="container">
+
     <?php
-    echo '<h2 class="text-center"> Your feedback is important to us!</h2><br><br>
+    echo '<h2 class="text-center"> Discounts and Offers!</h2><br><br>
     <form id="review-form">
     <div class="form-group">
-    <label for="detail">Offer</label>
-      <textarea class="form-control" rows="5" id="review" placeholder="Your feedback" name="message" maxlength="300"></textarea>
+    <label for="detail">Discount offer</label>
+      <textarea class="form-control" rows="5" id="discount" placeholder="Enter discount details" name="message" maxlength="300"></textarea>
     </div>
     <div class="form-group">
-      <label for="name"> Amount</label>
-      <input type="text" class="form-control" id="name" placeholder="Your name" name="name" maxlength="30">
+      <label for="name">Amount</label>
+      <br><br>
+      <select id="amount">
+    <option value="10%">10%</option>
+    <option value="15%">15%</option>
+    <option value="20%">20%</option>
+    <option value="25%">25%</option>
+    <option value="30%">30%</option>
+  </select>
+  <br><br>
+  
+    
     </div>
-    <button type="button" id="submit" class="btn btn-whatever" onclick="validateFeedback()">Submit</button>
-      
+    <button type="button" id="submit" name="insert" class="btn btn-whatever" onclick="validateFeedback()">Submit</button>
+      <button type="button" id="delete" class="btn btn-whatever" onclick="deleteoffer()">Delete exsiting offer</button>
     </form>';
+
     
     ?>
   </div>
 </div>
-
-
 
 
 <hr>

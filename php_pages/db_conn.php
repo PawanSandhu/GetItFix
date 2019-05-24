@@ -1,8 +1,8 @@
 <?php
 $servername = 'localhost';
-$username = 'root';
-$password = '';
-$database = 'GetItFix';
+$username = 'ictatjcu_getitfi';
+$password = '123zxc';
+$database = 'ictatjcu_getitfix';
 
 // Create connection
 $conn = mysqli_connect($servername, $username, $password, $database);

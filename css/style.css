@@ -2099,7 +2099,6 @@ background-color: #dbcdbd;
 
 .blog-services h5 {
   padding: 20px 20px 10px 20px;
-  paddin
 }
 
 .blog-services li {
@@ -2127,7 +2126,42 @@ background-color: #dbcdbd;
   height: 600px;
 }
 
+  
 
+ .show_discount {/*
+  background:  
+    linear-gradient(
+      rgba(0, 153, 153, 0.45), 
+      rgba(126, 198, 255, 0.45),
+      rgba(0, 153, 153, 0.45)
+    ),
+    url('http://192.168.64.2/GetItFix/images/discc.png');
+    background-repeat: no-repeat;
+  background-size: cover;*/
+  background-image: linear-gradient(to right, #009999 , #1ac6ff, #009999);
+    color: white;
+  text-align: center;
+  font-size: 26px;
+  font-family: "Comic Sans MS";
+ }
 
+.sign-up-btn {
+  width: auto;
+  height: auto;
+  padding: 15px;
+  background-color: #ff8000;
+  color: white;
+  border: 2px solid #ff8000; 
+  margin-top: 10px;
+}
 
+.disc-img {
+  height: auto;
+  width: auto;
+}
+
+.disc-text {
+  padding: 2rem;
+  margin-top: 20px;
+}
 
