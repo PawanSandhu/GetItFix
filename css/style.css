@@ -305,6 +305,11 @@ nav {
   margin-bottom: 10px;
 }
 
+.big-pic {
+  margin-top: 3rem;
+  margin-left: 15px;
+}
+
 .why {
   width: 100%;
   height: auto;
@@ -2064,7 +2069,7 @@ background-color: #dbcdbd;
   padding: 20px;
   color: white;
   height: 400px;
-  background-color: #333333;
+  background-color: #404040;
   
 }
 
@@ -2078,8 +2083,19 @@ background-color: #dbcdbd;
 }
 
 
-.tips3 {
-  background-color: #333333;
+.tipss {
+  background:  
+    linear-gradient(
+      
+      rgb(242, 240, 233),
+      rgb(102, 102, 102),
+      rgb(64, 64, 64),
+      rgb(51, 51, 51)
+    );
+  }
+
+  .tips3 {
+  background-color: #404040;
 }
 
 .back-clr{

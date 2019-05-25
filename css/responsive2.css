@@ -58,8 +58,18 @@ and (max-device-width : 1366px)  {
     max-width: 100%;
 }
 
+.big-pic {
+    margin-left: 0px;
+}
+
 .div-services {
-    width: 500px;
+    width: 300px;
+    margin-left: 5rem;
+}
+
+
+.div-break {
+    margin-top: 50px;
 }
 
 .home-srv-img {

@@ -94,6 +94,11 @@ nav {
 
 
 @media screen and (max-width: 575px) {
+
+.div-services {
+    margin-left: 1rem;
+}
+
 .carpet-price {
     margin-left: 0.5rem;
     font-size: 1.45rem;
@@ -180,6 +185,10 @@ nav {
 .blog-full-image {
     height: 250px;
   }
+
+  .div-services {
+    margin-left: 0rem;
+}
 }
 
 @media screen and (max-width: 430px) {
@@ -205,6 +214,7 @@ nav {
 }
 .div-services {
     width: 300px;
+    margin-left: 0rem;
 }
 
 .home-srv-img {
