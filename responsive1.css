@@ -1,0 +1,256 @@
+
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px)  {
+
+body {
+    font-size: 1.45rem !important;
+}
+
+.home-header {
+    font-size: 1rem !important;    
+}
+    .y {
+    top: 9.5%;
+    left: 3%;
+}
+
+.col-md-4 {
+    flex: 1 0 100%;
+    max-width: 100%;
+}
+
+.div-services {
+    width: 500px;
+}
+
+.home-srv-img {
+  height: 300px; 
+  width: 500px;
+}
+
+form {
+    width: 90%;
+    margin-left: 2rem;
+}
+
+form label {
+    font-size: 1.45rem !important;
+}
+
+.form-control {
+    font-size: 1.45rem !important;
+}
+
+.btn-whatever {
+     font-size: 1.45rem !important;
+}
+
+.col-md-6 {
+    flex: 0 0 100%;
+    max-width: 100%;
+    }
+
+.talk-bubble {
+    margin: 40px 40px 40px 80px;
+    width: 500px;
+    }
+
+.home-round-img {
+    bottom: 5.2rem;
+    left: 5rem;
+    height: 150px;
+}
+
+.home-testimonials-review {
+    margin: 30px 0px 0px 185px;
+    font-size: 1.75rem;
+}
+
+.home-testimonials-review1 {
+    margin: 30px 0px 0px 115px;
+    font-size: 1.75rem;
+    width: 350px;
+}
+
+.home-round-img1 {
+    position: absolute;
+    bottom: 4.5rem;
+    /*left: : 28rem !important;*/
+    height: 170px;
+    left: 28rem;
+    border: 2px solid #743125;
+}
+
+.col-md-3 {
+    -ms-flex: 0 0 25%;
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
+.bond-services-list{  
+    padding: 2rem 0rem 2rem 0rem;
+}
+
+.pest-work1 {
+    width: 300px;
+}
+
+.carpet-vacuum-text {
+    padding: 80px 50px 20px 60px;
+    font-size: 1.75rem;
+}
+
+.carpet-price {
+    background-color: #3F7033;
+    width: auto;
+    margin-left: 8rem;
+    font-size: 1.75rem;
+    padding: 10px 20px 10px 20px;
+}
+
+.about-full-image {
+    height: 400px;
+}
+
+.about-workers-text {
+    margin-top: 0rem;
+}
+
+.about-intro-img2 {
+    height: 300px;
+    width: 85%;
+    padding: 0px 0px 30px 70px;
+    opacity: 10;
+}
+
+.about-intro-img {
+    padding: 30px 0px 30px 50px;
+    height: 300px;
+    width: 85%;
+    margin-bottom: 2rem;
+}
+
+.content1 h5, li {
+    padding: 0px 60px 0px 20px;
+}
+
+h5, h5 {
+    font-size: 1.60rem;
+}
+li{
+    font-size: 1.40rem;
+}
+
+.big-pic {
+    margin-left: 1px;
+
+}
+
+.div-services {
+    width: 300px;
+    margin-left: 10rem;
+}
+
+
+.home-srv-img {
+  height: 200px !important; 
+  width: 300px !important;
+}
+.large-photo{  
+  width: 300px
+}
+.div-break {
+    margin-top: 50px;
+}
+
+}
+
+@media screen and (max-width: 767px) {
+
+.col-special {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+.navbar-toggler {
+        display:block;
+    }
+
+nav {
+    width: 0% !important;
+    height: 0em !important;
+}
+
+.navbar {
+    background: #743125 !important;
+}
+
+.request-button {
+	padding: 5px !important;
+}
+
+.y {
+    position: absolute;
+    top: 16.5%;
+    left: 30% !important;
+}
+
+.navbar-collapse {
+    background: #dbcdbd;
+        padding: 10px 220px 10px 50px;
+    position: absolute;
+    right: 1px;
+    top: 30px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    z-index: 1000;
+    /*padding: 20px;
+    float: left;
+    position: absolute;
+    top: 205% !important;
+    left: -80%;*/
+}
+
+#menu-main-nav {
+	margin-left: 85px;
+}
+
+.pest-work1 {
+    width: 250px;
+}
+
+.carpet-price {
+    margin-left: 5rem;
+}
+
+.about-full-image {
+    height: 400px;
+}
+.blog-services{
+ margin-left: 0px;
+ width: 500px;
+}
+
+
+.pressure-intro h4 {
+    margin-top: 20px;
+}
+}
+
+@media screen and (max-width: 690px) {
+.blog-full-image{
+    height: 400px;
+}
+
+
+.pressure-call h4{
+    font-size: 20px !important;
+}
+#myform {
+    margin-left: 1rem  !important;
+    width: 90%
+}
+}
+
+
+@
