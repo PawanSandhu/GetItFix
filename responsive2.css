@@ -1,0 +1,347 @@
+
+@media only screen 
+and (min-device-width : 1024px) 
+and (max-device-width : 1366px)  {
+    .y {
+    top: 7.25%;
+    left: 4%;
+}
+
+.pest-work1 {
+    width: 220px;
+}
+
+.bond-services-list{  
+    padding: 2rem 0rem 2rem 10rem;
+}
+
+.carpet-vacuum-text {
+    padding: 80px 50px 20px 60px;
+    font-size: 1.75rem;
+}
+
+.carpet-price {
+    background-color: #3F7033;
+    width: auto;
+    margin-left: 15rem;
+    font-size: 1.75rem;
+    padding: 10px 20px 10px 20px;
+}
+.blog-tips {
+
+    margin-left: 5px;
+}
+}
+
+@media screen and (max-width : 1023px)  {
+    .y {
+	left: 4%;
+	top: 16.5%; 
+}
+}
+
+@media screen and (max-width: 1010px) {
+.y {
+    left: 2%;
+	top: 16.5%; 
+}
+}
+
+@media screen and (max-width: 991px) {
+.y {
+    left: 4%;
+    top: 18.5%;  
+}
+}
+
+.col-md-4 {
+    flex: 1 0 100%;
+    max-width: 100%;
+}
+
+.big-pic {
+    margin-left: 0px;
+}
+
+.div-services {
+    width: 300px;
+    margin-left: 5rem;
+}
+
+
+.div-break {
+    margin-top: 50px;
+}
+
+.home-srv-img {
+  height: 300px; 
+  width: 500px;
+}
+
+.carpet-vacuum-text {
+    padding: 50px 50px 20px 100px;
+}
+
+form {
+    width: 90%;
+    margin-left: 2rem;
+}
+
+.col-md-3 {
+    -ms-flex: 0 0 25%;
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
+.pest-work1 {
+    width: 300px;
+}
+
+.blog-services{
+    width: 600px;
+ margin-bottom: 2rem;  
+ margin-left: 2rem;
+ padding-bottom: 2rem;
+}
+
+.blog-services img{
+    height: 400px !important;
+}
+}
+
+
+@media screen and (max-width: 910px) {
+
+.carpet-vacuum-text {
+    padding: 30px 50px 20px 60px;
+}
+
+
+
+.blog-full-image {
+    height: 500px;
+    width: 100%;
+}
+#myform {
+    margin-left: 8rem;
+}
+}
+
+
+@media screen and (max-width: 967px) {
+    .y {
+    left: 2%;
+    top: 20.5%;  
+}
+
+.container {
+    max-width: 910px;
+}
+.request-button{
+    width: 120px;
+}
+
+.login-btn{
+   
+    margin-top: 10px;
+}
+
+}
+
+
+@media screen and (max-width: 940px) {
+    .y {
+    left: 0.5%;
+    top: 20.5%;  
+}
+
+.
+@media screen and (max-width: 915px) {
+    .y {
+    left: 0.1%;
+    top: 20.5%;  
+}
+
+.container {
+    max-width: 1200px;
+}
+.request-button{
+    width: 90px;
+}
+
+.login-btn{
+   
+    margin-top: 10px;
+}
+
+}
+
+@media (min-width: 768px) and (max-width: 910px) {
+    .navbar-collapse.collapse {
+        display: none !important;
+    }
+    .navbar-collapse.collapse.in {
+        display: block !important;
+    }
+    .navbar-header .collapse, .navbar-toggle {
+        display:block !important;
+    }
+
+    .col-special {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+.navbar-toggler {
+        display:block !important;
+    }
+
+nav {
+    width: 0% !important;
+    height: 0em !important;
+}
+
+.navbar {
+    background: #743125 !important;
+}
+
+.request-button {
+    padding: 5px !important;
+}
+
+.y {
+    position: absolute;
+    top: 16.5%;
+    left: 30% !important;
+}
+
+.navbar-collapse {
+    background: #dbcdbd;
+        padding: 10px 220px 10px 50px;
+    position: absolute;
+    right: 1px;
+    top: 30px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    z-index: 1000;
+    /*padding: 20px;
+    float: left;
+    position: absolute;
+    top: 205% !important;
+    left: -80%;*/
+}
+
+#menu-main-nav {
+    margin-left: 85px;
+}
+
+
+}
+
+@media screen and (max-width: 910px) {
+
+.col-special {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+.navbar-toggler {
+        display:block !important;
+    }
+
+nav {
+    width: 0% !important;
+    height: 0em !important;
+}
+
+.navbar {
+    background: #743125 !important;
+}
+
+.request-button {
+    padding: 5px !important;
+}
+
+.y {
+    position: absolute;
+    top: 16.5%;
+    left: 30% !important;
+}
+
+.navbar-collapse {
+    background: #dbcdbd;
+        padding: 10px 220px 10px 50px;
+    position: absolute;
+    right: 1px;
+    top: 30px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    z-index: 1000;
+    /*padding: 20px;
+    float: left;
+    position: absolute;
+    top: 205% !important;
+    left: -80%;*/
+}
+
+#menu-main-nav {
+    margin-left: 85px;
+}
+
+
+.carpet-vacuum-text {
+    padding: 30px 50px 20px 60px;
+}
+
+
+
+.blog-full-image {
+    height: 500px;
+    width: 100%;
+}
+}
+
+@media screen and (max-width: 850px) {
+.y {
+    left: 8%;
+    top: 16.5%; 
+}
+
+.bond-services-list{  
+    padding: 2rem 0rem 2rem 5rem;
+}
+
+.carpet-vacuum-text {
+    padding: 50px 50px 20px 60px;
+}
+
+.carpet-price {
+    margin-left: 10rem;
+}
+
+
+.blog-full-image{
+    height: 450px;
+}
+}
+@media screen and (max-width: 850px) {
+.y {
+    left: 8%;
+	top: 16.5%; 
+}
+
+.bond-services-list{  
+    padding: 2rem 0rem 2rem 5rem;
+}
+
+.carpet-vacuum-text {
+    padding: 50px 50px 20px 60px;
+}
+
+.carpet-price {
+    margin-left: 10rem;
+}
+
+
+.blog-full-image{
+    height: 450px;
+}
+}

@@ -1,0 +1,461 @@
+/*.navbar ul.navbar-nav li.nav-item a.nav-link {  
+  margin-left: 10px !important;
+  margin-right: 10px !important;
+  margin-top: 20px;
+}*/
+
+    /* Force table to not be like tables anymore */
+nav {
+    width: 0% !important;
+    height: 0em !important;
+}
+
+.navbar {
+    background: #743125 !important;
+}
+
+.request-button {
+	padding: 5px !important;
+}
+
+.y {
+    position: absolute;
+    top: 16.5%;
+    left: 30% !important;
+}
+
+.navbar-collapse {
+    background: #dbcdbd;
+        padding: 10px 180px 10px 50px;
+    position: absolute;
+    right: 0px;
+    top: 30px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    z-index: 1000;
+}
+
+#menu-main-nav {
+	margin-left: 50px;
+}
+
+.div-services {
+    width: 300px;
+}
+
+.home-srv-img {
+  height: 200px; 
+  width: 300px;
+}
+
+.col-md-3 {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+.carpet-top-div h1 {
+    padding-top: 3rem;
+}
+
+.pest-work1 {
+    width: 300px;
+}
+
+.carpet-price {
+    margin-left: 3rem;
+}
+
+.about-full-image {
+    height: 300px;
+}
+
+
+
+.blog-img2 {
+    width: 100%;
+}
+
+.blog-full-image{
+    height: 350px;
+}
+
+.blog-services{
+  width: 400px;
+}
+.blog-services img{
+  height: 300px !important;
+}
+}
+
+@media screen and (max-width: 610px) {
+.blog-full-image{
+    height: 450px;
+}
+}
+
+
+@media screen and (max-width: 575px) {
+
+.div-services {
+    margin-left: 1rem;
+}
+
+.carpet-price {
+    margin-left: 0.5rem;
+    font-size: 1.45rem;
+}
+
+.carpet-vacuum-text {
+    font-size: 1.45rem;
+}
+
+.bond-services-list{  
+    padding: 2rem 0rem 2rem 2rem;
+}
+
+.contact-control {
+  width: 80%;
+  height: 50px !important;
+  border-radius: 5px;
+  background-color: #dbcdbd;
+  border: 2px solid #743125;
+  margin: 40px 0px 0px 10px;
+  padding: 10px !important;
+}
+
+.contact-support {
+    display: none;
+}
+.btn-contact {
+    margin-top: 20px;
+}
+
+.pressure-call h4{
+    font-size: 17px !important;
+}
+
+}
+
+@media screen and (max-width: 560px) {
+  .blog-full-image {
+    height: 300px;
+  }
+}
+
+
+@media screen and (max-width: 550px) {
+
+.blog-services{
+    width: 325px;
+  }
+  .blog-services img{
+   height: 250px;
+  }
+  #myform {
+    margin-left: 4rem;
+}
+}
+
+@media screen and (max-width: 415px) {
+
+.blog-services{
+    width: 230px;
+    margin-left: 0rem;
+  }
+  .blog-services img{
+   height: 200px !important;
+   width:  250px !important;
+  }
+
+}
+
+
+
+@media screen and (max-width: 477px) { 
+.carpet-price {
+    margin-left: 0.5rem;
+    font-size: 1.25rem;
+}
+
+.carpet-vacuum-text {
+    font-size: 1.25rem;
+}
+
+.about-full-image {
+    height: 200px;
+}
+
+.blog-full-image {
+    height: 250px;
+  }
+
+  .div-services {
+    margin-left: 0rem;
+}
+}
+
+@media screen and (max-width: 430px) {
+.navbar-collapse {
+        padding: 10px 120px 10px 50px;
+}
+
+.contact-control {
+  width: 80%;
+  height: 50px !important;
+  border-radius: 5px;
+  background-color: #dbcdbd;
+  border: 2px solid #743125;
+  margin: 40px 0px 0px 10px;
+  padding: 10px !important;
+}
+
+.contact-support {
+    display: none;
+}
+.btn-contact {
+    margin-top: 20px;
+}
+.div-services {
+    width: 300px;
+    margin-left: 0rem;
+}
+
+.home-srv-img {
+  height: 200px; 
+  width: 300px;
+}
+
+.bond-services-list{  
+    padding: 2rem 0rem 2rem 0rem;
+}
+
+form {
+    width: 100%;
+    margin-left: 0rem;
+}
+
+.home-testimonials-review1 {
+    margin: 30px 0px 0px 30px;
+}
+
+.home-round-img1 {
+    left: 15rem;
+}
+
+
+.carpet-vacuum-img {
+    width: 150px;
+}
+
+.carpet-vacuum-text {
+    padding: 80px 20px 20px 20px;
+}
+
+.carpet-price{ 
+    margin-left: 10px;
+}
+
+.about-workers-text {
+    margin-top: 0rem;
+}
+
+.about-button {
+    margin-top: 20px;
+}
+
+.blog-full-image {
+    height: 260px;
+  }
+}
+
+@media screen
+and (min-device-width : 411px) 
+and (max-device-width : 731px)  {
+
+
+.big-pic {
+    margin-left: 3px;
+
+}
+
+.div-services {
+    width: 180px;
+    margin-left: 0.5rem;
+}
+
+
+.home-srv-img {
+  height: 200px !important; 
+  width: 250px !important;
+}
+.large-photo{  
+  width: 250px
+}
+.div-break {
+    margin-top: 50px;
+}
+
+
+@media screen and (max-width: 430px){
+ #myform {
+    margin-left:1rem;
+    width: 85%;
+}
+}
+
+
+@media screen and (max-width: 380px) {
+.home-testimonials-review1 {
+    margin: 30px 0px 0px 20px;
+}
+
+.home-round-img1 {
+    left: 14rem;
+}
+
+.talk-bubble {
+    margin: 20px;
+    width: 230px;
+}
+
+.carpet-price{ 
+    margin-left: 10px;
+}
+ #myform {
+    margin-left:1rem;
+    width: 85%;
+}
+}
+
+@media screen
+and (min-device-width : 375px) 
+and (max-device-width : 667px)  {
+
+
+.big-pic {
+    margin-left: 1px;
+
+}
+
+.div-services {
+    width: 180px;
+    margin-left: 0.01rem;
+}
+
+
+.home-srv-img {
+  height: 200px !important; 
+  width: 250px !important;
+}
+.large-photo{  
+  width: 250px
+}
+.div-break {
+    margin-top: 50px;
+}
+}
+@media screen and (max-width: 360px) {
+
+.home-round-img {
+    left: 2.5rem;
+}
+
+.home-testimonials-review {
+    width: 200px;
+    padding: 10px 20px 10px 55px;
+}
+
+.talk-bubble {
+    margin: 40px;
+}
+
+.carpet-vacuum-text {
+    padding: 50px 20px 20px 20px;
+}
+
+.bond-services-list{  
+    padding: 2rem 0rem 2rem 0rem;
+}
+
+
+.big-pic {
+    margin-left: 0.5px;
+
+}
+
+.div-services {
+    width: 180px;
+    margin-left: 0.5rem;
+}
+
+
+.home-srv-img {
+  height: 200px !important; 
+  width: 180px !important;
+}
+.large-photo{  
+  width: 200px
+}
+.div-break {
+    margin-top: 50px;
+}
+
+
+@media screen and (max-width: 350px) {
+
+}
+#myform {
+    margin-left: 0rem  !important;
+    width: 100% !important;
+}
+}
+
+@media screen and (max-width: 320px) {
+.talk-bubble {
+    margin: 20px;
+    width: 200px;
+}
+
+.home-round-img {
+    left: 1.5rem;
+}
+
+.home-testimonials-review {
+    width: 160px;
+    padding: 10px 20px 10px 40px;
+}
+
+.home-round-img1 {
+    left: 11.5rem;
+    bottom: 6.5rem;
+}
+
+.home-testimonials-review1 {
+    width: 180px;
+}
+
+.carpet-price{ 
+    margin-left: 10px;
+    font-size: 1.15rem;
+}
+
+.carpet-vacuum-text {
+    font-size: 1.15rem;
+}
+.pressure-work-process{
+  width: 250px;
+}
+.pressure-process-img{
+  width: 250px !important;
+}
+.lawn-all-service {
+  width: 250px;
+  margin-left: 20px;
+}
+
+.lawn-service-img {
+  width: 250px;
+  }
+}
+
+
+
