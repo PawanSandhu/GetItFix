@@ -70,20 +70,24 @@
 
       <li id="menu-item-40" class="nav-item menu-item menu-item-type-post_type menu-item-object-page menu-item-40"><a href="pricing.php" class="nav-link">PRICING</a></li>
 
-      <li id="menu-item-963" class="nav-item menu-item menu-item-type-post_type menu-item-object-page menu-item-963 dropdown"><a href="#" class="nav-link home-item-space dropdown-toggle" data-toggle="dropdown" data_target="dropdown_target">ABOUT US
+      <!-- <li id="menu-item-963" class="nav-item menu-item menu-item-type-post_type menu-item-object-page menu-item-963 dropdown"><a href="#" class="nav-link home-item-space dropdown-toggle" data-toggle="dropdown" data_target="dropdown_target">ABOUT US
         <span class="caret"></span></a>
         <div class="dropdown-menu" aria-labelledby="dropdown_target">
           <a href="about_us.html" class="dropdown-item">Our Story</a>
           <div class="dropdown-divider"></div>
           <a href="contact.html" class="dropdown-item">Contact Us</a>
         </div>
-      </li>
+      </li> -->
+
+      <li id="menu-item-40" class="nav-item menu-item menu-item-type-post_type menu-item-object-page menu-item-40"><a href="blog.html" class="nav-link">ABOUT</a></li>
+
+      <li id="menu-item-40" class="nav-item menu-item menu-item-type-post_type menu-item-object-page menu-item-40"><a href="blog.html" class="nav-link">CONTACT</a></li>
 
        <li id="menu-item-40" class="nav-item menu-item menu-item-type-post_type menu-item-object-page menu-item-40"><a href="blog.html" class="nav-link">BLOG</a></li>
 
-     <li id="menu-item-40" class="nav-item menu-item menu-item-type-post_type menu-item-object-page menu-item-40 lifts"><a href="login.html" class="nav-link"><button id="login-btn" class="login-btn" type="submit">LOGIN</button></a></li>
+     <li id="menu-item-40" class="nav-item menu-item menu-item-type-post_type menu-item-object-page menu-item-40 lifts"><a href="login.html" class="nav-link"><button id="login-btn" class="request-button" type="submit">LOGIN</button></a></li>
 
-     <li id="menu-item-40" class="nav-item menu-item menu-item-type-post_type menu-item-object-page menu-item-40 lifts"><a href="index.html" class="nav-link"><button id="request-button" class="request-button" type="submit">Request a Free Quote</button></a></li>
+     <!-- <li id="menu-item-40" class="nav-item menu-item menu-item-type-post_type menu-item-object-page menu-item-40 lifts"><a href="index.html" class="nav-link"><button id="request-button" class="request-button" type="submit">Request a Free Quote</button></a></li> -->
 </ul>
 </div>
 </nav>
@@ -130,6 +134,54 @@
     <!-- end of first row div--> 
 
 
+
+<div id="stickyQuote">
+  <button data-toggle="modal" data-target="#exampleModalCenter" data-backdrop="static">Request a Free Quote</button>
+    </div>
+<!-- Modal -->
+<div class="modal" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" style="color: #743125;" id="exampleModalLongTitle">Free Quote</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="request-form">
+  <div class="request-area">
+    <form id="popform">
+   <!-- <form id="myform"> -->
+    <div class="form-group">
+      <label for="name">Name *</label>
+      <input type="text" class="form-control" id="name" placeholder="Your name" name="name" maxlength="30">
+    </div>
+    <div class="form-group">
+      <label for="email">Email *</label>
+      <input type="email" class="form-control" id="email" placeholder="yourname@abc.com" name="email" maxlength="30">
+    </div>
+    <div class="form-group">
+      <label for="phone">Phone number</label>
+      <input type="number" class="form-control" id="phone" placeholder="555 555 1212" name="phone" maxlength="15">
+    </div>
+    <div class="form-group">
+      <label for="subject">Subject *</label>
+      <input type="text" class="form-control" id="subject" placeholder="I want to get price for service (e.g. Bond cleaning)." name="subject" maxlength="100">
+    </div>
+    <div class="form-group">
+    <label for="detail">Message Detail</label>
+      <textarea class="form-control" rows="5" id="detail" placeholder="Additional details" name="message" maxlength="300"></textarea>
+    </div>
+    <button type="button" id="submit" class="btn btn-whatever">Send us your message</button>
+      
+    </form>
+</div>
+  </div>
+      </div>
+    </div>
+  </div>
+</div>
  <!-- <div class="row">  -->
     <!-- <div class="fixed-back"> -->
       <div class="home-back">
@@ -172,7 +224,7 @@
   </div>
 
     <div class="col-md-4">
-      <div class="div-services big-pic">
+      <div class="div-services" style="margin-top: 3rem;">
           <a href="bond.html" class="hvr-rectangle-out">
           <img src="images/squeeze.jpg"  class="anim-image" style="height: auto; width: 300px;"></a>
         <h5>END OF LEASE CLEANING</h5>
@@ -189,7 +241,7 @@
     <div class="col-md-4">
       <div class="col">
         <div class="row-md-6">
-      <div class="div-services div-break">
+      <div class="div-services">
         <a href="pest.html" class="hvr-rectangle-out">
           <img src="images/pestcontrol.jpg" class="home-srv-img anim-image"></a>
         <h5>END OF LEASE PEST CONTROL</h5>
@@ -361,9 +413,7 @@
     
    $result = $conn->query('SELECT * FROM Testimonials ORDER BY Id DESC LIMIT 4');
    $num = mysqli_num_rows($result);
-   $numsec = $num-1;
-   // echo "numsec " . $numsec;
-   $my_arary = array();
+   
   
 while($row = $result->fetch_assoc()){
 

@@ -120,6 +120,7 @@ nav {
     /*width: 99%;*/
     height: 5em;
 }
+
 /* change navbar background */
 .navbar {
   background: #dbcdbd !important;
@@ -169,6 +170,44 @@ nav {
   border-color: #dbcdbd !important;
 }
 
+.float-button {
+position: fixed;
+right: -77px;
+top: 270px;
+transition: all 0.2s ease-in 0s;//this is the key attribute
+z-index: 9999;
+cursor: pointer;
+}
+
+#stickyQuote {
+  height: 0px;
+  width: 85px;
+  position: fixed;
+  right: 0;
+  top: 55%;
+  z-index: 1000;
+  transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+}
+#stickyQuote button {
+  display: block;
+  background:#00b5f1;
+  height: 50px;
+  padding: 10px 0px 40px 0px;
+  width: 205px;
+  text-align: center;
+  color: #fff;
+  border: 3px solid #00b5f1;
+  font-size: 17px;
+  font-weight: bold;
+  text-decoration: none;
+}
+#stickyQuote button:hover {
+  background:#00495d;
+}
 
 .fixed-back { 
   width: 100%;
@@ -305,11 +344,6 @@ nav {
   margin-bottom: 10px;
 }
 
-.big-pic {
-  margin-top: 3rem;
-  margin-left: 15px;
-}
-
 .why {
   width: 100%;
   height: auto;
@@ -353,6 +387,19 @@ nav {
     border-color: #743125 !important;
     font-size: 1rem !important;
 }
+
+#popform{
+  width: 100%;
+  height: auto;
+  vertical-align: middle;
+  margin-top: 2rem;
+  border: 4px solid #743125;
+  border-radius: 10px;
+  padding: 20px;  
+  background-color: #d2c3ad;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.4), 0 1px 1px 0 rgba(0, 0, 0, 0.35);
+}
+
 #myform {
   width: 70%;
   height: auto;
@@ -388,12 +435,13 @@ form label {
   background-repeat: no-repeat;
   background-size: cover;
   opacity: 0.7;
+  padding: 3rem;
 }
 
 .home-testimonials h1{
   /*background: rgba(115, 38, 38, 0.7);*/
   text-align: center;
-  padding-top: 20px;
+  
   color: #743125;
 }
 
@@ -401,7 +449,7 @@ form label {
   margin: 40px;
   display: inline-block;
   position: relative;
-  width: 300px;
+  width: 400px;
   height: auto;
   background-color: lightyellow;
   box-shadow: 4px 4px 8px 4px rgba(0, 0, 0, 0.4), 4px 6px 20px 4px rgba(0, 0, 0, 0.35);
@@ -434,7 +482,7 @@ form label {
 
 
 .talktext{
-  padding: 1em;
+  padding: 1.5em;
   text-align: left;
   line-height: 1.5em;
 }
@@ -469,10 +517,10 @@ form label {
   margin: 30px 0px 0px 100px;
 }
 .home-round-img {
-  position: absolute;
-  bottom: 7.2rem;
-  height: 120px;
-  border: 2px solid #743125;
+  /*position: absolute;*/
+  /*bottom: 7.2rem;*/
+  height: 40px;
+  /*border: 2px solid #743125;*/
 }
 
 .home-round-img1 {
@@ -703,10 +751,6 @@ i:hover {
 
     position: relative;
     margin: auto;
-  }
-
-    .active {
-    background-color: #717171;
   }
 
 
@@ -1416,9 +1460,10 @@ background-color: #dbcdbd;
 .pressure-top-div {
    background:  
     linear-gradient(
-    rgba(0, 26, 0, 0.45),
-    rgba(0, 26, 0, 0.45)),
-  url('http://192.168.64.2/GetItFix/images/pres.png');
+      rgba(255, 221, 204, 0.65), 
+      rgba(204, 102, 0, 0.65)
+    ),
+    url('http://192.168.64.2/GetItFix/images/pressure.jpg');
   height: 250px;
   width: 100%;
   background-repeat: no-repeat;
@@ -1488,8 +1533,7 @@ background-color: #dbcdbd;
   padding: 20px 20px 10px 20px;
 }
 .pressure-work-process p {
-  padding: 30px 20px 30px 20px;
-  /*margin-top: 10x;*/
+  padding: 0px 10px 20px 10px;
 }
 .process-heading{
   text-align: center;
@@ -1522,28 +1566,7 @@ background-color: #dbcdbd;
     color: #dbcdbd;
 }
 
-.pressure-call{
-  background: 
-  linear-gradient(
-    rgba(0, 26, 0, 0.45),
-    rgba(0, 26, 0, 0.45)),
-  url('http://192.168.64.2/GetItFix/images/pressure.jpg');
-  height: 250px;
-  width: 100%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  color: white;
-  padding: 3rem;
-} 
 
-.pressure-call h2{
-  padding-top: 4rem;
-  text-align: center;
-}
-.pressure-images{
-  height: 30px;
-  width: 30px;
-}
 
 /*.............Registration page..................*/
 /*
@@ -1574,11 +1597,11 @@ background-color: #dbcdbd;
 /*............Lawn Mowing...........*/
 .lawn-top-div{
   background:  
-    linear-gradient( 
-      rgba(179, 143, 0, 0.65),
+    linear-gradient(
+      rgba(255, 219, 77, 0.65), 
       rgba(63, 112, 51, 0.65)
     ),
-    url('http://192.168.64.2/GetItFix/images/grass1.jpg');
+    url('http://192.168.64.2/GetItFix/images/lawnmover.jpg');
   height: 250px;
   width: 100%;
   background-repeat: no-repeat;
@@ -1593,32 +1616,14 @@ background-color: #dbcdbd;
  padding: 3rem 0rem 3rem 0rem;
   background-color: #dbcdbd; 
 }
-.lawn-quote{
-  padding: 2rem 0rem 2rem 0rem;
-  background-color: #743125;
-  color: #dbcdbd;
-  align-content: center;
-}
-.lawn-quote-button{
-  background-color: #3F7033;
-  border: 3px solid #3F7033;
-  color: #dbcdbd;
-  margin: 20px 0px 0px 35px;
-  padding: 15px  15px 15px 15px;
-}
 
-.lawn-quote-button:hover {
-  background-color: #743125;
-  color: #3F7033;
-  font-weight: bold;
-}
 .lawn-services{
   background:  
     linear-gradient(
       rgba(204, 153, 0, 0.45), 
       rgba(153, 204, 255, 0.45)
     ),
-    url('http://192.168.64.2/GetItFix/images/banner1.jpg');
+    url('http://getitfix.ictatjcub.com/images/banner1.jpg');
       height: auto;
   width: 100%;
   background-repeat: no-repeat;
@@ -1643,76 +1648,42 @@ background-color: #dbcdbd;
   width: 300px;
   background-color: #dbcdbd;
   border: 1px solid #dbcdbd;
-  text-align: center;
+  text-align: left;
   z-index: 1000;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   margin-bottom: 5rem;
+  margin-top: 4rem;
 }
 
 .lawn-all-service h5 {
   padding: 20px 20px 10px 20px;
 }
-.lawn-all-service p {
-  padding: 0px 10px 20px 10px;
+.lawn-all-service ul {
+  padding-right: 15px;
 }
-.lawn-faq{
-  background-color: #dbcdbd;
-  padding-bottom: 2rem;
-}
-.lawn-faq-heading{
-  padding: 2rem 0rem 2rem 0rem;
-  text-align: center;
-}
-.lawn-faq-ques{
-  display: table;
-  height: auto;
+.lawn-call{
+  background:
+  linear-gradient(
+      rgba(0, 26, 0, 0.45), 
+      rgba(0, 26, 0, 0.45)
+    ),
+    url('http://getitfix.ictatjcub.com/images/grass1.jpg');
+  height: 250px;
   width: 100%;
-  background-color: #c0a48c;
-  border: 1px solid #dbcdbd;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+}
+
+.lawn-call h2 {
+  padding-top: 4rem;
   text-align: center;
-  z-index: 1000;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.05);
-  /*margin-bottom: 1rem;*/
-  padding: 10px;
 }
-
-.lawn-faq-ans {
-  display: table;
-  height: auto;
-  width: 100%;
-  background-color: #c0a48c;
-  border: 1px solid #dbcdbd;
-  text-align: center;
-  z-index: 1000;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.05);
-  margin-bottom: 1rem;
-  padding: 10px;
+.lawn-images{
+  height: 40px;
+  width: 35    px;
+  
 }
-.lawn-faq-list{
-      margin: 10px 0px 0px 10px;
-    display: inline-block;
-    
-}
-
-.lawn-faq-list h5{
-  float: left;
-}
-/*.bond-faq-content{
-  background-color: #3F7033;
-  border: 1px solid #dbcdbd;
-  z-index: 1000;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}*/
-.lawn-faq-content P{
-  padding: 0px 10px 20px 10px;
-} 
-.lawn-faq-btnS{
-  background-color: #3F7033;
-  color: #dbcdbd;
-  float: right;
-  margin: 0px 10px 0px 10px;
-}
-
 
 /*............Login form...........*/
 .main-background{
@@ -1726,7 +1697,12 @@ background-color: #dbcdbd;
   position: fixed;
   width: 100vw;
   height: 100vh;
-  background-image: url('http://192.168.64.2/GetItFix/images/window.jpg');
+  background:  
+    linear-gradient(
+      rgba(219, 205, 189, 0.65),
+      rgba(0, 181, 241, 0.65)
+    ),
+    url('http://192.168.64.2/GetItFix/images/window.jpg');
   background-position: center center;
   background-repeat:no-repeat;
   background-attachment: fixed;
@@ -1750,36 +1726,7 @@ background-color: #dbcdbd;
   background: rgba(0,0,0,0.6);
 }
 
-.Registration-form{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%,-50%);
-  -moz-transform: translate(-50%,-50%);
-  -ms-transform: translate(-50%,-50%);
-  -o-transform: translate(-50%,-50%);
-  transform: translate(-50%,-50%);
-  width: 400px;
-  height: auto;
-  padding: 30px 40px;
-  background: rgba(0,0,0,0.6);
-}
-
 .avatar{
-  /*position: absolute;*/
-  width: 140px;
-  height: 100px;
-  margin-left: 5rem;
-  /*
-  border-radius:50%;
-  overflow: hidden;
-  top: calc(-80px/2);
-  left: calc(50% - 40px);*/
-
-}
-
-
-.avatr{
   /*position: absolute;*/
   width: 140px;
   height: 100px;
@@ -1816,26 +1763,6 @@ background-color: #dbcdbd;
   margin-bottom: 20px;
 }
 
-.Registration-form h2{
-   margin: 0;
-   padding: 0 0 20px;
-   color: #fff;
-   text-align: center;
-   text-transform: uppercase;
-}
-
-.Registration-form p{
-  margin: 0;
-  padding: 0;
-  font-weight: bold;
-  color: #fff;
-}
-
-.Registration-form input{
-  width: 100%;
-  margin-bottom: 20px;
-}
-
 .login-inputt
 {
       border: none;
@@ -1858,18 +1785,6 @@ background-color: #dbcdbd;
     margin: 20px 0px 0px 0px;
 }
 
-
-.Registration-form input[type=button]{
-    height: 45px;
-    color: #fff;
-    font-size: 18px;
-    background: #3F7033 ;
-    cursor: pointer;
-    border-radius: 25px;
-    border: none;
-    outline: none;
-    margin: 20px 0px 0px 0px;
-}
 
 .login-blue
 {
@@ -1998,7 +1913,6 @@ background-color: #dbcdbd;
 }
 
 .edit-price-div {
-  
   height: auto;
   width: 300px;
   background-color: #cccc00;
@@ -2009,7 +1923,6 @@ background-color: #dbcdbd;
    color: white;
    padding: 1rem;
 }
-
 
 .discount-div {
   margin-left: 0.4rem;
@@ -2037,12 +1950,90 @@ background-color: #dbcdbd;
    color: white;
    padding: 1rem;
 }
+.quote-div {
+  margin-top: 3rem;
+  margin-left:1rem;
+  height: auto;
+  width: 300px;
+  background-color: #e6ff99;
+}
+
+.quote-div h5 {
+  background-color: #558000;
+   color: white;
+   padding: 1rem;
+}
+.book-div {
+  margin-top: 3rem;
+  margin-left:2.2rem;
+  height: auto;
+  width: 300px;
+  background-color: #ffa366;
+}
+
+.book-div h5 {
+  background-color: #cc3300;
+   color: white;
+   padding: 1rem;
+}
+.customer-div {
+  margin-top: 3rem;
+  margin-left:2rem;
+  height: auto;
+  width: 300px;
+  background-color: #0086b3;
+}
+
+.customer-div h5 {
+  background-color: #006080;
+   color: white;
+   padding: 1rem;
+}
 
 
+.review-div {
+  margin-left: 5rem;
+  height: auto;
+  width: 300px;
+  background-color: #0099cc;
+}
+
+.review-div h5 {
+  background-color: #007399;
+   color: white;
+   padding: 1rem;
+}
+.book-now-div {
+  margin-bottom: 4rem;
+  margin-left:20rem;
+  height: auto;
+  width: 300px;
+  background-color: #ffa366;
+}
+
+.book-now-div h5 {
+  background-color: #cc3300;
+   color: white;
+   padding: 1rem;
+}
 .cpyryt {
   padding-left: 1rem;
   font-size: 12px;
 }
+
+#review-form {
+  width: 70%;
+  height: auto;
+  vertical-align: middle;
+  margin-left: 10rem;
+  margin-top: 2rem;
+  border: 4px solid #743125;
+  border-radius: 10px;
+  padding: 20px;  
+  background-color: #d2c3ad;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.4), 0 1px 1px 0 rgba(0, 0, 0, 0.35);
+}
+
 
 /* blog css*/
 
@@ -2083,17 +2074,6 @@ background-color: #dbcdbd;
 }
 
 
-.tipss {
-  background:  
-    linear-gradient(
-      
-      rgb(242, 240, 233),
-      rgb(102, 102, 102),
-      rgb(64, 64, 64),
-      rgb(51, 51, 51)
-    );
-  }
-
   .tips3 {
   background-color: #404040;
 }
@@ -2115,6 +2095,7 @@ background-color: #dbcdbd;
 
 .blog-services h5 {
   padding: 20px 20px 10px 20px;
+  paddin
 }
 
 .blog-services li {
@@ -2123,6 +2104,14 @@ background-color: #dbcdbd;
 
 .blog-tips {
   padding: 4rem;
+  background:  
+    linear-gradient(
+      
+      rgb(242, 240, 233),
+      rgb(102, 102, 102),
+      rgb(64, 64, 64),
+      rgb(51, 51, 51)
+    );
 }
 
 .blog-work {
@@ -2142,42 +2131,53 @@ background-color: #dbcdbd;
   height: 600px;
 }
 
-  
+.profile-pic {
+  position: relative;
+  display: inline-block;
+}
 
- .show_discount {/*
-  background:  
-    linear-gradient(
-      rgba(0, 153, 153, 0.45), 
-      rgba(126, 198, 255, 0.45),
-      rgba(0, 153, 153, 0.45)
-    ),
-    url('http://192.168.64.2/GetItFix/images/discc.png');
-    background-repeat: no-repeat;
-  background-size: cover;*/
-  background-image: linear-gradient(to right, #009999 , #1ac6ff, #009999);
-    color: white;
+.edit {
+  padding-top: 7px; 
+  padding-right: 7px;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.edit a {
+  color: black;
+}
+
+.fa-pencil {
+  color: black;
+}
+
+.fa-remove {
+  color: black;
+  padding: 0rem;
+  margin: 0px;
+  float: right;
+}
+
+.admin-quote{
   text-align: center;
-  font-size: 26px;
-  font-family: "Comic Sans MS";
- }
-
-.sign-up-btn {
-  width: auto;
+  margin-top: 2rem;
+}
+/*..............................*/
+.admin-cust-quote{
+  margin: 20px;
+  display: inline-block;
+  width: 500px;
   height: auto;
-  padding: 15px;
-  background-color: #ff8000;
-  color: white;
-  border: 2px solid #ff8000; 
-  margin-top: 10px;
+  background-color: #c0a78c;
+  padding: 10px 10px 0px 10px;
+  /*box-shadow: 4px 4px 8px 4px rgba(0, 0, 0, 0.4), 4px 6px 20px 4px rgba(0, 0, 0, 0.35);*/
 }
 
-.disc-img {
-  height: auto;
-  width: auto;
-}
 
-.disc-text {
-  padding: 2rem;
-  margin-top: 20px;
-}
 
+.admin-cust-quote-txt{
+  text-align: left;
+  line-height: 1.5em;
+  padding-left: 10px;
+}
