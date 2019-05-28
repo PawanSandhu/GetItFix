@@ -29,22 +29,22 @@
    <div class="Login-form">
      <img src="images/logo_getitfix.png" alt="" class="avatar">
      <!-- <h2>Login Form</h2> -->
-     <form class="signForm" action="php_pages/reset-request.inc.php" method="post">
-     <p class= "login-blue">Reset your password </p>
-     <br>
+     <form class="signForm" action="php_pages/reset-request.php" method="post">
+     <!-- <p class= "login-blue">Reset your password </p> -->
+     
        <p>Email</p>
        <input type="email" class="login-inputt" id="email" name="email" placeholder="Enter your e-mail address">
       
-       <input type="submit" id="login-button" name="reset-request-submit" value="Reset password">
+       <input type="submit" id="reset-request-button" name="reset-request-submit" value="Reset password">
      
-       <p class="login-blue">An email will be send to you with insrtuctions on how to reset your passwaod.</p>
+       <span class="login-blue" style="margin-top: 10px;">An email will be send to you with insrtuctions on how to reset your passward.</span>
       
        
      </form>
      <?php
  			    if (isset($_GET["reset"])) {
  			    	if ($_GET["reset"] == "success") {
- 			    		echo '<p class="">Check your e-mail or spam`!</p>'; 
+ 			    		echo '<p class="">Check your e-mail or spam !</p>'; 
  			    	}
  			    } 
  			    ?>
