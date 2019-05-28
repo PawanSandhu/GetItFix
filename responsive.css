@@ -293,7 +293,7 @@ and (max-device-width : 731px)  {
 .div-break {
     margin-top: 50px;
 }
-
+}
 
 @media screen and (max-width: 430px){
  #myform {
@@ -325,6 +325,30 @@ and (max-device-width : 731px)  {
     width: 85%;
 }
 }
+
+
+@media screen
+and (min-device-width : 411px) 
+and (max-device-width : 823px)  {
+
+   .y {
+    left: 2%;
+    top: 13.5% !important;
+
+}
+}
+
+@media screen
+and (min-device-width : 375px) 
+and (max-device-width : 812px)  {
+
+   .y {
+    left: 25% !important;
+    top: 10.5% !important;
+
+}
+}
+
 
 @media screen
 and (min-device-width : 375px) 
