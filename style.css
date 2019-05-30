@@ -19,7 +19,11 @@ body {
 
 html, body {
     max-width: 100%;
-    overflow-x: hidden !important;
+    overflow-x: hidden;
+}
+
+.home-header {
+  overflow: hidden;
 }
 
 .home-top-div {
@@ -66,6 +70,9 @@ html, body {
   width: 300px !important;
 }
 
+.request-form {
+  overflow: hidden;
+}
 
 .request-button {
   background-color: #3f7033;
@@ -172,6 +179,10 @@ nav {
   border-color: #dbcdbd !important;
 }
 
+#carouselExampleIndicators {
+  overflow: hidden;
+
+}
 .float-button {
 position: fixed;
 right: -77px;
@@ -183,7 +194,7 @@ cursor: pointer;
 
 #stickyQuote {
   height: 0px;
-  width: 85px;
+  width: 95px;
   position: fixed;
   right: 0;
   top: 65%;
@@ -193,6 +204,7 @@ cursor: pointer;
   -moz-transform: rotate(-90deg);
   -o-transform: rotate(-90deg);
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+
 }
 #stickyQuote button {
   display: block;
@@ -206,6 +218,7 @@ cursor: pointer;
   font-size: 17px;
   font-weight: bold;
   text-decoration: none;
+  z-index: 2000;
 }
 #stickyQuote button:hover {
   background:#00495d;
@@ -222,6 +235,11 @@ cursor: pointer;
   background-size: cover;
 }
 
+.big-pic {
+  margin-top: 3rem;
+  margin-left: 15px;
+}
+
 .jumbotron {
   background-color: #dbcdbd !important;
   margin: 0px !important;
@@ -232,6 +250,7 @@ cursor: pointer;
 
 .home-back {
   background-color: #dbcdbd !important;
+  overflow: hidden;
 }
 /*.text-indent{
   margin-left: 7rem;
@@ -256,6 +275,7 @@ cursor: pointer;
   margin: 0px !important;
   background-repeat: no-repeat;
   background-size: cover;
+  overflow: hidden;
 }
 
 .panel-transparent h2{
@@ -353,6 +373,7 @@ cursor: pointer;
   color: #dbcdbd;
   text-align: center;
   padding-top: 3rem;
+  overflow: hidden;
 }
 
 .why h2 {
@@ -438,6 +459,7 @@ form label {
   background-size: cover;
   opacity: 0.7;
   padding: 3rem;
+  overflow: hidden;
 }
 
 .home-testimonials h1{
@@ -1337,6 +1359,7 @@ background-color: #dbcdbd;
   background-color: red;
   color: white;
   text-align: center;
+  overflow: hidden;
 }
 
 .footer-about{
@@ -2182,4 +2205,8 @@ background-color: #dbcdbd;
   text-align: left;
   line-height: 1.5em;
   padding-left: 10px;
+}
+
+.blogSpace {
+  overflow-x: hidden;
 }

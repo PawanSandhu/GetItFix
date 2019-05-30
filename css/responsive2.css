@@ -3,7 +3,7 @@
 and (min-device-width : 1024px) 
 and (max-device-width : 1366px)  {
     .y {
-    top: 7.25%;
+    top: 2%;
     left: 4%;
 }
 
@@ -36,22 +36,23 @@ and (max-device-width : 1366px)  {
 @media screen and (max-width : 1023px)  {
     .y {
 	left: 4%;
-	top: 16.5%; 
+	top: 2%; 
 }
 }
 
-@media screen and (max-width: 1010px) {
-.y {
-    left: 2%;
-	top: 16.5%; 
-}
-}
+
 
 @media screen and (max-width: 991px) {
 .y {
-    left: 12%;
-	top: 16.5%; 
+    left: 6%;
+    top: 1.2%;
 }
+
+.container {
+    max-width: 880px;
+}
+
+
 
 .col-md-4 {
     flex: 1 0 100%;
@@ -115,7 +116,14 @@ form {
     padding: 30px 50px 20px 60px;
 }
 
+.container {
+    max-width: 870px;
+}
 
+.y {
+    left: 2%;
+    top: 1.2%;
+}
 
 .blog-full-image {
     height: 500px;
@@ -123,10 +131,35 @@ form {
 }
 }
 
+@media screen and (max-width: 880px) {
+.y {
+    left: 2%;
+	top: 1.2%; 
+}
+
+#navbarNav li{
+  /*padding-left:30px;*/
+  padding-right:15px;
+}
+
+.container {
+    max-width: 850px;
+}
+}
+
 @media screen and (max-width: 850px) {
 .y {
-    left: 8%;
-	top: 16.5%; 
+    left: 2%;
+    top: 1.2%; 
+}
+
+#navbarNav li{
+  /*padding-left:30px;*/
+  padding-right:8px;
+}
+
+.container {
+    max-width: 800px;
 }
 
 .bond-services-list{  
@@ -146,3 +179,20 @@ form {
     height: 450px;
 }
 }
+
+@media screen and (max-width: 850px) {
+.y {
+    left: 2%;
+    top: 1.2%; 
+}
+
+#navbarNav li{
+  /*padding-left:30px;*/
+  padding-right:5px;
+}
+
+.container {
+    max-width: 780px;
+}
+}
+

@@ -11,8 +11,13 @@ body {
     font-size: 1rem !important;    
 }
     .y {
-    top: 9.5%;
-    left: 3%;
+    top: 1.2%;
+    left: 0%;
+}
+
+#navbarNav li{
+  font-size: 0.9rem !important;
+  padding-right:5px;
 }
 
 .col-md-4 {
@@ -169,7 +174,7 @@ nav {
 
 .y {
     position: absolute;
-    top: 16.5%;
+    top: 1.2%;
     left: 30% !important;
 }
 

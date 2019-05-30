@@ -8,12 +8,28 @@
 @media screen and (max-width : 1075px)  {
 .y {
 	left: 4%;
-	top: 16.5%; 
+	top: 2%; 
+}
+
+.big-pic {
+  margin-top: 3rem;
+  margin-left: 15px;
 }
 }
 
 @media screen and (max-width : 1045px)  {
+
+.y {
+	left: 4%;
+	top: 2%; 
+}
+
 .blog-services {
     width: 285px;
+}
+
+.big-pic {
+  margin-top: 3rem;
+  margin-left: 15px;
 }
 }
