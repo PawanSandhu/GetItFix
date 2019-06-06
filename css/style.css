@@ -52,7 +52,58 @@ html, body {
 }
 .y{
     position:absolute;
-    top: 2%;
+    top: 2.1%;
+    left: 8%;
+    z-index: 1000;
+}
+
+.ya{
+    position:absolute;
+    top: 4%;
+    left: 8%;
+    z-index: 1000;
+}
+
+.yb{
+    position:absolute;
+    top: 3.7%;
+    left: 8%;
+    z-index: 1000;
+}
+
+.yc{
+    position:absolute;
+    top: 4.6%;
+    left: 8%;
+    z-index: 1000;
+}
+
+
+
+.ye{
+    position:absolute;
+    top: 3.5%;
+    left: 8%;
+    z-index: 1000;
+}
+
+.yf{
+    position:absolute;
+    top: 4.7%;
+    left: 8%;
+    z-index: 1000;
+}
+
+.yg{
+    position:absolute;
+    top: 2.3%;
+    left: 8%;
+    z-index: 1000;
+}
+
+.yh{
+    position:absolute;
+    top: 2.9%;
     left: 8%;
     z-index: 1000;
 }
@@ -185,7 +236,7 @@ cursor: pointer;
   width: 85px;
   position: fixed;
   right: 0;
-  top: 60%;
+  top: 55%;
   z-index: 1000;
   transform: rotate(-90deg);
   -webkit-transform: rotate(-90deg);
@@ -193,12 +244,13 @@ cursor: pointer;
   -o-transform: rotate(-90deg);
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
 }
+
 #stickyQuote button {
   display: block;
   background:#00b5f1;
   height: 50px;
   padding: 10px 0px 40px 0px;
-  width: 205px;
+  width: 130px;
   text-align: center;
   color: #fff;
   border: 3px solid #00b5f1;
@@ -208,6 +260,7 @@ cursor: pointer;
 }
 #stickyQuote button:hover {
   background:#00495d;
+  border: 3px solid #00495d;
 }
 
 .fixed-back { 
@@ -560,6 +613,7 @@ footer {
 .btn-footer {
   background-color: #3f7033;
   border-color: #3f7033;
+  color: white;
 }
 
 .btn-footer:hover {
@@ -1892,6 +1946,7 @@ background-color: #dbcdbd;
 
 .div-services:hover .anim-image {
   opacity: 0.3;
+
 }
 
 .div-services:hover .anim-middle {

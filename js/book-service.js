@@ -1,17 +1,5 @@
 $(document).ready(function() {
-// 	$('#request-button').click(function(){
-// $('html, body').animate({scrollTop: $('.request-form').offset().top}, 'slow');
-// return false;
-// });
-
-
-$('#footer-request').click(function(){
-$('html, body').animate({scrollTop: $('.request-form').offset().top}, 'slow');
-return false;
-});
-
-
-$("#bookNow").click(function(){
+	$("#bookNow").click(function(){
 		var submit = $(this).val();
 	var name = $("#name").val();
 	var email = $("#email").val();
@@ -153,8 +141,11 @@ $("#bookNow").click(function(){
 
         },
         success: function(msg) {
-        	$('.popform')[0].reset();
+        	// $('.myform')[0].reset();
             alert (msg);
+            if(msg="The service has been booked."){
+            window.location.href = "book.html";
+            }
         },
         error: function(err) {
         	alert(err);
@@ -165,54 +156,7 @@ $("#bookNow").click(function(){
 });
 
 
-
-
-
-
-	$("#quote").click(function(){
-	var name = $("#name").val();
-	var email = $("#email").val();
-	var phone = $("#phone").val();
-	var subject = $("#subject").val();
-	var message = $("#detail").val();
-	if(name == ""){
-		alert('Please enter your name');
-	}
-	else if(email == ""){
-		alert('Please enter your email address');
-	}
-	else if(IsEmail(email) == false){
-		alert('Please enter a valid email address');
-	}
-	else if(phone == ""){
-		alert('Please enter your contact number');
-	}
-	else if(subject == ""){
-		alert('Please enter the subject');
-	}
-	else {
-		$.ajax({
-        url: 'php_pages/index.php',
-        type: 'POST',
-        data: {
-            postname:name,
-             postemail:email,
-             postcontact:phone,
-             postsubject:subject,
-             postmessage:message
-        },
-        success: function(msg) {
-        	$('#myform')[0].reset();
-            alert(msg);
-        }               
-    });
-		
-	}
 });
-
-
-});
-
 
 
 function IsEmail(email) {
@@ -223,4 +167,3 @@ function IsEmail(email) {
     return true;
   }
 }
-

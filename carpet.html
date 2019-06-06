@@ -37,9 +37,8 @@
       </div>
     </div>
 
-    <div class="container y">
+    <div class="container ye">
   <nav class="navbar navbar-expand-md navbar-light container">
- <!--  <a class="navbar-brand" href="#"><img src="images/logo_getitfix.png" style="height: 100px; width: 100px;"> </a> -->
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -65,25 +64,121 @@
 
       <li id="menu-item-40" class="nav-item menu-item menu-item-type-post_type menu-item-object-page menu-item-40"><a href="pricing.php" class="nav-link">PRICING</a></li>
 
-      <li id="menu-item-963" class="nav-item menu-item menu-item-type-post_type menu-item-object-page menu-item-963 dropdown"><a href="#" class="nav-link home-item-space dropdown-toggle" data-toggle="dropdown" data_target="dropdown_target">ABOUT US
-        <span class="caret"></span></a>
-        <div class="dropdown-menu" aria-labelledby="dropdown_target">
-          <a href="about_us.html" class="dropdown-item">Our Story</a>
-          <div class="dropdown-divider"></div>
-          <a href="contact.html" class="dropdown-item">Contact Us</a>
-        </div>
-      </li>
+      <li id="menu-item-40" class="nav-item menu-item menu-item-type-post_type menu-item-object-page menu-item-40"><a href="about_us.html" class="nav-link">ABOUT</a></li>
+
+      <li id="menu-item-40" class="nav-item menu-item menu-item-type-post_type menu-item-object-page menu-item-40"><a href="contact.html" class="nav-link">CONTACT</a></li>
 
        <li id="menu-item-40" class="nav-item menu-item menu-item-type-post_type menu-item-object-page menu-item-40"><a href="blog.html" class="nav-link">BLOG</a></li>
 
-     <li id="menu-item-40" class="nav-item menu-item menu-item-type-post_type menu-item-object-page menu-item-40 lifts"><a href="login.html" class="nav-link"><button id="login-btn" class="login-btn" type="submit">LOGIN</button></a></li>
+     <li id="menu-item-40" class="nav-item menu-item menu-item-type-post_type menu-item-object-page menu-item-40 lifts"><a href="login.html" class="nav-link"><button id="login-btn" class="request-button" type="submit">LOGIN</button></a></li>
 
-     <li id="menu-item-40" class="nav-item menu-item menu-item-type-post_type menu-item-object-page menu-item-40 lifts"><a href="index.html" class="nav-link"><button id="request-button" class="request-button" type="submit">Request a Free Quote</button></a></li>
+    
 </ul>
 </div>
 </nav>
 </div>
 </div>
+
+
+<div id="stickyQuote">
+  <button data-toggle="modal" data-target="#bookingPopup" data-backdrop="static">Book Now</button>
+    </div>
+<!-- Modal -->
+<div class="modal" id="bookingPopup" tabindex="-1" role="dialog" aria-labelledby="bookingPopup" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" style="color: #743125;" id="exampleModalLongTitle">Book Now</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="request-area">
+    <form id="popform">
+   <!-- <form id="myform"> -->
+    <h3 style="color:#3f7033">Personal Information</h3>
+    <hr>
+    <div class="form-group">
+      <label for="name">Name *</label>
+      <input type="text" class="form-control" id="name" placeholder="Your name" name="name" maxlength="30">
+    </div>
+    <div class="form-group">
+      <label for="email">Email *</label>
+      <input type="email" class="form-control" id="email" placeholder="yourname@abc.com" name="email" maxlength="30">
+    </div>
+    <div class="form-group">
+      <label for="phone">Phone number</label>
+      <input type="number" class="form-control" id="phone" placeholder="555 555 1212" name="phone" maxlength="15">
+    </div>
+    <h3 style="color:#3f7033">Address</h3>
+    <hr>
+    <div class="form-group">
+      <label for="name">Address *</label>
+      <input type="text" class="form-control" id="address" placeholder="Enter your address" name="name" maxlength="30">
+    </div>
+    <div class="form-group">
+      <label for="city">City *</label>
+      <input type="text" class="form-control" id="city" placeholder="Enter your city" name="email" maxlength="30">
+    </div>
+    <div class="form-group">
+      <label for="phone">State</label>
+      <input type="text" class="form-control" id="state" placeholder="Enter your state " name="phone" maxlength="15">
+    </div>
+    <div class="form-group">
+      <label for="phone">Post Code</label>
+      <input type="text" class="form-control" id="postcode" placeholder="Enter your post code" name="phone" maxlength="15">
+    </div>
+
+     <h3 style="color:#3f7033">Type of Service</h3>
+    <hr>
+    <div class="form-group">
+      <label for="service">Service</label><br>
+     
+      <input type="checkbox" id="service" value="End of Lease cleaning"> End of Lease cleaning <br><br>
+      <input type="checkbox" id="service1" value="End of Lease Carpet Steam Cleaning"> End of Lease Carpet Steam Cleaning <br><br>
+      <input type="checkbox" id="service2" value="End of Lease Pest Control "> End of Lease Pest Control  <br><br>
+      <input type="checkbox" id="service3" value="End of Lease Pressure Wash"> End of Lease Pressure Wash <br><br>
+      <input type="checkbox" id="service4" value="End of Lease lawn mowing"> End of Lease lawn mowing<br><br></div>
+      <div class="form-group">
+      <label for="bedroom">Bedroom</label><br>
+    
+      <input type="radio" id="bedroom"  name="bedroom"  value="1" checked> 1
+      <input type="radio" id="bedroom" class="radioSpacing" name="bedroom" value="2"> 2
+      <input type="radio" id="bedroom" class="radioSpacing" name="bedroom" value="3"> 3
+      <input type="radio" id="bedroom" class="radioSpacing" name="bedroom" value="4"> 4 
+      <input type="radio" id="bedroom" class="radioSpacing" name="bedroom" value="5"> 5<br><br></div>
+  
+      <div class="form-group">
+      <label for="bathroom">Bathroom</label><br>
+      
+      <input type="radio" id="bathroom" name="bathroom" value="1" checked> 1
+      <input type="radio" id="bathroom" name="bathroom" class="radioSpacing" value="2"> 2
+      <input type="radio" id="bathroom" name="bathroom" class="radioSpacing" value="3"> 3<br><br>
+     </div>
+
+    
+    <h3 style="color:#3f7033">Extras</h3>
+    <hr>
+    <div class="form-group"> 
+      <input type="checkbox" id="extras0" value="Wall wash">  Wall wash <br><br>
+      <input type="checkbox" id="extras1" value="Outside the windows">  Outside the windows <br><br>
+      <input type="checkbox" id="extras2" value="Heavy stains on the carpet">  Heavy stains on the carpet <br><br></div>
+    <div class="form-group">
+      <h3 style="color:#3f7033">Customer comments</h3>
+      <textarea class="form-control" rows="5" id="detail" placeholder="Additional details" name="message" maxlength="300"></textarea>
+    </div>
+    <button type="button" id="bookNow" class="btn btn-whatever">Book now</button>
+      
+    </form>
+
+  </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
 
 <div class="carpet-top-div text-center">
 	<h1>End of lease Carpet Steam Cleaning</h1>
@@ -256,12 +351,58 @@ germs, particles and other pollutants.</p>
     <ul class="list-unstyled list-inline text-center py-2">
       
       <li class="list-inline-item">
-        <a href="index.html" class="btn btn-footer btn-lg btn-rounded">Request a free quote</a>
+        <button data-toggle="modal" class="btn btn-footer btn-lg btn-rounded" data-target="#exampleModalCenter" data-backdrop="static">Request a Free Quote</button>
+    </div>
+        <!-- <a href="#" id="footer-request" class="btn btn-footer btn-lg btn-rounded">Request a free quote</a> -->
       </li>
     </ul>
     
     <div class="footer-copyright text-center py-3">© 2019 Copyright:GetItFixBondCleaning.com.au
     </div>
+
+    <div class="modal" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" style="color: #743125;" id="exampleModalLongTitle">Free Quote</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="request-form">
+  <div class="request-area">
+    <form id="popform">
+   <!-- <form id="myform"> -->
+    <div class="form-group">
+      <label for="name">Name *</label>
+      <input type="text" class="form-control" id="name" placeholder="Your name" name="name" maxlength="30">
+    </div>
+    <div class="form-group">
+      <label for="email">Email *</label>
+      <input type="email" class="form-control" id="email" placeholder="yourname@abc.com" name="email" maxlength="30">
+    </div>
+    <div class="form-group">
+      <label for="phone">Phone number</label>
+      <input type="number" class="form-control" id="phone" placeholder="555 555 1212" name="phone" maxlength="15">
+    </div>
+    <div class="form-group">
+      <label for="subject">Subject *</label>
+      <input type="text" class="form-control" id="subject" placeholder="I want to get price for service (e.g. Bond cleaning)." name="subject" maxlength="100">
+    </div>
+    <div class="form-group">
+    <label for="detail">Message Detail</label>
+      <textarea class="form-control" rows="5" id="detail" placeholder="Additional details" name="message" maxlength="300"></textarea>
+    </div>
+    <button type="button" id="quote" class="btn btn-whatever">Send us your message</button>
+      
+    </form>
+</div>
+  </div>
+      </div>
+    </div>
+  </div>
+</div>
 
 </footer> 
 <!-- Footer -->
